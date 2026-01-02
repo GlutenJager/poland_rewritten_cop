@@ -1,0 +1,5 @@
+PSX = {
+	original_tag = POL
+	has_government = neutrality
+}
+

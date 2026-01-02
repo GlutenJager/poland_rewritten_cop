@@ -1,0 +1,122 @@
+POL_european_power_balance = {
+	initial_value = 0.1
+
+	left_side = POL_separatism_side
+	right_side = POL_federalism_side
+	decision_category = POL_balance_of_power_category
+
+
+	# Federaliści
+	side = {
+		id = POL_federalism_side
+		icon = GFX_bop_POL_federalism_side
+		
+		range = { 
+			id = POL_federalism_low_control_range
+			min = 0
+			max = 0.3
+			modifier = {
+				political_power_gain = 0.1
+			}
+			on_activate = {
+					set_power_balance_gfx = {
+					id = POL_european_power_balance
+					side = POL_federalism_side
+					gfx = GFX_bop_POL_federalism_side
+				}
+			}
+			on_deactivate = {
+			}
+		}
+		range = { 
+			id = POL_federalism_general_control_range
+			min = 0.3
+			max = 0.9
+			modifier = {
+				political_power_gain = 0.3
+				production_speed_buildings_factor = 0.15
+				stability_factor = 0.10
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = { 
+			id = POL_federalism_total_control_range
+			min = 0.9
+			max = 1
+			modifier = {
+				political_power_gain = 0.5
+				production_speed_buildings_factor = 0.30
+				stability_factor = 0.20
+			}
+			on_activate = {
+					set_power_balance_gfx = {
+					id = POL_european_power_balance
+					side = POL_federalism_side
+					gfx = GFX_bop_POL_federalism_improved_side
+				}
+			}
+			on_deactivate = {
+			}
+		}
+	}
+
+	# Separatyści
+	side = {
+		id = POL_separatism_side
+		icon = GFX_bop_POL_separatism_side
+		
+		range = { 
+			id = POL_separatism_low_control_range
+			min = -0.3
+			max = 0
+			modifier = {
+				political_power_gain = -0.1
+			}
+			on_activate = {
+					set_power_balance_gfx = {
+					id = POL_european_power_balance
+					side = POL_separatism_side
+					gfx = GFX_bop_POL_separatism_side
+				}
+			}
+			on_deactivate = {
+			}
+		}
+		range = { 
+			id = POL_separatism_gen_control_range
+			min = -0.9
+			max = -0.3
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = -0.15
+				stability_factor = -0.10
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = { 
+			id = POL_separatism_total_control_range
+			min = -1
+			max = -0.9
+			modifier = {
+				political_power_gain = -0.5
+				production_speed_buildings_factor = -0.30
+				stability_factor = -0.20
+			}
+			on_activate = {
+					set_power_balance_gfx = {
+					id = POL_european_power_balance
+					side = POL_separatism_side
+					gfx = GFX_bop_POL_separatism_improved_side
+				}
+			}
+			on_deactivate = {
+			}
+		}
+	}
+}

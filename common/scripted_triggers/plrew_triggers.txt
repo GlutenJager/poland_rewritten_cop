@@ -1,0 +1,114 @@
+prawica_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_centrum
+		has_completed_focus = POL_opcja_lewica
+		has_completed_focus = POL_opcja_anarchia
+		has_completed_focus = POL_opcja_dziwna
+	}
+}
+konfederacja_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_kamraci
+		has_completed_focus = POL_opcja_kukiz
+		has_completed_focus = POL_opcja_zero
+	}
+}
+pis_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kamraci
+		has_completed_focus = POL_opcja_kukiz
+		has_completed_focus = POL_opcja_zero
+	}
+}
+kukiz_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kamraci
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_zero
+	}
+}
+zero_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kamraci
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_kukiz
+	}
+}
+kamraci_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kukiz
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_zero
+	}
+}
+centrum_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_prawica
+		has_completed_focus = POL_opcja_lewica
+		has_completed_focus = POL_opcja_anarchia
+		has_completed_focus = POL_opcja_dziwna
+	}
+}
+lewica_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_prawica
+		has_completed_focus = POL_opcja_centrum
+		has_completed_focus = POL_opcja_anarchia
+		has_completed_focus = POL_opcja_dziwna
+	}
+}
+nowa_lewica_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_moja_ojczyzna_zjednoczona
+		has_completed_focus = POL_opcja_razem
+	}
+}
+pzpr_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_nowa_lewica
+		has_completed_focus = POL_opcja_razem
+	}
+}
+razem_lewica_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_moja_ojczyzna_zjednoczona
+		has_completed_focus = POL_opcja_nowa_lewica
+	}
+}
+senyszyn_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_powrot_generala
+		has_completed_focus = POL_opcja_nowa_lewica
+		has_completed_focus = POL_opcja_razem
+	}
+}
+jaruzel_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_sensacja
+		has_completed_focus = POL_opcja_nowa_lewica
+		has_completed_focus = POL_opcja_razem
+	}
+}
+anarchia_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_prawica
+		has_completed_focus = POL_opcja_centrum
+		has_completed_focus = POL_opcja_lewica
+		has_completed_focus = POL_opcja_dziwna
+	}
+}

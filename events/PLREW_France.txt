@@ -1,0 +1,6 @@
+###########################
+# PLREW France Events
+###########################
+
+add_namespace = PLREW_france
+

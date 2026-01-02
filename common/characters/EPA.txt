@@ -1,0 +1,25 @@
+characters = {
+
+
+	EPA_Leon_XIV = {
+
+		name = EPA_Leon_XIV
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EPA_Leon_XIV
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

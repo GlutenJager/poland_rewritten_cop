@@ -1,0 +1,25 @@
+characters = {
+
+
+	EOS_manfred_webber = {
+
+		name = EOS_manfred_webber
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EOS_Manfred_Webber
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

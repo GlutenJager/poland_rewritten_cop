@@ -1,0 +1,3208 @@
+
+
+POL_civil_war_decisions = {
+	POL_german_action = { 
+		icon = infiltrate_state
+
+		allowed = { tag = POL }
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		days_mission_timeout = 15
+		is_good = no
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		cancel_trigger = {
+			has_civil_war = no
+		}
+
+		visible = {
+			has_civil_war = yes
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				news_event = {
+				id = PLREW_world_news.5
+			}
+				GER = {
+					set_state_owner = 807
+					set_state_owner = 86
+
+					set_state_controller = 807
+					set_state_controller = 86
+
+					puppet = DNZ
+				}
+				DNZ = {
+					set_cosmetic_tag = DNZ_reichsprotektorat
+				}
+			}
+
+		}
+	}
+	POL_lithuanian_action = { 
+		icon = infiltrate_state
+
+		allowed = { tag = POL }
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		days_mission_timeout = 60
+		is_good = no
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		cancel_trigger = {
+			has_civil_war = no
+		}
+
+		visible = {
+			has_civil_war = yes
+		}
+
+		timeout_effect = {
+			
+			hidden_effect = {
+				news_event = {
+				id = PLREW_world_news.4
+			}
+				LIT = {
+					set_state_owner = 784
+					set_state_controller = 784
+					set_capital = {
+						state = 784
+					}
+				}
+			}
+
+		}
+	}
+	POL_ukrainian_action = { 
+		icon = infiltrate_state
+
+		allowed = { tag = POL }
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		days_mission_timeout = 80
+		is_good = no
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		cancel_trigger = {
+			has_civil_war = no
+		}
+
+		visible = {
+			has_civil_war = yes
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				news_event = {
+				id = PLREW_world_news.6
+			}
+				UKR = {
+                    set_state_owner = 91
+                    set_state_owner = 89
+
+                    set_state_controller = 91
+                    set_state_controller = 89
+
+					set_cosmetic_tag = UKR_UPA
+					declare_war_on = {
+						target = PSX
+					}
+					declare_war_on = {
+						target = POL
+					}
+                    set_politics = { ruling_party = fascism }
+                    add_popularity = {
+                        ideology = fascism
+                        popularity = 1
+                    }
+                    add_popularity = {
+                        ideology = communism
+                        popularity = 0.2
+                    }
+					division_template = {
+						name = "Ukraińska Powstańcza Armia"
+						priority = 1
+						division_names_group = UKR_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+						prioritize = { 89 }
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+						create_unit = {
+							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
+							owner = UKR
+						}
+					}
+				}
+                
+				every_country = {
+					limit = {
+						original_tag = POL
+					}
+					declare_war_on = {
+						target = UKR
+					}
+				}
+			}
+
+		}
+	}
+	POL_raid_arms_depot = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_civil_war = yes
+		}
+
+		cost = 25
+		fire_only_once = no
+		days_remove = 15
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			add_stability = -0.01
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = POL
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 10
+				producer = POL
+			}
+		}
+	}
+}
+
+POL_pis_polityka_zagraniczna = {
+	# DO NAPRAWY ALE ZACZYNA DZILAC#
+    
+    POL_oddac_wegrom_slowacje = { # decyzja o oddaniu Węgrom Słowacji (stan 69)
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+            controls_state = 69              # Bratysława (Słowacja)
+                     # Czechosłowacja nie może istnieć
+
+            HUN = {
+				AND = {
+					exists = yes
+					OR = {
+						is_in_faction_with = POL
+						is_subject_of = POL
+					}
+				}
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+        }
+
+        fire_only_once = yes
+        days_remove = 15
+        
+        cost = 20
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        complete_effect = {
+        
+            HUN = {
+				transfer_state = 69
+                add_state_core = 69
+
+            }
+        }
+    }
+}
+
+POL_po_europejska_dominacja = {
+    
+    POL_eurokomissariat_skandinavien = { # decyzja o utworzeniu eurokomiisariatu skandynawii
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Skandinavische_eurokomissariat
+
+            controls_state = 142
+			controls_state = 920
+			controls_state = 921
+			controls_state = 922
+			controls_state = 110
+			controls_state = 143
+			controls_state = 923
+			controls_state = 144
+			controls_state = 924
+			controls_state = 925
+			controls_state = 148
+			controls_state = 722
+			controls_state = 147
+			controls_state = 929
+			controls_state = 150
+			controls_state = 149
+			controls_state = 146
+			controls_state = 930
+			controls_state = 926
+			controls_state = 927
+			controls_state = 928
+			controls_state = 111
+			controls_state = 145
+			controls_state = 124
+			controls_state = 910
+			controls_state = 37
+			controls_state = 911
+			controls_state = 99
+			controls_state = 337
+			controls_state = 100
+			controls_state = 101
+			controls_state = 666
+			controls_state = 918
+			controls_state = 917
+			controls_state = 38
+			controls_state = 916
+			controls_state = 141
+			controls_state = 919
+			controls_state = 140
+			controls_state = 913
+			controls_state = 139
+			controls_state = 915
+			controls_state = 138
+
+            NOR = {
+				exists = no
+            }
+			DEN = {
+				exists = no
+            }
+			FIN = {
+				exists = no
+            }
+			SWE = {
+				exists = no
+            }
+			ICE = {
+				exists = no
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_Skandinavische_eurokomissariat
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ESK = {
+				transfer_state = 142
+                add_state_core = 142
+				transfer_state = 920
+                add_state_core = 920
+				transfer_state = 921
+                add_state_core = 921
+				transfer_state = 922
+                add_state_core = 922
+				transfer_state = 110
+                add_state_core = 110
+				transfer_state = 143
+                add_state_core = 143
+				transfer_state = 923
+                add_state_core = 923
+				transfer_state = 144
+                add_state_core = 144
+				transfer_state = 924
+                add_state_core = 924
+				transfer_state = 925
+                add_state_core = 925
+				transfer_state = 148
+                add_state_core = 148
+				transfer_state = 722
+                add_state_core = 722
+				transfer_state = 147
+                add_state_core = 147
+				transfer_state = 929
+                add_state_core = 929
+				transfer_state = 150
+                add_state_core = 150
+				transfer_state = 149
+                add_state_core = 149
+				transfer_state = 146
+                add_state_core = 146
+				transfer_state = 930
+                add_state_core = 930
+				transfer_state = 926
+                add_state_core = 926
+				transfer_state = 927
+                add_state_core = 927
+				transfer_state = 928
+                add_state_core = 928
+				transfer_state = 111
+                add_state_core = 111
+				transfer_state = 145
+                add_state_core = 145
+				transfer_state = 124
+                add_state_core = 124
+				transfer_state = 910
+                add_state_core = 910
+				transfer_state = 37
+                add_state_core = 37
+				transfer_state = 911
+                add_state_core = 911
+				transfer_state = 99
+                add_state_core = 99
+				transfer_state = 337
+                add_state_core = 337
+				transfer_state = 100
+                add_state_core = 100
+				transfer_state = 101
+                add_state_core = 101
+				transfer_state = 666
+                add_state_core = 666
+				transfer_state = 918
+                add_state_core = 918
+				transfer_state = 917
+                add_state_core = 917
+				transfer_state = 38
+                add_state_core = 38
+				transfer_state = 916
+                add_state_core = 916
+				transfer_state = 141
+                add_state_core = 141
+				transfer_state = 919
+                add_state_core = 919
+				transfer_state = 140
+                add_state_core = 140
+				transfer_state = 913
+                add_state_core = 913
+				transfer_state = 139
+                add_state_core = 139
+				transfer_state = 915
+                add_state_core = 915
+				transfer_state = 138
+                add_state_core = 138
+				}
+			}
+			POL_bop_medium_decrease_effect = yes
+				puppet = { target = ESK }
+			}
+        }
+
+
+		 POL_eurokomissariat_Niderlande = { # decyzja o utworzeniu eurokomiisariatu niderlandów
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Benelux_eurokomissariat
+
+            controls_state = 36
+			controls_state = 7
+			controls_state = 35
+			controls_state = 309
+			controls_state = 695
+
+            HOL = {
+				exists = no
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_Benelux_eurokomissariat
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ENI = {
+				transfer_state = 36
+				add_state_core = 36
+                transfer_state = 7
+				add_state_core = 7
+				transfer_state = 35
+				add_state_core = 35
+				transfer_state = 309
+				add_state_core = 309
+				transfer_state = 695
+				add_state_core = 695
+				}
+			}
+
+				puppet = { target = ENI }
+
+			POL_bop_medium_decrease_effect = yes
+
+			}
+        }
+
+
+
+		 POL_eurokommisarat_ostland = { # decyzja o eurokomisariacie wschodnim
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Baltische_eurokomissariat
+
+            controls_state = 784
+			controls_state = 815
+			controls_state = 11
+			controls_state = 814
+			controls_state = 189
+			controls_state = 190
+			controls_state = 809
+			controls_state = 810
+			controls_state = 808
+			controls_state = 12
+			controls_state = 191
+			controls_state = 13
+			controls_state = 813
+			controls_state = 812
+			controls_state = 811
+			controls_state = 95
+			controls_state = 96
+
+            LIT = {
+				exists = no
+            }
+			LAT = {
+				exists = no
+            }
+			EST = {
+				exists = no
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_Baltische_eurokomissariat
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EOS = {
+				transfer_state = 784
+                add_state_core = 784
+				transfer_state = 815
+                add_state_core = 815
+				transfer_state = 11
+                add_state_core = 11
+				transfer_state = 814
+                add_state_core = 814
+				transfer_state = 189
+                add_state_core = 189
+				transfer_state = 190
+                add_state_core = 190
+				transfer_state = 809
+                add_state_core = 809
+				transfer_state = 810
+                add_state_core = 810
+				transfer_state = 808
+                add_state_core = 808
+				transfer_state = 12
+                add_state_core = 12
+				transfer_state = 191
+                add_state_core = 191
+				transfer_state = 13
+                add_state_core = 13
+				transfer_state = 813
+                add_state_core = 813
+				transfer_state = 812
+                add_state_core = 812
+				transfer_state = 811
+                add_state_core = 811
+				transfer_state = 95
+                add_state_core = 95
+				transfer_state = 96
+                add_state_core = 96
+
+				}
+			}
+
+				puppet = { target = EOS }
+
+			    	POL_bop_medium_decrease_effect = yes
+			}
+        }
+
+
+		 POL_euroordenstadt_burgund = { # decyzja o utworzeniu Zakonu Europy
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Benelux_eurokomissariat
+
+            controls_state = 977
+			controls_state = 6
+			controls_state = 34
+			controls_state = 980
+
+	AND = {
+            BEL = {
+				exists = no
+            }
+			OR = {
+				FRA = { exists = no }
+				FRA = { is_puppet_of = POL }
+			}
+        }
+	}
+
+        visible = {
+            has_completed_focus = POL_Benelux_eurokomissariat
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ORB = {
+				transfer_state = 977
+                add_state_core = 977
+				transfer_state = 6
+				add_state_core = 6
+				transfer_state = 34
+				add_state_core = 34
+				transfer_state = 980
+				add_state_core = 980
+				transfer_state = 29
+				add_state_core = 29
+				transfer_state = 18
+				add_state_core = 18
+				transfer_state = 17
+				add_state_core = 17
+				}
+			}
+
+				puppet = { target = ORB }
+
+				POL_bop_medium_decrease_effect = yes
+			}
+        }
+
+	POL_oddajmy_bialorus_ostland = { # decyzja o oddaniu Białorusi Litwie (staty207 206 i 204)
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_wolna_bialorus
+
+            controls_state = 207
+			controls_state = 206
+			controls_state = 204
+
+	AND = {
+            BLR = {
+				exists = no
+            }
+			OR = {
+				EOS = { exists = yes }
+				EOS = { is_puppet_of = POL }
+			}
+        }
+	}
+
+        visible = {
+            has_completed_focus = POL_wolna_bialorus
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EOS = {
+				transfer_state = 207
+                add_state_core = 207
+				transfer_state = 206
+				add_state_core = 206
+				transfer_state = 204
+				add_state_core = 204
+				}
+			}
+
+				POL_bop_low_decrease_effect = yes
+			}
+        }
+
+	POL_eurokommisarat_ukraine = { # decyzja o eurokomisariacie Ukrainy
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_obrona_ukrainy
+
+            controls_state = 199
+			controls_state = 201
+			controls_state = 194
+			controls_state = 202
+			controls_state = 193
+			controls_state = 225
+			controls_state = 197
+			controls_state = 226
+			controls_state = 221
+			controls_state = 240
+			controls_state = 200
+			controls_state = 227
+			controls_state = 228
+			controls_state = 218
+			controls_state = 93
+			controls_state = 94
+
+            UKR = {
+				exists = no
+            }
+
+        }
+
+        visible = {
+            has_completed_focus = POL_obrona_ukrainy
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EUK = {
+				transfer_state = 199
+                add_state_core = 199
+				transfer_state = 201
+                add_state_core = 201
+				transfer_state = 194
+                add_state_core = 194
+				transfer_state = 202
+                add_state_core = 202
+				transfer_state = 193
+                add_state_core = 193
+				transfer_state = 225
+                add_state_core = 225
+				transfer_state = 259
+                add_state_core = 259
+				transfer_state = 203
+                add_state_core = 203
+				transfer_state = 197
+                add_state_core = 197
+				transfer_state = 226
+                add_state_core = 226
+				transfer_state = 221
+                add_state_core = 221
+				transfer_state = 240
+                add_state_core = 240
+				transfer_state = 200
+                add_state_core = 200
+				transfer_state = 227
+                add_state_core = 227
+				transfer_state = 228
+                add_state_core = 228
+				transfer_state = 218
+                add_state_core = 218
+				transfer_state = 93
+				add_state_core = 93
+				transfer_state = 94
+				add_state_core = 94
+
+				}
+			}
+
+				puppet = { target = EUK }
+
+			    	POL_bop_medium_decrease_effect = yes
+			}
+        }
+
+POL_eurokommisarat_moskowien = { # decyzja o eurokomisariacie Moskwy
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+
+            controls_state = 208
+			controls_state = 195
+			controls_state = 209
+			controls_state = 263
+			controls_state = 244
+			controls_state = 264
+			controls_state = 246
+			controls_state = 247
+			controls_state = 210
+			controls_state = 242
+			controls_state = 224
+			controls_state = 243
+			controls_state = 241
+			controls_state = 205
+			controls_state = 219
+			controls_state = 223
+			controls_state = 222
+			controls_state = 220
+			controls_state = 258
+			controls_state = 254
+			controls_state = 260
+			controls_state = 257
+			controls_state = 255
+			controls_state = 250
+			controls_state = 239
+			controls_state = 401
+			controls_state = 829
+			controls_state = 265
+			controls_state = 217
+			controls_state = 245
+			controls_state = 238
+			controls_state = 237
+			controls_state = 236
+			controls_state = 248
+			controls_state = 253
+
+            EOS = {
+				exists = yes
+            }
+			EUK = {
+				exists = yes
+            }
+
+        }
+
+        visible = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				set_province_name = {
+					id = 3151
+					name = FriedrichStadt
+				}
+				set_province_name = {
+					id = 6245
+					name = Hohenzollern
+				}
+				set_province_name = {
+					id = 6474
+					name = Wilhelmo
+				}
+				set_province_name = {
+					id = 3686
+					name = Neu-Berlin
+				}
+				set_province_name = {
+					id = 3529
+					name = Bismarckgrad
+				}
+
+				POL = {
+					add_state_core = 196
+					add_state_core = 137
+				}
+
+				EMO = {
+				transfer_state = 248
+				add_state_core = 248
+                transfer_state = 253
+				add_state_core = 253
+				transfer_state = 208
+                add_state_core = 208
+				transfer_state = 195
+                add_state_core = 195
+				transfer_state = 209
+                add_state_core = 209
+				transfer_state = 263
+                add_state_core = 263
+				transfer_state = 244
+                add_state_core = 244
+				transfer_state = 264
+                add_state_core = 264
+				transfer_state = 246
+                add_state_core = 246
+				transfer_state = 247
+                add_state_core = 247
+				transfer_state = 210
+                add_state_core = 210
+				transfer_state = 242
+                add_state_core = 242
+				transfer_state = 224
+                add_state_core = 224
+				transfer_state = 243
+                add_state_core = 243
+				transfer_state = 241
+                add_state_core = 241
+				transfer_state = 205
+                add_state_core = 205
+				transfer_state = 219
+                add_state_core = 219
+				transfer_state = 223
+                add_state_core = 223
+				transfer_state = 222
+				add_state_core = 222
+				transfer_state = 220
+				add_state_core = 220
+				transfer_state = 258
+				add_state_core = 258
+				transfer_state = 254
+				add_state_core = 254
+				transfer_state = 260
+				add_state_core = 260
+				transfer_state = 257
+				add_state_core = 257
+				transfer_state = 255
+				add_state_core = 255
+				transfer_state = 250
+				add_state_core = 250
+				transfer_state = 239
+				add_state_core = 239
+				transfer_state = 401
+				add_state_core = 401
+				transfer_state = 829
+				add_state_core = 829
+				transfer_state = 265
+				add_state_core = 265
+				transfer_state = 217
+				add_state_core = 217
+				transfer_state = 245
+				add_state_core = 245
+				transfer_state = 238
+				add_state_core = 238
+				transfer_state = 237
+				add_state_core = 237
+				transfer_state = 236
+				add_state_core = 236
+
+				}
+			}
+
+				puppet = { target = EMO }
+
+			}
+        }
+
+		POL_wieksza_sandynawia = { # decyzja o oddaniu skandynawii rzeczy
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+
+            controls_state = 213
+			controls_state = 216
+			controls_state = 215
+
+	}
+
+        visible = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ESK = {
+				transfer_state = 213
+                add_state_core = 213
+				transfer_state = 216
+				add_state_core = 216
+				transfer_state = 215
+				add_state_core = 215
+				}
+			}
+
+			}
+        }
+
+POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+
+			controls_state = 252
+			controls_state = 256
+			controls_state = 400
+			controls_state = 833
+			controls_state = 249
+			controls_state = 251
+			controls_state = 399
+			controls_state = 651
+			controls_state = 652
+			controls_state = 582
+			controls_state = 879
+			controls_state = 351
+			controls_state = 880
+			controls_state = 214
+			controls_state = 397
+			controls_state = 262
+			controls_state = 825
+			controls_state = 398
+			controls_state = 572
+			controls_state = 653
+			controls_state = 573
+			controls_state = 580
+			controls_state = 579
+			controls_state = 581
+			controls_state = 403
+			controls_state = 571
+			controls_state = 570
+			controls_state = 577
+			controls_state = 578
+			controls_state = 824
+			controls_state = 516
+			controls_state = 568
+			controls_state = 654
+			controls_state = 40
+			controls_state = 569
+			controls_state = 576
+			controls_state = 878
+			controls_state = 567
+			controls_state = 575
+			controls_state = 876
+			controls_state = 563
+			controls_state = 566
+			controls_state = 564
+			controls_state = 565
+			controls_state = 574
+			controls_state = 877
+			controls_state = 644
+			controls_state = 822
+			controls_state = 562
+			controls_state = 874
+			controls_state = 637
+			controls_state = 560
+			controls_state = 561
+			controls_state = 657
+			controls_state = 409
+			controls_state = 408
+			controls_state = 655
+			controls_state = 875
+
+            EOS = {
+				exists = yes
+            }
+			EUK = {
+				exists = yes
+            }
+			EMO = {
+				exists = yes
+			}
+			SOV = {
+				exists = no
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ETR = {
+				transfer_state = 252
+				add_state_core = 252
+				transfer_state = 256
+				add_state_core = 256
+				transfer_state = 400
+				add_state_core = 400
+				transfer_state = 833
+				add_state_core = 833
+				transfer_state = 249
+				add_state_core = 249
+				transfer_state = 251
+				add_state_core = 251
+				transfer_state = 399
+				add_state_core = 399
+				transfer_state = 651
+				add_state_core = 651
+				transfer_state = 652
+				add_state_core = 652
+				transfer_state = 582
+				add_state_core = 582
+				transfer_state = 879
+				add_state_core = 879
+				transfer_state = 351
+				add_state_core = 351
+				transfer_state = 880
+				add_state_core = 880
+				transfer_state = 214
+				add_state_core = 214
+				transfer_state = 397
+				add_state_core = 397
+				transfer_state = 262
+				add_state_core = 262
+				transfer_state = 825
+				add_state_core = 825
+				transfer_state = 398
+				add_state_core = 398
+				transfer_state = 572
+				add_state_core = 572
+				transfer_state = 653
+				add_state_core = 653
+				transfer_state = 573
+				add_state_core = 573
+				transfer_state = 580
+				add_state_core = 580
+				transfer_state = 579
+				add_state_core = 579
+				transfer_state = 581
+				add_state_core = 581
+				transfer_state = 403
+				add_state_core = 403
+				transfer_state = 571
+				add_state_core = 571
+				transfer_state = 570
+				add_state_core = 570
+				transfer_state = 577
+				add_state_core = 577
+				transfer_state = 578
+				add_state_core = 578
+				transfer_state = 824
+				add_state_core = 824
+				transfer_state = 516
+				add_state_core = 516
+				transfer_state = 568
+				add_state_core = 568
+				transfer_state = 654
+				add_state_core = 654
+				transfer_state = 40
+				add_state_core = 40
+				transfer_state = 569
+				add_state_core = 569
+				transfer_state = 576
+				add_state_core = 576
+				transfer_state = 878
+				add_state_core = 878
+				transfer_state = 567
+				add_state_core = 567
+				transfer_state = 575
+				add_state_core = 575
+				transfer_state = 876
+				add_state_core = 876
+				transfer_state = 563
+				add_state_core = 563
+				transfer_state = 566
+				add_state_core = 566
+				transfer_state = 564
+				add_state_core = 564
+				transfer_state = 565
+				add_state_core = 565
+				transfer_state = 574
+				add_state_core = 574
+				transfer_state = 877
+				add_state_core = 877
+				transfer_state = 644
+				add_state_core = 644
+				transfer_state = 822
+				add_state_core = 822
+				transfer_state = 562
+				add_state_core = 562
+				transfer_state = 874
+				add_state_core = 874
+				transfer_state = 637
+				add_state_core = 637
+				transfer_state = 560
+				add_state_core = 560
+				transfer_state = 561
+				add_state_core = 561
+				transfer_state = 657
+				add_state_core = 657
+				transfer_state = 409
+				add_state_core = 409
+				transfer_state = 408
+				add_state_core = 408
+				transfer_state = 655
+				add_state_core = 655
+				transfer_state = 875
+				add_state_core = 875
+				}
+			}
+
+				puppet = { target = ETR }
+
+			}
+        }
+
+		POL_integracja_tuvy = {
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+
+            controls_state = 329
+			ETR = {
+				exists = yes
+			}
+	}
+
+        visible = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				ETR = {
+				transfer_state = 329
+                add_state_core = 329
+				}
+			
+			}
+        }
+
+	POL_euroregion_Schweiz = { # decyzja o euroregionie Szwajcarskim
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_zmiazdzenie_alpejskiej_neutralnosci
+
+            controls_state = 845
+			controls_state = 847
+			controls_state = 3
+			controls_state = 151
+			controls_state = 846
+			
+
+            SWI = {
+				exists = no
+            }
+
+        }
+
+        visible = {
+            has_completed_focus = POL_zmiazdzenie_alpejskiej_neutralnosci
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ESH = {
+				transfer_state = 845
+				add_state_core = 845
+				transfer_state = 847
+				add_state_core = 847
+				transfer_state = 3
+				add_state_core = 3
+				transfer_state = 151
+				add_state_core = 151
+				transfer_state = 846
+				add_state_core = 846
+
+				}
+			}
+
+				puppet = { target = ESH }
+
+			    	POL_bop_medium_decrease_effect = yes
+			}
+        }
+
+		POL_euroregion_ireland = { # decyzja o Eurokommisarriacie irlandii
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_koniec_Brexitu
+
+            controls_state = 113
+			controls_state = 134
+			controls_state = 135
+			controls_state = 119
+			
+			IRE = {
+				exists = no
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_koniec_Brexitu
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EIR = {
+				transfer_state = 113
+				add_state_core = 113
+				transfer_state = 119
+				add_state_core = 119
+				transfer_state = 134
+				add_state_core = 134
+				transfer_state = 135
+				add_state_core = 135
+
+				}
+			}
+
+				puppet = { target = EIR }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_euroregion_england = { # decyzja o Euroregionie england
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_koniec_Brexitu
+
+            controls_state = 130
+			controls_state = 132
+			controls_state = 129
+			controls_state = 128
+			controls_state = 338
+			controls_state = 125
+			controls_state = 127
+			controls_state = 126
+			controls_state = 123
+
+			ENG = {
+				exists = no
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_koniec_Brexitu
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EEN = {
+				transfer_state = 130
+				add_state_core = 130
+				transfer_state = 132
+				add_state_core = 132
+				transfer_state = 129
+				add_state_core = 129
+				transfer_state = 128
+				add_state_core = 128
+				transfer_state = 338
+				add_state_core = 338
+				transfer_state = 125
+				add_state_core = 125
+				transfer_state = 127
+				add_state_core = 127
+				transfer_state = 126
+				add_state_core = 126
+				transfer_state = 123
+				add_state_core = 123
+
+				}
+			}
+
+				puppet = { target = EEN }
+
+			    	POL_bop_medium_decrease_effect = yes
+			}
+        }
+
+		POL_euroregion_walien = { # decyzja o Euroregionie walien
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_koniec_Brexitu
+
+            controls_state = 122
+
+			ENG = {
+				exists = no
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_koniec_Brexitu
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EWL = {
+				transfer_state = 122
+				add_state_core = 122
+				}
+			}
+
+				puppet = { target = EWL }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_euroregion_scotland = { # decyzja o Euroregionie szkocji
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_koniec_Brexitu
+
+            controls_state = 120
+			controls_state = 133
+			controls_state = 136
+			controls_state = 121
+			controls_state = 931
+			controls_state = 131
+			controls_state = 933
+
+			ESC = {
+				exists = no
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_koniec_Brexitu
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ESC = {
+				transfer_state = 120
+				add_state_core = 120
+				transfer_state = 133
+				add_state_core = 133
+				transfer_state = 136
+				add_state_core = 136
+				transfer_state = 121
+				add_state_core = 121
+				transfer_state = 931
+				add_state_core = 931
+				transfer_state = 131
+				add_state_core = 131
+				transfer_state = 933
+				add_state_core = 933
+				}
+			}
+
+				puppet = { target = ESC }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_euroregion_neapol = { # decyzja o Euroregionie neapolu
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_do_europy_federalnej
+	AND ={
+        OR = {
+			controls_state = 117
+			any_subject_country = {
+				controls_state = 117
+			}
+		}
+		OR = {
+			controls_state = 849
+			any_subject_country = {
+				controls_state = 849
+			}
+		}
+		OR = {
+			controls_state = 156
+			any_subject_country = {
+				controls_state = 156
+			}
+		}
+		OR = {
+			controls_state = 115
+			any_subject_country = {
+				controls_state = 115
+			}
+		}
+		OR = {
+			controls_state = 114
+			any_subject_country = {
+				controls_state = 114
+			}
+		}
+		OR = {
+			controls_state = 164
+			any_subject_country = {
+				controls_state = 164
+			}
+		}
+        }
+	}
+
+        visible = {
+            has_completed_focus = POL_do_europy_federalnej
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				ENP = {
+				transfer_state = 117
+				add_state_core = 117
+				transfer_state = 849
+				add_state_core = 849
+				transfer_state = 156
+				add_state_core = 156
+				transfer_state = 115
+				add_state_core = 115
+				transfer_state = 114
+				add_state_core = 114
+				transfer_state = 164
+				add_state_core = 164
+				}
+			}
+
+				puppet = { target = ENP }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_euroregion_2137 = { # decyzja o Euroregionie Papieskim
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_do_europy_federalnej
+
+			AND ={
+        OR = {
+			controls_state = 2
+			any_subject_country = {
+				controls_state = 2
+			}
+		}
+		OR = {
+			controls_state = 157
+			any_subject_country = {
+				controls_state = 157
+			}
+		}
+		OR = {
+			controls_state = 162
+			any_subject_country = {
+				controls_state = 162
+			}
+		}
+		OR = {
+			controls_state = 161
+			any_subject_country = {
+				controls_state = 161
+			}
+		}
+        }
+	}
+
+
+        visible = {
+            has_completed_focus = POL_do_europy_federalnej
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EPA = {
+				transfer_state = 2
+				add_state_core = 2
+				transfer_state = 157
+				add_state_core = 157
+				transfer_state = 162
+				add_state_core = 162
+				transfer_state = 161
+				add_state_core = 161
+				}
+			}
+
+				puppet = { target = EPA }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_eurorepublik_Italien = { # decyzja o Eurorepublice wloch
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_do_europy_federalnej
+
+			AND ={
+        OR = {
+			controls_state = 158
+			any_subject_country = {
+				controls_state = 158
+			}
+		}
+		OR = {
+			controls_state = 159
+			any_subject_country = {
+				controls_state = 159
+			}
+		}
+		OR = {
+			controls_state = 160
+			any_subject_country = {
+				controls_state = 160
+			}
+		}
+		OR = {
+			controls_state = 850
+			any_subject_country = {
+				controls_state = 850
+			}
+		}
+		OR = {
+			controls_state = 736
+			any_subject_country = {
+				controls_state = 736
+			}
+		}
+		OR = {
+			controls_state = 804
+			any_subject_country = {
+				controls_state = 804
+			}
+		}
+		OR = {
+			controls_state = 105
+			any_subject_country = {
+				controls_state = 105
+			}
+		}
+		OR = {
+			controls_state = 802
+			any_subject_country = {
+				controls_state = 802
+			}
+		}
+		OR = {
+			controls_state = 970
+			any_subject_country = {
+				controls_state = 970
+			}
+		}
+		OR = {
+			controls_state = 934
+			any_subject_country = {
+				controls_state = 934
+			}
+		}
+		OR = {
+			controls_state = 44
+			any_subject_country = {
+				controls_state = 44
+			}
+		}
+		OR = {
+			controls_state = 805
+			any_subject_country = {
+				controls_state = 805
+			}
+		}
+		OR = {
+			controls_state = 185
+			any_subject_country = {
+				controls_state = 185
+			}
+		}
+		OR = {
+			controls_state = 186
+			any_subject_country = {
+				controls_state = 186
+			}
+		}
+		OR = {
+			controls_state = 182
+			any_subject_country = {
+				controls_state = 182
+			}
+		}
+		OR = {
+			controls_state = 187
+			any_subject_country = {
+				controls_state = 187
+			}
+		}
+		OR = {
+			controls_state = 164
+			any_subject_country = {
+				controls_state = 164
+			}
+		}
+		OR = {
+			controls_state = 183
+			any_subject_country = {
+				controls_state = 183
+			}
+		}
+
+        }
+	}
+ remove_effect = {
+	
+
+			ITA = {
+				OR = {
+				exists = no
+				is_puppet_of = POL
+				}
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_do_europy_federalnej
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				
+				#create lider i set cosmetic
+				hidden_effect = {
+				ITA = {
+				set_cosmetic_tag = ITA_eurorepublik
+				transfer_state = 158
+				transfer_state = 159
+				transfer_state = 160
+				transfer_state = 850
+				transfer_state = 736
+				transfer_state = 852
+				transfer_state = 103
+				transfer_state = 804
+				transfer_state = 105
+				transfer_state = 802
+				transfer_state = 970
+				transfer_state = 934
+				transfer_state = 44
+				transfer_state = 805
+				transfer_state = 185
+				transfer_state = 186
+				transfer_state = 182
+				transfer_state = 187
+				transfer_state = 164
+				transfer_state = 183
+				set_cosmetic_tag = ITA_eurorepublik
+				}
+			}
+
+				puppet = { target = ITA }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_eurorepublik_iberien = { # decyzja o Eurorepublik Iberien
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Marsz_na_Iberię
+
+            controls_state = 165
+			controls_state = 794
+			controls_state = 167
+			controls_state = 166
+			controls_state = 168
+			controls_state = 793
+			controls_state = 174
+			controls_state = 172
+			controls_state = 168
+			controls_state = 791
+			controls_state = 174
+			controls_state = 790
+			controls_state = 171
+			controls_state = 41
+			controls_state = 175
+			controls_state = 789
+			controls_state = 173
+			controls_state = 170
+			controls_state = 169
+			controls_state = 788
+			controls_state = 290
+			controls_state = 177
+			controls_state = 181
+			controls_state = 180
+			controls_state = 112
+			controls_state = 795
+			controls_state = 179
+
+        }
+
+        visible = {
+            has_completed_focus = POL_Marsz_na_Iberię
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				EIB = {
+				transfer_state = 165
+				add_state_core = 165
+				transfer_state = 794
+				add_state_core = 794
+				transfer_state = 167
+				add_state_core = 167
+				transfer_state = 166
+				add_state_core = 166
+				transfer_state = 168
+				add_state_core = 168
+				transfer_state = 793
+				add_state_core = 793
+				transfer_state = 176
+				add_state_core = 176
+				transfer_state = 172
+				add_state_core = 172
+				transfer_state = 792
+				add_state_core = 792
+				transfer_state = 168
+				add_state_core = 168
+				transfer_state = 791
+				add_state_core = 791
+				transfer_state = 174
+				add_state_core = 174
+				transfer_state = 790
+				add_state_core = 790
+				transfer_state = 171
+				add_state_core = 171
+				transfer_state = 41
+				add_state_core = 41
+				transfer_state = 175
+				add_state_core = 175
+				transfer_state = 789
+				add_state_core = 789
+				transfer_state = 173
+				add_state_core = 173
+				transfer_state = 170
+				add_state_core = 170
+				transfer_state = 169
+				add_state_core = 169
+				transfer_state = 788
+				add_state_core = 788
+				transfer_state = 290
+				add_state_core = 290
+				transfer_state = 177
+				add_state_core = 177
+				transfer_state = 181
+				add_state_core = 181
+				transfer_state = 180
+				add_state_core = 180
+				transfer_state = 112
+				add_state_core = 112
+				transfer_state = 795
+				add_state_core = 795
+				transfer_state = 179
+				add_state_core = 179
+				}
+			}
+
+				puppet = { target = EIB }
+
+			    	POL_bop_medium_decrease_effect = yes
+			}
+        }
+
+		POL_integracja_giblartaru = {
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Marsz_na_Iberię
+
+            controls_state = 118
+			EIB = {
+				exists = yes
+			}
+	}
+
+        visible = {
+            has_completed_focus = POL_Marsz_na_Iberię
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				EIB = {
+				transfer_state = 118
+                add_state_core = 118
+				}
+			
+
+				POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_eurokommisarat_kaukasien = { # decyzja o eurokomisariacie Kaukazu
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+
+            controls_state = 234
+			controls_state = 235
+			controls_state = 232
+			controls_state = 233
+			controls_state = 826
+			controls_state = 827
+			controls_state = 821
+			controls_state = 828
+			controls_state = 231
+			controls_state = 229
+			controls_state = 230
+			
+            EOS = {
+				exists = yes
+            }
+			EUK = {
+				exists = yes
+            }
+
+        }
+
+        visible = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				
+				EQA = {
+				transfer_state = 234
+                add_state_core = 234
+				transfer_state = 235
+                add_state_core = 235
+				transfer_state = 232
+                add_state_core = 232
+				transfer_state = 233
+                add_state_core = 233
+				transfer_state = 826
+                add_state_core = 826
+				transfer_state = 827
+                add_state_core = 827
+				transfer_state = 821
+				add_state_core = 821
+				transfer_state = 828
+				add_state_core = 828
+				transfer_state = 231
+				add_state_core = 231
+				transfer_state = 229
+				add_state_core = 229
+				transfer_state = 230
+				add_state_core = 230
+				
+				}
+			}
+
+				puppet = { target = EQA }
+
+			}
+        }
+
+		POL_eurokommisarat_Turkiestan = { # decyzja o eurokomisariacie Turkiestanu
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+
+            controls_state = 407
+			controls_state = 406
+			controls_state = 402
+			controls_state = 587
+			controls_state = 823
+			controls_state = 831
+			controls_state = 584
+			controls_state = 832
+			controls_state = 830
+			controls_state = 585
+			controls_state = 405
+			controls_state = 742
+			controls_state = 732
+			controls_state = 404
+			controls_state = 586
+			controls_state = 589
+			controls_state = 881
+			controls_state = 588
+			controls_state = 590
+			controls_state = 882
+			controls_state = 583
+			
+            EOS = {
+				exists = yes
+            }
+			EUK = {
+				exists = yes
+            }
+			EMO = {
+				exists = yes
+			}
+			EQA = {
+				exists = yes
+			}
+
+        }
+
+        visible = {
+            has_completed_focus = POL_powalenie_niedzwiedzia
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+				
+				ETU = {
+				transfer_state = 407
+                add_state_core = 407
+				transfer_state = 406
+                add_state_core = 406
+				transfer_state = 402
+                add_state_core = 402
+				transfer_state = 587
+                add_state_core = 587
+				transfer_state = 823
+                add_state_core = 823
+				transfer_state = 831
+                add_state_core = 831
+				transfer_state = 584
+				add_state_core = 584
+				transfer_state = 832
+				add_state_core = 832
+				transfer_state = 830
+				add_state_core = 830
+				transfer_state = 585
+				add_state_core = 585
+				transfer_state = 405
+				add_state_core = 405
+				transfer_state = 742
+                add_state_core = 742
+				transfer_state = 732
+				add_state_core = 732
+				transfer_state = 404
+				add_state_core = 404
+				transfer_state = 586
+				add_state_core = 586
+				transfer_state = 589
+				add_state_core = 589
+				transfer_state = 881
+				add_state_core = 881
+				transfer_state = 588
+				add_state_core = 588
+				transfer_state = 590
+				add_state_core = 590
+				transfer_state = 882
+				add_state_core = 882
+				transfer_state = 583
+				add_state_core = 583
+				
+				}
+			}
+
+				puppet = { target = ETU }
+
+			}
+        }
+
+		POL_europrotektorat_tschechien = { # decyzja o eurokomisariacie czech
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_eurokomissariat_Tschechien
+
+            controls_state = 9
+			controls_state = 75
+
+            CZE = {
+				exists = no
+            }
+			
+        }
+
+        visible = {
+            has_completed_focus = POL_eurokomissariat_Tschechien
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+					
+					#leader i comsetic
+				CZE = {
+				transfer_state = 9
+                add_state_core = 9
+				transfer_state = 75
+                add_state_core = 75
+				}
+			}
+
+				puppet = { target = CZE }
+			    	POL_bop_low_decrease_effect = yes
+				CZE = {
+					set_cosmetic_tag = CZE_eurorepublik
+				}
+			}
+        }
+
+		POL_europrotektorat_slovakia = { # decyzja o eurokomisariacie slowacji
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_eurokomissariat_Tschechien
+
+            controls_state = 70
+			controls_state = 71
+			controls_state = 73
+			controls_state = 664
+
+        
+			
+        }
+
+        visible = {
+            has_completed_focus = POL_eurokomissariat_Tschechien
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+					#leader i comsetic
+					
+				SLO = {
+				set_cosmetic_tag = SLO_eurorepublik
+				transfer_state = 70
+                add_state_core = 70
+				transfer_state = 71
+                add_state_core = 71
+				transfer_state = 73
+				add_state_core = 73
+				transfer_state = 664
+				add_state_core = 664
+
+				}
+			}
+
+				puppet = { target = SLO }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+		POL_eurokommisariat_balkan_union = { # decyzja o eurokomisariacie balkan
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_Balkanische_eurokomissariat
+
+            controls_state = 975
+			controls_state = 109
+			controls_state = 104
+			controls_state = 45
+			controls_state = 107
+			controls_state = 764
+			controls_state = 108
+			controls_state = 106
+			controls_state = 803
+			controls_state = 731
+			controls_state = 47
+			controls_state = 184
+			controls_state = 155
+			controls_state = 974
+			controls_state = 43
+			controls_state = 973
+			controls_state = 154
+			controls_state = 83
+			controls_state = 76
+			controls_state = 82
+			controls_state = 84
+			controls_state = 81
+			controls_state = 46
+			controls_state = 79
+			controls_state = 80
+			controls_state = 971
+			controls_state = 77
+			controls_state = 766
+			controls_state = 78
+			controls_state = 192
+			controls_state = 834
+			controls_state = 198
+			controls_state = 48
+			controls_state = 801
+			controls_state = 211
+			controls_state = 212
+
+            SLO = {
+				exists = yes
+            }
+			CZE = {
+				exists = yes
+			}
+			
+        }
+
+        visible = {
+            has_completed_focus = POL_Balkanische_eurokomissariat
+        }
+
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+        }
+
+			remove_effect = {
+				hidden_effect = {
+					#leader i comsetic
+				YUG = {
+					set_cosmetic_tag = YUG_eurorepublik
+				transfer_state = 975
+                add_state_core = 975
+				transfer_state = 73
+                add_state_core = 73
+				transfer_state = 109
+				add_state_core = 109
+				transfer_state = 664
+				add_state_core = 664
+				transfer_state = 104
+                add_state_core = 104
+				transfer_state = 45
+                add_state_core = 45
+				transfer_state = 107
+				add_state_core = 107
+				transfer_state = 764
+				add_state_core = 764
+				transfer_state = 108
+                add_state_core = 108
+				transfer_state = 106
+                add_state_core = 106
+				transfer_state = 803
+				add_state_core = 803
+				transfer_state = 731
+				add_state_core = 731
+				transfer_state = 47
+                add_state_core = 47
+				transfer_state = 184
+                add_state_core = 184
+				transfer_state = 155
+				add_state_core = 155
+				transfer_state = 974
+				add_state_core = 974
+				transfer_state = 43
+                add_state_core = 43
+				transfer_state = 973
+                add_state_core = 973
+				transfer_state = 154
+				add_state_core = 154
+				transfer_state = 83
+				add_state_core = 83
+				transfer_state = 76
+                add_state_core = 76
+				transfer_state = 82
+                add_state_core = 82
+				transfer_state = 84
+				add_state_core = 84
+				transfer_state = 81
+				add_state_core = 81
+				transfer_state = 46
+                add_state_core = 46
+				transfer_state = 79
+                add_state_core = 79
+				transfer_state = 80
+				add_state_core = 80
+				transfer_state = 971
+				add_state_core = 971
+				transfer_state = 77
+                add_state_core = 77
+				transfer_state = 766
+                add_state_core = 766
+				transfer_state = 78
+				add_state_core = 78
+				transfer_state = 192
+				add_state_core = 192
+				transfer_state = 834
+                add_state_core = 834
+				transfer_state = 198
+                add_state_core = 198
+				transfer_state = 48
+				add_state_core = 48
+				transfer_state = 801
+				add_state_core = 801
+				transfer_state = 211
+				add_state_core = 211
+				transfer_state = 212
+                add_state_core = 212
+
+				}
+			}
+
+				puppet = { target = YUG }
+
+			    	POL_bop_low_decrease_effect = yes
+			}
+        }
+
+
+    
+
+
+
+
+POL_braun_wielka_polska_dzialania = { 
+
+	POL_nacjonalizacja_kamienic = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_war_support > 0.6
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 200
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.05
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	POL_wykorzystanie_misiow = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_war_support > 0.4
+		}
+
+		cost = 30
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.05
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+
+	POL_presja_na_monopolistow = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_war_support > 0.6
+		}
+
+		cost = 150
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 250
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.2
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 25000
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 10000
+			}
+		}
+	}
+
+	POL_rozdanie_tytulow_hetmanskich = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.7
+			has_war_support > 0.55
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 250
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			army_experience = 300
+			add_command_power = 100
+			add_political_power = -100
+		}
+	}
+
+	POL_pomoc_w_odzyskiwaniu_majatkow_szlacheckich = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability < 0.7
+		}
+
+		cost = 30
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 200
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = 0.15
+			add_political_power = -100
+		}
+	}
+
+
+	POL_przywrocenie_chlopstwa = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.5
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.15
+			add_political_power = -100
+			add_manpower = 1000000
+		}
+	}
+
+	POL_sprawdzanie_autentycznosci_szlachectwa = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.5
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = 0.15
+			add_political_power = -100
+			add_manpower = -10000
+		}
+	}
+
+POL_ufundowanie_kosciolow = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.5
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_political_power = 300
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+
+
+	
+
+	}
+
+	POL_balance_of_power_category = {
+
+			POL_bop_kampania_propagandowa_w_mediach = {
+		priority = 110
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			POL_bop_high_increase_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.3
+				}
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.15
+				}
+			}
+		}
+	}
+
+	POL_bop_udobruchajmy_elity = {
+		priority = 109
+		icon = GFX_decision_eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			POL_bop_medium_increase_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.3
+				}
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.15
+				}
+			}
+		}
+	}
+
+	POL_bop_kampania_doktora_napierdala = {
+		priority = 108
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_country_leader = POL_donald_tusk
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_stability = -0.05
+			POL_bop_medium_increase_effect = yes
+
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_prowokacja_prawicy = {
+		priority = 107
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = no
+		days_re_enable = 70
+
+		complete_effect = {
+			add_political_power = 500
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			POL_bop_medium_decrease_effect = yes
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_nozki_popieloszki_w_zalewie_wislanej = {
+		priority = 106
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_wosp
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		days_re_enable = 150
+
+		complete_effect = {
+			add_stability = 0.1
+			ITA_bop_medium_increase_effect = yes
+
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_zebranie_rady_europejskiej = {
+		priority = 105
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = POL_do_europy_federalnej
+			}
+		}
+
+		available = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = { #event
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			POL_bop_low_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_akcje_antypatriotyczne = {
+		priority = 104
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			has_completed_focus = POL_fur_deutschland
+		}
+
+		cost = 100
+
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 90
+
+		remove_effect = {
+			POL_bop_high_increase_effect = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_sfinansowanie_influenserow = {
+		priority = 104
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			has_completed_focus = POL_fur_deutschland
+		}
+
+		cost = 100
+
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+
+		remove_effect = {
+			POL_bop_high_increase_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_znikajace_pomniki = {
+		priority = 106
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			has_completed_focus = POL_fur_deutschland
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			POL_bop_medium_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	POL_bop_koalicja_swiatel_drogowych = {
+		priority = 105
+		icon = GFX_decision_generic_speech
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		days_remove = 90
+
+		modifier = {
+			political_power_factor = -0.15
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			POL_bop_low_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	POL_bop_odezwa_strasburska = {
+		priority = 104
+		icon = GFX_decision_generic_fundraising
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 60
+
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			POL_bop_high_increase_effect = yes
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_stability = 0.05
+			}
+			else = {
+				add_stability = 0.1
+				add_political_power = 100
+			}
+		}
+
+		modifier = {
+			consumer_goods_factor = -0.10
+		}
+
+		ai_will_do = {
+			base = 1
+			
+		}
+	}
+
+	POL_kooperacja_z_chrzescijanskimi_demokratami = {
+		priority = 103
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+			
+		}
+
+		cost = 70
+
+		fire_only_once = no
+		days_re_enable = 50
+
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			POL_bop_medium_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	}

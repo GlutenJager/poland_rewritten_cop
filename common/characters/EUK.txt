@@ -1,0 +1,25 @@
+characters = {
+
+
+	EUK_Wolodymyr_Zelensky = {
+
+		name = EUK_Wolodymyr_Zelensky
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EUK_Wolodymyr_Zelensky
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

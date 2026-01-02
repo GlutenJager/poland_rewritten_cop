@@ -1,0 +1,124 @@
+bookmarks = {
+	bookmark = {
+		name = "POCZATKI_NOWEJ_POLSKI_NAME"
+		desc = "POCZATKI_NOWEJ_POLSKI_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_poczatki_nowej_polski"
+		default_country = "POL"
+		default = yes
+		
+		"POL"={
+			history = "POL_PLREW_POCZATKI_NOWEJ_POLSKI_DESC"
+			ideology = neutrality
+			ideas = {
+				POL_european_pressure
+				POL_broken_justice_system
+			}	
+			focuses = {
+				POL_dziwni_goscie
+				POL_opcja_prawica
+				POL_za_wielka_polske
+			}			
+		}
+
+		"FRA" = {
+			minor = yes
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+		"USA"={
+			minor = yes
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
+			}
+		}
+		"ENG"={
+			minor = yes
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				ENG_imperial_federation
+				ENG_the_kings_party
+				ENG_organize_the_blackshirts
+			}
+		}
+		GER = {
+			minor = yes
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				GER_mefo_bills_1936_fake_ns
+				GER_army_1936_fake_ns
+				GER_airforce_fake_ns
+			}
+			focuses = {
+				GER_fuhrerprinzip
+				GER_the_peoples_victory
+				GER_glory_to_the_imperial_army
+			}
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_il_sol_dell_avvenire
+				ITA_a_colonial_empire
+			}		
+		}
+		"SOV"={
+			minor = yes
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { has_dlc = "No Step Back" }
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+				SOV_behead_the_snake
+				SOV_the_supreme_soviet
+				SOV_reconvene_the_zemsky_sobor
+			}	
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

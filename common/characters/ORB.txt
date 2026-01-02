@@ -1,0 +1,25 @@
+characters = {
+
+
+	ORB_Henri_Himelard = {
+
+		name = ORB_Henri_Himelard
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_ORB_Henri_Himelard
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

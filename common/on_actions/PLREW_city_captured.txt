@@ -1,0 +1,110 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = POL
+					has_war_with = PSX
+					FROM.FROM = {
+						is_owned_by = PSX
+					}
+				}
+			    # Kielce
+				if = {
+					limit = { FROM.FROM = { state = 90 } }
+					country_event = { id = PLREW_poland.17 hours = 10 }
+				}
+				# Lwow
+				if = {
+					limit = { FROM.FROM = { state = 91 } }
+					country_event = { id = PLREW_poland.26 hours = 10 }
+				}
+				# Kraków
+				if = {
+					limit = { FROM.FROM = { state = 89 } }
+					country_event = { id = PLREW_poland.20 hours = 10 }
+				}
+				# Katowice
+				if = {
+					limit = { FROM.FROM = { state = 762 } }
+					country_event = { id = PLREW_poland.21 hours = 10 }
+				}
+				# Lublin
+				if = {
+					limit = { FROM.FROM = { state = 92 } }
+					country_event = { id = PLREW_poland.22 hours = 10 }
+				}
+			}
+		}
+	}
+	on_daily_POL = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = PSX
+					controls_province = 6580
+				}
+				# Zamość
+				country_event = { id = PLREW_poland.19 }
+			}
+		}
+	
+	
+		effect = {
+			if = {
+				limit = {
+					has_war_with = PSX
+					controls_province = 3458
+				}
+				# Radom
+				country_event = { id = PLREW_poland.18 }
+			}
+		}
+	
+	
+		effect = {
+			if = {
+				limit = {
+					has_war_with = PSX
+					controls_province = 422
+				}
+				# Kowel
+				country_event = { id = PLREW_poland.23 }
+			}
+		}
+	
+		effect = {
+			if = {
+				limit = {
+					has_war_with = PSX
+					controls_province = 11301
+				}
+				# Bialystok
+				country_event = { id = PLREW_poland.24 }
+			}
+		}
+	
+		effect = {
+			if = {
+				limit = {
+					has_war_with = PSX
+					controls_province = 400
+				}
+				# suwalki
+				country_event = { id = PLREW_poland.25 }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_war_with = PSX
+					controls_province = 11411
+				}
+				# Stanislau
+				country_event = { id = PLREW_poland.27 }
+			}
+		}
+	}
+}

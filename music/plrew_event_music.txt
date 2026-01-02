@@ -1,0 +1,10 @@
+music_station = "plrew_event_music"
+music = {
+    song = "Silencio"
+    chance = {
+        factor = 0
+        modifier = {
+            factor = 100
+        }
+    }
+}

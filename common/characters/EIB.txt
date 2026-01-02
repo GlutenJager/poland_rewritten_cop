@@ -1,0 +1,25 @@
+characters = {
+
+
+	EIB_Pedro_Sanchez = {
+
+		name = EIB_Pedro_Sanchez
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EIB_Pedro_Sanchez
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

@@ -1,0 +1,1179 @@
+ideas = {
+
+
+country = {
+        DEBUG_IDEA = {
+            
+        }
+
+        POL_european_pressure = {
+            picture = naciski_ue
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.15
+                democratic_drift = 0.3
+                democratic_acceptance = 15
+                non_core_manpower = 0.05
+            }
+        }
+
+        POL_european_pressure_tusk = {
+            picture = naciski_ue
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = 0.05
+                democratic_drift = 0.3
+                democratic_acceptance = 15
+                non_core_manpower = 0.05
+                consumer_goods_factor = -0.05
+            }
+        }
+
+		POL_jp2 = {
+            picture = jp2
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                monthly_population = 0.02
+                out_of_supply_factor = -0.15
+            }
+        }
+        POL_sejmersi = {
+            picture = sejmersi
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                political_power_cost = 0.05
+                stability_factor = -0.10
+                political_advisor_cost_factor = 0.10
+            }
+        }
+        POL_unloyal_army = {
+            picture = rozwalona_armia
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                offence = -0.25
+                defence = -0.25
+                army_org = -10
+                command_power_gain = -0.05
+                army_chief_cost_factor = 0.15
+            }
+        }
+        POL_broken_justice_system = {
+            picture = rozwalone_sadownictwo
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.3
+                monthly_population = -0.05
+                stability_factor = -0.25
+                stability_weekly = -0.01
+                drift_defence_factor = -0.3
+                surrender_limit = -0.15
+            }
+        }
+        POL_corrupt_justice_system = {
+            picture = skorumpowane_sadownictwo
+            
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.3
+                monthly_population = -0.1
+                stability_factor = -0.3
+                drift_defence_factor = 0.1
+            }
+        }
+        POL_fixed_justice_system = {
+            picture = naprawione_sadownictwo
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                stability_factor = 0.1
+                drift_defence_factor = -0.1
+                surrender_limit = 0.2
+            }
+        }
+        POL_private_lawyers = {
+            picture = sprywatyzowane_sadownictwo
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                political_power_gain = 0.05
+                stability_factor = -0.1
+                consumer_goods_factor = -0.05
+                surrender_limit = 0.1
+            }
+        }
+        POL_popis_delegalized = {
+            picture = zdelegalizuj_popis
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                stability_factor = 0.1
+                democratic_drift = -0.1
+                democratic_acceptance = -15
+            }
+        }
+        POL_majority_tyrrany = {
+            picture = tyrania_wiekszosci
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                stability_factor = 0.1
+                democratic_drift = -0.1
+                neutrality_drift = -0.1
+                democratic_acceptance = -15
+                neutrality_acceptance = -15
+            }
+        }
+        POL_pgr = {
+            picture = pgr
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.1
+                production_speed_buildings_factor = 0.2
+                production_factory_efficiency_gain_factor = 0.1
+                production_factory_max_efficiency_factor = 0.3
+            }
+        }
+        POL_reformed_abw = {
+            picture = zreformowane_abw
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                intel_network_gain = 1
+                operation_cost = -0.3
+                operation_risk = -0.2
+            }
+        }
+        POL_dwa_tysiace_sie_nalezy = {
+            picture = dwa_tysiace_sie_nalezy
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                stability_factor = 0.10
+                consumer_goods_factor = 0.10
+            }
+        }
+        POL_reforma_rolna_spirit = {
+            picture = reforma_rolna
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = -0.1
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        POL_agrarian_gold_age = {
+            picture = zloty_wiek_rolnictwa
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.2
+                production_speed_buildings_factor = 0.30
+                production_factory_start_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.3
+            }
+        }
+        POL_etatyzm_spirit = { # Etatyzm
+            picture = etatyzm
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier= {
+                democratic_drift = 0.1
+                consumer_goods_factor = 0.1
+                production_factory_start_efficiency_factor = 0.1
+                stability_factor = 0.05
+                production_speed_buildings_factor = 0.1
+            }
+        }
+        POL_etatyzm_spirit_2 = { # Etatyzm (stagnacja)
+            picture = etatyzm
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier= {
+                democratic_drift = 0.1
+                consumer_goods_factor = 0.15
+                production_factory_start_efficiency_factor = 0.3
+                stability_factor = 0.1
+                production_speed_infrastructure_factor = 0.2
+                production_speed_industrial_complex_factor = 0.15
+            }
+        }
+        POL_etatyzm_spirit_3 = { # Socjalizm
+            picture = socjalizm
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                communism_drift = 0.05
+                consumer_goods_factor = 0.2
+                production_factory_start_efficiency_factor = 0.3
+                production_speed_infrastructure_factor = 0.3
+                production_speed_industrial_complex_factor = 0.2
+            }
+        }
+        POL_TVPiS = {
+            picture = tvpis
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_weekly = 0.01
+                political_power_gain = 0.15
+                offence = 0.3
+            }
+        }
+        POL_Orlen = {
+            picture = orlen
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                production_speed_synthetic_refinery_factor = 0.2
+                consumer_goods_factor = -0.1
+            }
+        }
+        POL_500plus = {
+            picture = 500+
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.05
+                political_power_gain = 0.05
+            }
+        }
+        POL_800plus = {
+            picture = 800+
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.2
+                stability_factor = 0.1
+                political_power_gain = 0.15
+            }
+        }
+        POL_1000plus = {
+            picture = 1000+
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.5
+                stability_factor = 0.1
+                political_power_gain = 0.1
+            }
+        }
+        POL_1000plus_reforma = {
+            picture = 1000+
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.2
+                stability_factor = 0.2
+                political_power_gain = 0.3
+                production_factory_max_efficiency_factor = -0.1
+            }
+        }
+        POL_wojsko_polskie = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            experience_gain_army = 0.3
+            surrender_limit = 0.15
+            }
+        }
+        POL_wojsko_polskie_piechota_1 = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            experience_gain_army = 0.3
+            surrender_limit = 0.15
+            # ----
+            army_core_attack_factor = 0.2
+            army_core_defence_factor = 0.2
+            army_defence_factor = 0.10
+            breakthrough_factor = 0.25
+            }
+        }
+        POL_wojsko_polskie_piechota_2 = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            experience_gain_army = 0.3
+            surrender_limit = 0.15
+            army_core_attack_factor = 0.2
+            army_core_defence_factor = 0.2
+            army_defence_factor = 0.10
+            breakthrough_factor = 0.25
+            # ----
+            army_org = 5
+            army_morale_factor = 0.30
+            supply_consumption_factor = -0.15
+            }
+        }
+        POL_wojsko_polskie_motoryzacja_1 = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            experience_gain_army = 0.3
+            surrender_limit = 0.15
+            # ----
+            army_core_attack_factor = 0.15
+            army_attack_factor = 0.2
+            breakthrough_factor = 0.3
+            }
+        }
+        POL_wojsko_polskie_motoryzacja_2 = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            experience_gain_army = 0.3
+            surrender_limit = 0.15
+            army_core_attack_factor = 0.15
+            army_attack_factor = 0.2
+            breakthrough_factor = 0.3
+            # ----
+            army_speed_factor = 0.3
+            army_fuel_consumption_factor = -0.3
+            }
+        }
+        POL_za_wielka_polske_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            surrender_limit = 1.00
+            war_support_factor = 0.30
+            non_core_manpower = 0.03
+            }
+        }
+        POL_tania_artyleria_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            equipment_bonus = {
+                artillery_equipment = {
+                    build_cost_ic = -0.3
+                    instant = yes
+                }
+            }
+        }
+        POL_okopana_armia_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            dig_in_speed_factor = 0.30
+            max_dig_in = 5
+            conscription_factor = 0.01
+            resistance_growth_on_our_occupied_states = 0.50
+            compliance_growth_on_our_occupied_states = -0.15
+            equipment_capture = 0.03
+            }
+        }
+        POL_tania_motoryzacja_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            equipment_bonus = {
+                motorized_equipment = {
+                    build_cost_ic = -0.3
+                    instant = yes
+                }
+                mechanized_equipment = {
+                    build_cost_ic = -0.3
+                    instant = yes
+                }
+            }
+
+        }
+        POL_pobudzona_motoryzacja_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            production_speed_arms_factory_factor = 0.35
+            production_speed_fuel_silo_factor = 0.50
+            production_speed_synthetic_refinery_factor = 0.30
+            }
+        }
+        POL_wsparcie_z_powietrza_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            army_bonus_air_superiority_factor = 0.20
+            experience_gain_air = 0.30
+            air_weather_penalty = -0.25
+            air_fuel_consumption_factor = -0.10
+            }
+        }
+        POL_masowa_produkcja_schronow_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            production_speed_bunker_factor = 0.3
+            production_speed_coastal_bunker_factor = 0.3
+            }
+        }
+        POL_masowa_produkcja_logistyki_spirit = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+            production_speed_infrastructure_factor = 0.1
+            production_speed_rail_way_factor = 0.3
+            production_speed_supply_node_factor = 0.5
+            supply_consumption_factor = -0.40
+            }
+        }
+        POL_trybunal_niekonstytucyjny = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.15
+                agency_upgrade_time = 0.3
+                operation_cost = 0.2
+            }
+        }
+        POL_katotaliban = {
+            picture = katotaliban
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = 0.5
+                party_popularity_stability_factor = 0.3
+            }
+        }
+        POL_radio_maryja_spirit = {
+            picture = radio_maryja
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.1
+            }
+        }
+        POL_menel_europy_spirit = {
+            picture = menel_europy
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.5
+                war_support_factor = -1
+            }
+        }
+        POL_kaczafi_spirit = {
+            picture = kaczafi
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_factor = 0.15
+                max_command_power_mult = -0.1
+                drift_defence_factor = 0.1
+                conscription_factor = 0.1
+            }
+        }
+        POL_cesarz_spirit = {
+            picture = kaczafi
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                war_support_factor = 0.15
+                army_attack_factor= 0.15
+                breakthrough_factor = 0.2
+
+                political_power_factor = 0.15
+                max_command_power_mult = -0.1
+                drift_defence_factor = 0.1
+                conscription_factor = 0.1
+            }
+        }
+        POL_polski_chleb = {
+            picture = polski_chleb
+
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+                army_org = 5
+                supply_consumption_factor = -0.3
+                army_speed_factor = 0.2
+            }
+        }
+         POL_wrogowie_wewnetrzni = {
+            allowed = {
+            original_tag = POL
+            }
+            modifier = {
+               political_advisor_cost_factor = 0.15
+               political_power_gain = -0.5
+                drift_defence_factor = -0.2
+                war_support_factor = -0.3
+                surrender_limit = -0.5
+            }
+        }
+        POL_wojna_domowa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                surrender_limit = +1.00
+                political_power_gain = 0.3
+            }
+        }
+
+        POL_zerowy_pit = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = -0.1
+                stability_factor = 0.15
+                industrial_capacity_factory = 0.075
+            }
+        }
+
+        POL_cukier_plus_idea = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.05
+                political_power_gain = 0.3
+            }
+        }
+
+        POL_opozycja_narodowa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.15
+                stability_weekly = -0.01
+
+                fascism_drift = 0.03
+                fascism_acceptance = 15
+            }
+        }
+
+        POL_weak_opocyzja_narodowa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.10
+                fascism_acceptance = 10
+            }
+        }
+
+        POL_opozycja_korony = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.2
+                stability_weekly = -0.01
+                conscription_factor = -0.2
+
+                democratic_acceptance = -15
+                communism_acceptance = 15 # matiuszka rasija
+            }
+        }
+
+        POL_weak_opozycja_korony = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.10
+                communism_acceptance = 10
+            }
+        }
+
+        POL_wplywy_lobbystow_wipler = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = 0.15
+                political_power_factor = 0.2
+            }
+        }
+        
+         POL_koalicja_polskich_serc = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.15
+                drift_defence_factor = -0.1
+                stability_weekly = -0.005
+                surrender_limit = -0.5
+                production_speed_rail_way_factor = -0.3 #tusk nie lubi rozwijania zadupia
+                democratic_drift = 0.1
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_ruch_8_gwiazd = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.05
+                fascism_acceptance = -15
+                communism_acceptance = -5
+                democratic_drift = 0.01
+                research_speed_factor = 0.05
+                production_speed_arms_factory_factor = 0.1
+            }
+        }
+
+        POL_pakt_migracyjny = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.10
+                fascism_acceptance = -25
+                communism_acceptance = -10
+            }
+
+    }
+
+    POL_pakt_migracyjny_2 = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                fascism_acceptance = -25
+                communism_acceptance = -10
+                democratic_drift = 0.002
+                research_speed_factor = 0.05 #inzynierowie
+                production_speed_buildings_factor = 0.2
+            }
+
+    }
+
+     POL_ciepla_woda = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.25
+                stability_factor = 0.02
+                political_power_gain = 0.25
+            }
+
+        }
+
+    POL_wina_tuska = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.15
+            }
+
+        }
+
+        POL_koalicja_polskich_serc_nowoczesna = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.15
+                drift_defence_factor = -0.1
+                stability_weekly = 0.0005
+                surrender_limit = 0.5
+                production_speed_rail_way_factor = -0.3 #tusk nie lubi rozwijania zadupia
+                democratic_drift = 0.01
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_koalicja_polskich_serc_ipl = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.15
+                drift_defence_factor = -0.1
+                stability_weekly = 0.0005
+                surrender_limit = 0.5
+                production_speed_rail_way_factor = 0.3 
+                democratic_drift = 0.01
+                communism_drift = 0.01
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_koalicja_polskich_serc_zieloni = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                drift_defence_factor = -0.1
+                stability_weekly = 0.0005
+                surrender_limit = 0.1
+                production_speed_rail_way_factor = 0.3 
+                democratic_drift = 0.01
+                communism_drift = 0.01
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_koalicja_polskich_serc_agrounia = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                stability_weekly = 0.0005
+                surrender_limit = 0.1
+                production_speed_rail_way_factor = 0.3 
+                democratic_drift = 0.01
+                communism_drift = 0.01
+                democratic_acceptance = 15
+                research_speed_factor = 0.05
+            }
+        }
+
+        POL_prymat_volksplatform = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                stability_weekly = 0.0005
+                surrender_limit = 0.3 
+                democratic_drift = 0.001
+                democratic_acceptance = 15
+                research_speed_factor = 0.1
+            }
+        }
+
+         POL_polnische_wehrmacht = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                army_defence_factor = 0.15
+                army_attack_factor = 0.15
+                army_speed_factor = 0.1
+                breakthrough_factor = 0.1
+                war_support_factor = 0.2
+                surrender_limit = 0.2
+                experience_gain_army = 0.25
+                production_factory_efficiency_gain_factor = 0.1
+                production_factory_max_efficiency_factor = 0.2
+            }
+        }
+        POL_pakt_migracyjny = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.15
+                consumer_goods_factor = -0.10
+                democratic_drift = -0.05
+                war_stability_factor = -0.1
+            }
+
+        }
+        POL_przyjecie_euro = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.10
+                consumer_goods_factor = 0.2
+                compliance_growth_on_our_occupied_states = 0.3
+            }
+
+        }
+         POL_legacy_of_korwin = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.15
+                consumer_goods_factor = -0.15
+                production_factory_efficiency_gain_factor = 0.2
+                production_factory_max_efficiency_factor = 0.2
+                production_lack_of_resource_penalty_factor = -0.1
+                production_speed_buildings_factor = 0.15
+            }
+
+        }
+        POL_christus_rex = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.10
+                compliance_growth_on_our_occupied_states = -0.3
+                non_core_manpower = 0.2
+            }
+
+        }
+
+         POL_wojna_z_lidlem = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.2
+                stability_factor = -0.1
+                political_advisor_cost_factor = 0.7
+                weekly_manpower = 2137
+                production_speed_buildings_factor = -0.2
+
+            }
+
+        }
+
+        POL_koniec_5g = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.1
+                research_speed_factor = -0.15
+                air_advisor_cost_factor = 0.5
+
+            }
+
+        }
+
+         POL_sprzeczna_doktryna = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                party_popularity_stability_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.1
+                land_doctrine_cost_factor = 0.05
+
+            }
+
+        }
+
+         POL_konfederacja_korony_polskiej = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                weekly_stability = 0.00001
+                neutrality_drift = -0.003
+                command_power_gain = 0.01
+                stability_factor = 0.1
+                weekly_manpower = 200
+
+            }
+
+        }
+
+        POL_delegalizacja_lgbt = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                weekly_manpower = 250
+                weekly_bombing_war_support = 0.15
+                democratic_acceptance = -0.2
+                political_power_factor = -0.1
+            }
+
+        }
+
+        POL_sejmiki_justice_system = {
+            picture = rozwalone_sadownictwo
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.1
+                monthly_population = 0.05
+                surrender_limit = 0.15
+                compliance_growth = 0.3
+                experience_gain_army_factor = 0.2
+            }
+        }
+
+        POL_teatralne = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                stability_weekly = 0.0005
+                surrender_limit = 0.1 
+                research_speed_factor = 0.1
+                attack_bonus_against_cores = 0.2
+            }
+        }
+
+        POL_zerowy_pis = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                stability_weekly = 0.002
+                recruitable_population = 0.2
+                democratic_drift = -0.02
+            }
+        }
+
+        POL_nowa_nadzieja = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                neutrality_drift = 0.005
+                command_power_gain = 0.01
+                stability_factor = 0.1
+                production_speed_buildings_factor = 0.15
+
+            }
+
+        }
+
+        POL_zniesienie_malzenstw = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                neutrality_drift = 0.005
+                weekly_manpower = -2
+                stability_factor = 0.1
+                production_speed_buildings_factor = 0.1
+                army_defence_factor = 0.15
+
+            }
+
+        }
+
+        POL_relokacja_hotdogow = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                army_attack_factor = 0.15
+                army_speed_factor = 0.1
+                production_speed_buildings_factor = 0.15
+
+            }
+
+        }
+
+        POL_wolnosc_slowa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_weekly = 0.005
+                political_power_factor = 0.15
+                war_support_factor = -0.1
+            }
+
+        }
+
+         POL_kosciol_w_szkole = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.05
+                drift_defence_factor = -0.1
+                fascism_drift = 0.01
+                fascism_acceptance = 10
+            }
+
+        }
+
+        POL_nd_legacy = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_factor = 0.15
+                stability_factor = 0.05
+                fascism_drift = 0.01
+                democratic_acceptance = 15
+            }
+
+        }
+
+        POL_narodowe_sentymenty = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_factor = 0.15
+                fascism_drift = 0.015
+                democratic_acceptance = 10
+                conscription_factor = 0.15
+            }
+
+        }
+
+        POL_opocyzja_libkofa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.1
+                neutrality_acceptance = 10
+                compliance_growth = -0.15
+            }
+        }
+
+        POL_konfa_ruch_narodowy = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                compliance_gain = 0.1
+                weekly_manpower = 150
+                fascism_drift = 0.01
+            }
+        }
+
+        POL_homonationalizm = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                army_attack_factor = 0.1
+            }
+        }
+
+        POL_homonationalizm_2 = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                army_attack_factor = 0.1
+                experience_gain_army = 0.1
+                stability_factor = 0.05
+            }
+        }
+
+        POL_czolem_wielkiej_polsce_bosak = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+              experience_gain_air = 0.1
+              experience_gain_navy = 0.1
+              equipment_capture = 0.15
+              war_support_weekly_factor = 0.01
+            }
+        }
+
+        POL_koniec_rosyjskiej_dominacji = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+              attack_bonus_against_cores = 0.25
+              decryption_factor = 0.2
+             intel_network_gain = 0.5
+            }
+        }
+
+        POL_chaos = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+              political_power_factor = -0.07
+              decryption_factor = -0.2
+              consumer_goods_factor = 0.6
+              democratic_drift = 0.11
+              stability_weekly = -0.05
+            }
+        }
+    }
+}

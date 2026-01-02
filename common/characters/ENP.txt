@@ -1,0 +1,25 @@
+characters = {
+
+
+	ENP_Mario_Draghi = {
+
+		name = ENP_Mario_Draghi
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_ENP_Mario_Draghi
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

@@ -1,0 +1,25 @@
+characters = {
+
+
+	ESH_Hose_Guntler = {
+
+		name = ESH_Hose_Guntler
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_ESH_Hose_Guntler
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

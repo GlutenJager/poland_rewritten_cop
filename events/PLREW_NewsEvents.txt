@@ -1,0 +1,171 @@
+add_namespace = PLREW_world_news
+
+news_event = { #lepper
+	id = PLREW_world_news.1
+	title = PLREW_world_news.1.t
+	desc = PLREW_world_news.1.d
+	picture = GFX_world_news_lepper
+	fire_only_once = yes
+
+	option = {
+		name = PLREW_world_news.1.o1
+	}
+}
+news_event = { #PIS
+	id = PLREW_world_news.2
+	title = PLREW_world_news.2.t
+	desc = PLREW_world_news.2.d
+	picture = GFX_world_news_pis
+	fire_only_once = yes
+
+	option = {
+		name = PLREW_world_news.2.o1
+	}
+}
+
+#WAJNA DAMOFA POLSKA# 
+
+news_event = {
+	id = PLREW_world_news.4  #LITWINI ZAJMUJĄ WILNO
+	title = PLREW_world_news.4.t
+	desc = PLREW_world_news.4.desc
+	picture = GFX_news_event_038
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.4.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.5 #niemcy interweniują na ziemiach koronnych
+	title = PLREW_world_news.5.t
+	desc = PLREW_world_news.5.desc
+	picture = GFX_news_event_HUN_alliance_with_germany
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.5.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.6 #upa organizuje bunt
+	title = PLREW_world_news.6.t
+	desc = PLREW_world_news.6.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.6.o1
+	}
+}
+
+# WAJNA DOMOOFA USA#
+news_event = {
+	id = PLREW_world_news.3
+	title = PLREW_world_news.3.t
+	desc = PLREW_world_news.3.desc
+	picture = GFX_world_news_pis
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.3.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.7 #Tusk przejmuje wladze
+	title = PLREW_world_news.7.t
+	desc = PLREW_world_news.7.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.7.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.8 #Zielona wyspa Evropy
+	title = PLREW_world_news.8.t
+	desc = PLREW_world_news.8.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.8.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.9 #Koalicja destroy the fuckin left
+	title = PLREW_world_news.9.t
+	desc = PLREW_world_news.9.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.9.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.10 #Braun koronowany przez biskupa
+	title = PLREW_world_news.10.t
+	desc = PLREW_world_news.10.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.10.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.11 #Braun odnawia sluby lwowskie
+	title = PLREW_world_news.11.t
+	desc = PLREW_world_news.11.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.11.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.12 #Rzesza upada
+	title = PLREW_world_news.12.t
+	desc = PLREW_world_news.12.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.12.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.13 #IV niemiecka kaiserriech
+	title = PLREW_world_news.13.t
+	desc = PLREW_world_news.13.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.13.o1
+	}
+}
+

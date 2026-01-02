@@ -1,0 +1,25 @@
+characters = {
+
+
+	EEN_Boris_Johnson = {
+
+		name = EEN_Boris_Johnson
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EEN_Boris_Johnson
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

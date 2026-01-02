@@ -1,0 +1,25 @@
+characters = {
+
+
+	EMO_Aleksiej_Nawalny = {
+
+		name = EMO_Aleksiej_Nawalny
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EMO_Aleksiej_Nawalny
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

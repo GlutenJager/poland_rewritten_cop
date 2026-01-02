@@ -1,0 +1,137 @@
+################
+##### POL ######
+################
+
+POL_pis_polityka_zagraniczna = {
+	icon = GFX_decision_category_generic_communism
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		has_completed_focus = POL_polityka_zemsty_historycznej
+	}
+
+	priority = 100
+}
+
+POL_defensive_plans = {
+	
+	icon = GFX_decision_category_army_reform
+
+	allowed = {
+		original_tag = POL
+		has_dlc = "No Step Back"
+	}
+
+	visible = {
+		always = yes
+	}
+
+	priority = 8
+}
+
+# PLREW
+
+POL_civil_war_decisions = {
+	
+	icon = GFX_decision_category_generic_crisis
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		AND = {
+			has_civil_war = yes
+			has_completed_focus = POL_zamach_stanu
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = 100
+}
+POL_pis_fractionality_decisions = {
+	
+	icon = GFX_decision_category_generic_crisis
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		AND = {
+			has_completed_focus = POL_opcja_pis
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = 100
+}
+
+# PLREW - Balance of Power
+
+POL_european_power_balance_category = {
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+	}
+}
+
+# PLREW - Tuskowa dominacja w europie
+
+POL_po_europejska_dominacja = {
+
+	icon = GFX_decision_category_generic_crisis
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		AND = {
+			has_completed_focus = POL_unia_polsko_niemiecka
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = 100
+}
+
+# Braun droga do wielkosci
+
+POL_braun_wielka_polska_dzialania = {
+	icon = GFX_decision_category_generic_communism
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		has_completed_focus = POL_zapedy_imperialne
+	}
+
+	priority = 100
+}
+
+#TUSK 
+
+POL_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		
+	}
+
+	priority = 100
+}

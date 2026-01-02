@@ -1,0 +1,10 @@
+﻿l_polish:
+  POL_european_power_balance: "Integracja Europy"
+  POL_federalism_side: "Federalizacja"
+  POL_federalism_low_control_range: "Niskie poparcie dla federalizacji"
+  POL_federalism_general_control_range: "Poparcie dla federalizacji"
+  POL_federalism_total_control_range: "Zjednoczeni"
+  POL_separatism_side: "Ruch separatystyczny"
+  POL_separatism_low_control_range: "Sprzeciw wobec federalizacji"
+  POL_separatism_gen_control_range: "Wysoka aktywność separatystów"
+  POL_separatism_total_control_range: "Chaos"

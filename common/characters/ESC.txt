@@ -1,0 +1,25 @@
+characters = {
+
+
+	ESC_Prince_William = {
+
+		name = ESC_Prince_William
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_ESC_Prince_William
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

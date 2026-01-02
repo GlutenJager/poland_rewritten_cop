@@ -1,0 +1,25 @@
+characters = {
+
+
+	ETR_Herman_Gorkin = {
+
+		name = ETR_Herman_Gorkin
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_ETR_Herman_Gorkin
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

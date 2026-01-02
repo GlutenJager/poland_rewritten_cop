@@ -1,0 +1,25 @@
+characters = {
+
+
+	EIR_Rodolf_Hess = {
+
+		name = EIR_Rodolf_Hess
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_EIR_Rodolf_Hess
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

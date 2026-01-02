@@ -1,0 +1,25 @@
+characters = {
+
+
+	ESK_Joachim_von_Ribbentrop = {
+
+		name = ESK_Joachim_von_Ribbentrop
+
+		#portraits = {
+			#civilian = {
+				#large = GFX_portrait_ESK_Joachim_von_Ribbentrop
+			#}
+		#}
+
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	
+
+}

@@ -1,0 +1,35 @@
+characters = {
+	TRU_Donald_Trump = {
+		name= "Donald J. Trump"
+		portraits = {
+			civilian = {
+				large="GFX_portraits_Donald_Trump"
+			}
+		}
+		
+		country_leader = {
+			ideology= kaczism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology= stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology= despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology= alt-left
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+
+
+	}
+	
+}

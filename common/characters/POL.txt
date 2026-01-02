@@ -1,0 +1,3417 @@
+characters = {
+	POL_ignacy_moscicki = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			army={
+				small=GFX_portrait_POL_ignacy_moscicki_small
+			}
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		
+		country_leader = {
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_wladyslaw_gomulka = {
+		name=POL_wladyslaw_gomulka
+		portraits = {
+			civilian = {
+				large=GFX_portrait_POL_wladyslaw_gomulka
+			}
+		}
+		country_leader = {
+			ideology=leninism
+			traits = { soviet_thaw }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_stanislaw_mikolajczyk = {
+		name=POL_stanislaw_mikolajczyk
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_stanislaw_mikolajczyk"
+			}
+		}
+		country_leader = {
+			ideology=socialism
+			traits = { polish_peasant_champion }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_boleslaw_piasecki = {
+		name=POL_boleslaw_piasecki
+		portraits = {
+			civilian = {
+				large="GFX_POL_boleslaw_piasecki"
+			}
+		}
+		country_leader = {
+			ideology=falangism
+			expire="1965.1.1.1"
+			id=-1
+			traits = { unruly_falangist }
+		}
+	}
+
+	# PLREW COUNTRY LEADERS
+
+	POL_zgromadzenie = {
+		name="Zgromadzenie Narodowe"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_zgromadzenie
+			}
+		}
+	}
+
+	POL_andrzej_lepper = {
+		name="Andrzej Lepper"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_andrzej_lepper
+			}
+		}
+	}
+
+	POL_jaroslaw_kaczynski = {
+		name="Jarosław Kaczyński"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_jaroslaw_kaczynski
+			}
+		}
+	}
+
+	POL_donald_tusk = { # lider
+		name="Donald Tusk"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_donald_tusk
+			}
+		}
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { mod_lubi_niemcy mod_kaszub cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_rafal_trzaskowski = { # lider
+		name="Rafał Trzaskowski"
+		portraits = {
+			civilian = {
+				#large = GFX_portraits_rafal_trzaskowski
+			}
+		}
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { popular_figurehead2 white_liberal_leader_improved democratic_crusader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_radek_sikorski = { # lider
+		name="Radosław Sikorski"
+		portraits = {
+			civilian = {
+				#large = GFX_portraits_rafal_trzaskowski
+			}
+		}
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { the_gentleman_president liberal_journalist british_bulldog popular_figurehead }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_wojciech_olszanski = { # lider
+		name="Wojciech Olszański"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_wojciech_olszanski
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { fascist_corporatist fascist_militia_leader fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	# konfa konfunia
+
+	POL_janusz_korwin_mikke = {
+		name="Janusz Korwin-Mikke"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_korwin_mikke
+			}
+		}
+	}
+
+	POL_slawomir_mentzen = {
+		name = "Sławomir Mentzen"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_slawomir_mentzen
+			}
+		}
+	}
+
+	POL_przemyslaw_wipler = {
+		name = "Przemysław Wipler"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_przemyslaw_wipler
+			}
+		}
+		advisor={ 
+			cost = 100
+			slot = political_advisor
+			idea_token = POL_przemyslaw_wipler
+			available = {
+				has_completed_focus = POL_wipleryzacja_partii
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_agency_boost
+			}
+		}
+	}
+
+	POL_artur_dziambor = {
+		name = "Artur Dziambor"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_artur_dziambor
+			}
+		}
+	}
+
+	POL_dobromir_sosnierz = {
+		name = "Dobromr Sośnierz"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_artur_dziambor
+			}
+		}
+	}
+
+	POL_krzysztof_bosak = {
+		name = "Krzysztof Bosak"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_krzysztof_bosak
+			}
+		}
+	}
+
+	POL_grzegorz_braun = {
+		name = "Grzegorz Braun"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_grzegorz_braun
+			}
+		}
+		field_marshal = {
+			visible = { 
+				has_completed_focus = POL_opcja_konfa
+				has_completed_focus = POL_kto_w_gasnicach_znalazl_bombe
+				has_completed_focus = POL_opcja_kamraci
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4 # wybitne skille pierdolenia glupot 
+			logistics_skill = 1
+		}
+	}
+
+	POL_robert_winnicki = {
+		name = "Robert Winnicki"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_robert_winnicki
+			}
+		}
+	}
+
+	# pisiory
+
+	POL_antonius_smolenskus = {
+		name="Antonius Smoleńskus"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_antonius_smolenskus
+			}
+		}
+	}
+
+	POL_antoni_macierewicz = {
+		name="Antoni Macierewicz"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_antoni_macierewicz
+			}
+		}
+	}
+
+	POL_janusz_kowalski = {
+		name="Janusz Kowalski"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_kowalski
+			}
+		}
+	}
+
+	POL_zbigniew_ziobro = {
+		name="Zbigniew Ziobro"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_zbigniew_ziobro_leader
+			}
+		}
+		country_leader = {
+			ideology = kaczism
+			traits = { mod_populist mod_zero }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={ 
+			cost = 100
+			slot = political_advisor
+			idea_token = POL_zbigniew_ziobro
+			available = {
+				has_completed_focus = POL_reforma_sprawiedliwosci
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_prokurator
+			}
+		}
+	}
+
+
+	POL_mateusz_morawiecki = {
+		name="Mateusz Morawiecki"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_mateusz_morawiecki
+			}
+		}
+	}
+
+	POL_rada_liderow_pis = {
+		name="Rada Liderów"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_rada_liderow_pis
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+	#KONFA GENERALS
+
+
+
+
+POL_Ryszard_Wilk = {
+		name = "Ryszard Wilk"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_Stanislaw_tyszka = {
+		name = "Stanisław Tyszka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_przewrot_narodowcow
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 7
+			logistics_skill = 7
+		} 
+			
+	}
+
+	POL_konrad_berkowicz_general = {
+		name = "Konrad Berkowicz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_Patryk_marjan = {
+		name = "Patryk Marjan"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		} 
+			
+	}
+
+	POL_bartlomiej_pejo = {
+		name = "Bartłomiej Pejo"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		} 
+			
+	}
+
+	POL_grzegorz_placzek = {
+		name = "Grzegorz Płaczek"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_piotr_liroy = {
+		name = "Piotr Liroy-Marzec"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_powrot_leroya
+			}
+		}
+			skill = 2
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_marcin_sypniewski = {
+		name = "Marcin Sypniewski"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_ewa_zajaczkowska = {
+		name = "Ewa Zajączkowska-Hernik"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+			}
+		}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_artur_dziambor_general = {
+		name = "Artur Erwin Dziambor"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_holownia
+				has_completed_focus = POL_opcja_agrarna
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 3
+		} 
+			
+	}
+
+	POL_dobromir_sosnierz_general = {
+		name = "Dobromir Sośnierz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+				has_completed_focus = POL_opcja_akap
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 8
+			planning_skill = 4
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_jakub_kulesza = {
+		name = "Jakub Kulesza"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_ankap_kulesza
+				has_completed_focus = POL_opcja_akap
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_michal_urbaniak = {
+		name = "Michał Urbaniak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 4
+			attack_skill = 8
+			defense_skill = 8
+			planning_skill = 4
+			logistics_skill = 6
+		} 
+			
+	}
+
+	POL_slawomir_mentzen_general = {
+		name = "Sławomir Mentzen"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_bosak_i_mentzen
+				has_completed_focus = POL_kto_doradcow_ma_z_przedszkola
+			}
+		}
+			skill = 4
+			attack_skill = 9
+			defense_skill = 8
+			planning_skill = 8
+			logistics_skill = 7
+		} 
+			
+	}
+
+	POL_patryk_jaki = {
+		name = "Patryk Jaki"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_kto_doradcow_ma_z_przedszkola
+				has_completed_focus = POL_opcja_ziobro
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_krzysztof_bosak_general = {
+		name = "Krzysztof Bosak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_bosak_i_mentzen
+				has_completed_focus = POL_kto_doradcow_ma_z_przedszkola
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_mlodziez_wszechpolska_focus
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 5
+			attack_skill = 9
+			defense_skill = 9
+			planning_skill = 6
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_Krzysztof_Tuduj = {
+		name = "Krzysztof Tuduj"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_hold_lenny_narodowcow 
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_slawomir_zawislak = {
+		name = "Sławomir Zawiślak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_destabilizacja_kkp
+				has_completed_focus = POL_kkp
+				has_completed_focus = POL_opcja_pis
+			}
+		}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_roman_fritz = {
+		name = "Roman Fritz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_korwin_general = {
+		name = "Jonasz Koran-Mekka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		field_marshal = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_gandalf_bialy
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_akap
+				has_completed_focus = POL_heil_korwin
+			}
+		}
+			skill = 4
+			attack_skill = 11
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		} 
+			
+	}
+
+	POL_wlodzimierz_skalik = {
+		name = "Włodzimierz Skalik"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_anna_brylka = {
+		name = "Anna Bryłka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow 
+				has_completed_focus = POL_opcja_agrarna
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_dominika_korwin_mike = {
+		name = "Dominika Korwin-Mikke"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = { 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_seb_ross = {
+		name = "Sebastian Ross"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+			skill = 4
+			attack_skill = 11
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_longinus_zerwimycka = {
+		name = "Longinus Zerwimycka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_usunac_balcerowicza
+				has_completed_focus = POL_zniszczmy_zydokomune
+				has_completed_focus = POL_opcja_lepper
+
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_witold_tumanowicz = {
+		name = "Witold Tumanowicz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_zero
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_michal_wawer = {
+		name = "Michał Wawer"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_krzysiu_narodowy_libek
+			}
+		}
+			skill = 4
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_kaja_godek = {
+		name = "Kaja Godek"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_braun
+			}
+		}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_marek_jakubiak_general = {
+		name = "Marek Jakubiak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_jakubiak
+				has_completed_focus = POL_kukiz
+				has_completed_focus = POL_zawiazanie_iv_rp
+				has_completed_focus = POL_wielkie_księstwo
+			}
+		}
+			skill = 4
+			attack_skill = 9
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 7
+		} 
+			
+	}
+
+POL_samuela_torkowska = {
+		name = "Samuela Torkowska"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_jacek_wilk = {
+		name = "Jacek Wilk"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_karina_bosak = {
+		name = "Karina Bosak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_krzysiu_narodowy_libek
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_robert_bakiewicz = {
+		name = "Robert Bąkiewicz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_wykorzystanie_sebixow
+				has_completed_focus = POL_mlodziez_wszechpolska_focus
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_opcja_pis
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+
+
+
+
+	#PEO GENERALS
+
+	POL_tomasz_lis = {
+		name = "Tomasz Lis"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		field_marshal = {
+			visible = { has_completed_focus = POL_premier_z_krakowa }
+			traits = { }
+			skill = 6
+			attack_skill = 9 #skil macania stazystow
+			defense_skill = 5
+			planning_skill = 8
+			logistics_skill = 7
+		}
+	}
+
+	POL_klaudia_jachira = {
+		name="Klaudia Jachira"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Ewa_Kopacz"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_KO_Zieloni }
+			traits = {}
+			skill=1
+			attack_skill=9
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+
+	POL_Ewa_Kopacz = {
+		name="Ewa Kopacz"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Ewa_Kopacz"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_bron_na_dinozaury }
+			traits = {}
+			skill=1
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_dariusz_jonski = {
+		name="Dariusz Joński"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=1
+			attack_skill=7
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
+	POL_michal_szczerba = {
+		name="Michał Szczerba"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=1
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
+	POL_kinga_gajewska = {
+		name="Kinga Gajewska"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_slawomir_nitras = {
+		name="Sławomir Nitras"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=1
+			attack_skill=7
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_adam_szlapka = {
+		name="Adam Szłapka"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=1
+			attack_skill=5
+			defense_skill=10
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+
+	POL_witold_zebaczynski = {
+		name="Witold Zębaczyński"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_KO_Nowoczesna }
+			traits = {}
+			skill=1
+			attack_skill=6
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3 #nieudas
+			legacy_id=-1
+		}
+	}
+
+	POL_katarzyna_lubnauer = {
+		name="Katarzyna Lubnauer"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_KO_Nowoczesna }
+			traits = {}
+			skill=1
+			attack_skill=3
+			defense_skill=8 #we build a wall
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_jan_pinski = {
+		name="Jan Piński"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=1
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_barbara_nowacka = {
+		name="Barbara Nowacka"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_KO_iPL }
+			traits = {}
+			skill=1
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_janusz_palikot = {
+		name="Janusz Palikot"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_KO_iPL }
+			traits = {}
+			skill=3
+			attack_skill=8
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_boguslaw_woloszanski = {
+		name="Bogusław 'Ben' Wołoszański"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=5
+			attack_skill=6
+			defense_skill=5
+			planning_skill=10
+			logistics_skill=9 #niezły agent
+			legacy_id=-1
+		}
+	}
+
+	POL_michal_kolodziejczak = {
+		name="Michał Kołodziejczak"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_KO_Agrounia }
+			traits = {}
+			skill=4
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=2 #zostal zjedzony lol
+			legacy_id=-1
+		}
+	}
+
+	POL_andrzej_olechowski = {
+		name="Andrzej Olechowski"
+		portraits = {
+			army = {
+				#large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = {}
+			skill=4
+			attack_skill=7
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_bronislaw_komorowski = {
+		name = "Bronisław Komorowski"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		field_marshal = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = { }
+			skill = 4
+			attack_skill = 2 #jest bezuzyteczny XD
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 4
+		}
+	}
+
+	POL_jan_maria_rokita= {
+		name = "Jan Maria Rokita"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		field_marshal = {
+			visible = { has_completed_focus = POL_premier_z_krakowa }
+			traits = { }
+			skill = 6
+			attack_skill = 8
+			defense_skill = 7
+			planning_skill = 9
+			logistics_skill = 7
+		}
+	}
+
+	POL_donald_tusk_general = {
+		name = "Geuleiter Donald von Tusk"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		field_marshal = {
+			visible = { has_completed_focus = POL_opcja_tusk }
+			traits = { }
+			skill = 9
+			attack_skill = 10
+			defense_skill = 6 # bo wszyscy go o wszystko obwiniaja
+			planning_skill = 10
+			logistics_skill = 10
+		}
+	}
+
+	# MOD ADVISORS
+
+	POL_daniel_obajtek={
+		name="Daniel Obajtek"
+		portraits={
+			army={
+				small="GFX_portraits_daniel_obajtek"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = POL_daniel_obajtek
+			available = {
+				OR = {
+					has_completed_focus = POL_manipulacja_cenami_paliw
+					has_completed_focus = POL_negocjacje_z_obajtkiem
+				}
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_naftowy_szejk
+			}
+		}
+	}
+
+	POL_przemyslaw_czarnek={
+		name="Przemysław Czarnek"
+		portraits={
+			army={
+				small="GFX_portraits_przemyslaw_czarnek"
+			}
+		}
+		advisor={
+			cost = 50
+			slot = political_advisor
+			idea_token = POL_przemyslaw_czarnek
+			available = {
+				has_completed_focus = POL_opcja_pis
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_dzban_edukacji
+			}
+		}
+	}
+	POL_karol_nawrocki = {
+		name="Karol Nawrocki"
+		portraits = {
+			army={
+				small="GFX_portraits_karol_nawrocki"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = POL_karol_nawrocki
+			available = {
+				has_completed_focus = POL_karol_nawrocki_prezydentem_polski
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_batyr
+			}
+		}
+	}
+
+	POL_andrzej_duda = {
+		name="Andrzej Duda"
+		portraits = {
+			army={
+				small="GFX_portraits_andrzej_duda"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = POL_andrzej_duda
+			available = {
+				has_completed_focus = POL_opcja_pis
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_dudus
+			}
+		}
+	}
+
+	POL_bartlomiej_misiewicz = {
+		name="Bartłomiej Misiewicz"
+		portraits = {
+			army={
+				small="GFX_portraits_bartlomiej_misiewicz"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = POL_bartlomiej_misiewicz
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_macierewicz
+				}
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_mlody_znajomy_krolika
+			}
+		}
+	}
+
+	POL_john_maynard_keynes = {
+		name = "John Maynard Keynes"
+		portraits = {
+			army={
+				small="GFX_portraits_keynes"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_ulubieniec_etatystow }
+			idea_token = POL_john_maynard_keynes
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_etatyzm
+			}
+		}
+	}
+	POL_leszek_miller = {
+		name = "Leszek Miller"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_miller"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			traits = { mod_lewak_starej_daty }
+			idea_token = POL_leszek_miller
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = GFX_opcja_lepper
+			}
+		}
+	}
+	POL_krystyna_pawlowicz = {
+		name = "Krystyna Pawłowicz"
+		portraits = {
+			army={
+				small="GFX_portraits_krystyna_pawlowicz"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			traits = { mod_prokurator }
+			idea_token = POL_krystyna_pawlowicz
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_opcja_lepper
+			}
+		}
+	}
+
+	POL_mariusz_blaszczak = {
+		name = "Mariusz Błaszczak"
+		portraits = {
+			army={
+				small="GFX_portraits_mariusz_blaszczak"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_flegmatyczny_pisowiec }
+			idea_token = POL_mariusz_blaszczak
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_opcja_pis
+			}
+		}
+	}
+	POL_leszek_bubel = {
+		name = "Leszek Bubel"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_bubel"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_nacjonalista_chlopski }
+			idea_token = POL_leszek_bubel
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_opcja_lepper
+			}
+		}
+	}
+
+	POL_aleksander_chodorowski = {
+		name = "Aleksander Chodorowski"
+		portraits = {
+			army={
+				small="GFX_portraits_aleksander_chodorowski"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_artyst }
+			idea_token = POL_aleksander_chodorowski
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_opcja_lepper
+			}
+		}
+	}
+
+	POL_leszek_balcerowicz = {
+		name = "Leszek Balcerowicz"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_libek }
+			idea_token = POL_leszek_balcerowicz
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				always = no
+			}
+		}
+	}
+
+	POL_lech_walesa = {
+		name = "Lech Wałęsa"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_bolek }
+			idea_token = POL_lech_walesa
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				always = no
+			}
+		}
+	}
+
+	# PLREW GENERALS
+
+	POL_rajmund_andrzejczak = {
+		name = "Rajmund Andrzejczak"
+		portraits = {
+			army = {
+				large ="GFX_portraits_Rajmund_Andrzejczak"
+			}
+		}
+		field_marshal = {
+			visible = { has_completed_focus = POL_reorganizacja_armii }
+			skill = 5
+			attack_skill = 11
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 9
+		}
+	}
+
+	POL_sergey_shoigu = {
+		name = "Сергей Шойгу"
+		portraits = {
+			army = {
+				large="GFX_portraits_Sergiej_Szojgu"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_przyjaciele_z_moskwy }
+			traits = { politically_connected }
+			skill=2
+			attack_skill=7
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	POL_yevgeny_prigozhin = {
+		name = "Евгений Пригожин"
+		portraits = {
+			army = {
+				large="GFX_portraits_Yevgeny_Prigoshin"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_przyjaciele_z_moskwy }
+			traits = { politically_connected }
+			skill=3
+			attack_skill=5
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=12 # SZAJGU GIERASIMOW GDZIE MOJE PRIBAFE
+			legacy_id=-1
+		}
+	}	
+
+	POL_mariusz_kaminski = {
+		name="Mariusz Kamiński"
+		portraits = {
+			army = {
+				large="GFX_portraits_Mariusz_Kaminski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_prawica }
+			traits = {}
+			skill=1
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_maciej_wasik = {
+		name="Maciej Wąsik"
+		portraits = {
+			army = {
+				large="GFX_portraits_Maciej_Wasik"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_prawica }
+			traits = { }
+			skill=2
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_radoslaw_fogiel = {
+		name = "Radosław Fogiel"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Radoslaw_Fogiel"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_pis }
+			traits = { }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 1
+		}
+		field_marshal = {
+			visible = { has_completed_focus = POL_zalozmy_kaczorowi_x }
+			traits = { }
+			skill = 3
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+
+	POL_ryszard_terlecki = {
+		name = "Ryszard Terlecki"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Ryszard_Terlecki"
+			}
+		}
+		
+		field_marshal = {
+			visible = { has_completed_focus = POL_opcja_pis }
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	POL_dariusz_matecki = {
+		name = "Dariusz Matecki"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Dariusz_Matecki"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_prawica }
+			traits = { }
+			skill = 1
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	POL_lukasz_schreiber = {
+		name = "Łukasz Schreiber"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Lukasz_Schreiber"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_pis }
+			traits = { }
+			skill = 2
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	POL_elzbieta_witek = {
+		name = "Elżbieta Witek"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_pis }
+			traits = { }
+			skill = 4
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 2
+		}
+		field_marshal = {
+			visible = { has_completed_focus = POL_opcja_pis }
+			traits = { }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	POL_michal_rachon = {
+		name = "Michał Rachoń"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Michal_Rachon"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				has_completed_focus = POL_tvpis 
+				NOT = {
+					has_completed_focus = POL_emerytura_w_szwecji
+				}
+			}
+			traits = { }
+			skill = 3
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	POL_adrian_klarenbach = {
+		name = "Adrian Klarenbach"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Adrian_Klarenbach"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				has_completed_focus = POL_tvpis 
+				NOT = {
+					has_completed_focus = POL_emerytura_w_szwecji
+				}
+			}
+			traits = { }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	POL_jacek_kurski = {
+		name = "Jacek Kurski"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Jacek_Kurski"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_emerytura_w_szwecji }
+			traits = { }
+			skill = 3
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 3
+		}
+	}
+	POL_zbigniew_stonoga = {
+		name = "Zbigniew Stonoga"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Zbigniew_Stonoga"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_kolaboracja_ze_stonoga
+				has_completed_focus = POL_opcja_centrum
+				}
+		}
+			traits = { }
+			skill = 3
+			attack_skill = 8
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	POL_mariusz_gosek = {
+		name = "Mariusz Gosek"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Mariusz_Gosek"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_pis }
+			traits = { }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	POL_jerzy_andrzejewski = {
+		name = "Jerzy Andrzejewski"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Jerzy_Andrzejewski"
+			}
+			army = {
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_opcja_lepper }
+			traits = { }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	POL_tadeusz_rydzyk = {
+		name = "Tadeusz Rydzyk"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Tadeusz_Rydzyk"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	POL_roman_giertych = {
+		name = "Roman Giertych"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Roman_Giertych"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_wykorzystanie_LPR
+				has_completed_focus = POL_silni_razem
+				}
+		 }
+			traits = { }
+			skill = 3
+			attack_skill = 9
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	POL_aldona_skiergiello = {
+		name = "Aldona Skiergiełło"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Aldona_Skiergiello"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_completed_focus = POL_opcja_lepper
+			}
+			traits = { }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	POL_krzysztof_jackowski = {
+		name = "Krzysztof Jackowski"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Krzysztof_Jackowski"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_completed_focus = POL_opcja_lepper
+			}
+			traits = { }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	POL_krzysztof_rutkowski = {
+		name = "Krzysztof Rutkowski"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Krzysztof_Rutkowski"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_completed_focus = POL_opcja_lepper
+			}
+			traits = { }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 8
+			planning_skill = 6
+			logistics_skill = 2
+		}
+	}
+	POL_jerzy_owsiak = {
+		name = "Jerzy Owsiak"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Mariusz_Gosek"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_wosp }
+			traits = { }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 9
+			planning_skill = 8
+			logistics_skill = 5
+		}
+	}
+	POL_oskar_dirlewanger = {
+		name = "Oskar Dirlewanger"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Mariusz_Gosek"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = POL_never_lose_yr_smile }
+			traits = { }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	
+	# PLREW GENERALS - END
+
+
+
+
+### PLREW THEORISTS ###
+
+	#twoja stara up there
+
+	POL_jacek_bartosiak = {
+		name = "mgr Jacek Bartosiak"
+		portraits = {
+			army = {
+				small="GFX_portraits_jacek_bartosiak"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = POL_jacek_bartosiak
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+	}
+
+	POL_piotr_napierala = {
+		name = "Dr Piotr Napierała"
+		portraits = {
+			army = {
+				small="GFX_portraits_piotr_napierala"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = POL_piotr_napierala
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = { military_theorist }
+		}
+	}
+
+POL_wladyslaw_kosiniak = {
+		name = "Władysław Kosiniak-Kamysz"
+		portraits = {
+			army = {
+				small="GFX_portraits_wladyslaw_kosiniak"
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = POL_wladyslaw_kosiniak
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = { mod_minister_obrony }
+			available = {
+				OR = {
+				has_completed_focus = POL_kolejna_koalicja_psl
+				has_completed_focus = POL_opcja_agrarna
+				}
+			}
+		}
+	}
+
+POL_lukail_kalsznikov = {
+		name = "Łukaił 'Kałach' Kalasznikov"
+		portraits = {
+			army = {
+				small="GFX_portraits_kalach"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = POL_lukail_kalsznikov
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = { mod_rewolucjonista }
+		}
+	}
+
+POL_elon_musk = {
+		name = "Elon Musk"
+		portraits = {
+			army = {
+				small="GFX_portraits_elon_musk_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = POL_elon_musk
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = { nuclear_enthusiast }
+		}
+	}
+
+POL_aleksander_jablonowski = {
+		name = "Wojciech Olszański"
+		portraits = {
+			army = {
+				small="GFX_portraits_jaszczur_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = POL_aleksander_jablonowski
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = { mod_jaszczur }
+		}
+	}
+
+POL_slawosz_uznanski = {
+		name = "Sławosz Uznański-Wiśniewski"
+		portraits = {
+			army = {
+				small="GFX_portraits_slawosz_uznanski"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = POL_slawosz_uznanski
+			ledger = air
+			allowed = {
+				original_tag = POL
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+
+
+
+### ARMY CHIEFS MOD ###
+
+
+	
+
+	
+
+	POL_czerwony_jamal = {
+		name = "Czerwony Jamal"
+		portraits = {
+			army = {
+				small="GFX_portraits_czarny_jamal"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = POL_czerwony_jamal
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_agresywny_stalinista
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_andrzej_szejna = {
+		name = "Andrzej Szejna"
+		portraits = {
+			army = {
+				small="GFX_portraits_andrzej_szejna"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = POL_andrzej_szejna
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				red_army_organizer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_donald_von_tusk = {
+		name = "Donald von Tusk"
+		portraits = {
+			army = {
+				small="GFX_portraits_donald_tusk_adv"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = POL_donald_von_tusk
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_pruski_general
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_marek_jakubiak = {
+		name = "Marek Jakubiak"
+		portraits = {
+			army = {
+				small="GFX_portraits_marek_jakubiak_adv"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = POL_marek_jakubiak
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_husarz
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+	### AIR CHIEFS PLREW ###
+
+	POL_gluten_jager = {
+		name = "Gluten Jager"
+		portraits = {
+			army = {
+				small="GFX_portraits_gluten_jager"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = POL_gluten_jager
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_pruska_dominacja
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_iga_swiatek = {
+		name = "Iga Świątek"
+		portraits = {
+			army = {
+				small="GFX_portraits_iga_swiatek"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = POL_iga_swiatek
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				close_air_support_proponent
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### NAVAL CHIEF ###
+
+	POL_mariusz_pudzianowski = {
+		name = "Mariusz Pudzianowski"
+		portraits = {
+			army = {
+				small="GFX_portraits_mariusz_pudzianowski"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = POL_mariusz_pudzianowski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				navy_capital_ship_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_dafael = {
+		name = "Daf*el"
+		portraits = {
+			army = {
+				small="GFX_portraits_dafael"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = POL_dafael
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_dafaelowiec
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	####PLREW DOWODZTWO###
+
+POL_wojtek_drewniak = {
+		name = "Wojtek Drewniak"
+		portraits = {
+			army = {
+				small="GFX_portraits_wojciech_drewniak"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_wojtek_drewniak
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_agnieszka_holland = {
+		name = "Agnieszka Holland"
+		portraits = {
+			army = {
+				small="GFX_portraits_agnieszka_holland"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_agnieszka_holland
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_rajmund_andrzejczak_com = {
+		name = "Rajmund Andrzejczak"
+		portraits = {
+			army = {
+				small="GFX_portraits_rajmund_andrzejczak_adv"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_rajmund_andrzejczak_com
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_chief_organizational_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	
+	POL_pies_odi = {
+		name = "Odi"
+		portraits = {
+			army = {
+				small="GFX_portraits_odi"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_pies_odi
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_specjalista_od_materialow_wyb
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_norbert_baczyk = {
+		name = "Norbert Bączyk"
+		portraits = {
+			army = {
+				small="GFX_portraits_norbert_baczyk"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_norbert_baczyk
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_historyk_antyniemiecki
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	POL_wojciech_cejrowski_com = {
+		name = "Wojciech Cejrowski"
+		portraits = {
+			army = {
+				small="GFX_portraits_wojcech_cejrowski_adv"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_wojciech_cejrowski_com
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_dawider = {
+        name=POL_dawider
+        portraits = {
+            army = {
+                small="GFX_idea_POL_zygmunt_buhusz_szysko"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = POL_dawider
+            allowed = {
+                original_tag = POL
+            }
+            traits = {
+                mod_kosmopolita
+            }
+            cost = 150
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
+
+
+
+
+	#GENERALS#
+
+
+	POL_boleslaw_wieniawa_glugoszowski = {
+		name=POL_boleslaw_wieniawa_glugoszowski
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
+			}
+			army = {
+				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
+				small = "GFX_idea_POL_boleslaw_wieniawa_dlugoszowski"
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer war_hero politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_witold_pilecki = {
+		name=POL_witold_pilecki
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_witold_pilecki"
+			}
+			army = {
+				large="GFX_portrait_POL_witold_pilecki"
+				small = "GFX_idea_POL_witold_pilecki"
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer POL_sanation_left_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_wladyslaw_sikorski = {
+		name=POL_wladyslaw_sikorski
+		portraits = {
+			civilian = {
+				large=GFX_portrait_POL_wladyslaw_sikorski
+			}
+			army = {
+				large=GFX_portrait_POL_wladyslaw_sikorski
+				small = GFX_portrait_POL_wladyslaw_sikorski_small
+			}
+		}
+
+		field_marshal = {
+			traits = { POL_sanation_left_leader defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_vladislav_korchits = {
+		name = POL_vladislav_korchits
+		portraits = {
+			army = {
+				large = GFX_portrait_POL_vladislav_korchits
+				small = GFX_portrait_POL_vladislav_korchits_small
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_completed_focus = POL_soviet_military_staff
+			}
+			traits = { JAP_communist_sympathizer old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	POL_edward_rydzsmigly = {
+		name=POL_edward_rydz_smigly
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_edward_rydz_smigly"
+				small = "GFX_idea_POL_edward_rydz_smigly"
+			}
+			civilian = {
+				large="GFX_portrait_POL_edward_rydz_smigly"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard POL_sanation_right_leader thorough_planner politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_wojtek = {
+		name = POL_wojtek
+		portraits = {
+			army = {
+				large = GFX_portrait_POL_wojtek
+				small = "GFX_idea_POL_wojtek"
+			}
+			civilian = {
+				large = "GFX_portrait_POL_king_woytek"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery }
+			visible = {
+				has_country_flag = POL_vojtek_commander
+			}
+			skill = 1
+		}
+	}
+	POL_wladyslaw_bortnowski = {
+		name=POL_wladyslaw_bortnowski
+		portraits = {
+			army = {
+				large="GFX_POL_wladyslaw_bortnowski"
+				small = GFX_portrait_POL_wladyslaw_bortnowski_small
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader thorough_planner }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_stanislaw_kopanski = {
+		name=POL_stanislaw_kopanski
+		portraits = {
+			army = {
+				large="GFX_POL_stanislav_kopanski"
+				small = GFX_portrait_POL_stanislaw_kopanski_small
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_marian_kukiel = {
+		name=POL_marian_kukiel
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_marian_kukiel"
+				small = "GFX_idea_POL_marian_kukiel"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_jozef_haller = {
+		name=POL_jozef_haller
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_jozef_haller"
+				small="GFX_idea_POL_jozef_haller"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard POL_sanation_left_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_stanislaw_sosabowski = {
+		name=POL_stanislaw_sosabowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_stanislaw_sosabowski"
+				small = "GFX_idea_POL_stanislaw_sosabowski"
+			}
+		}
+		corps_commander = {
+			traits = { commando POL_sanation_left_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	POL_lucjan_zeligowski = {
+		name=POL_lucjan_zeligowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_lucjan_zeligowski"
+				small = "GFX_idea_POL_lucjan_zeligowski"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard infantry_officer POL_sanation_left_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_tadeusz_kutrzeba = {
+		name=POL_tadeusz_kutrzeba
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_tadeusz_kutrzeba"
+				small = "GFX_idea_POL_tadeusz_kutrzeba"
+			}
+		}
+		corps_commander = {
+			traits = { defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_wladyslaw_anders = {
+		name=POL_wladyslaw_anders
+		portraits = {
+			army = {
+				large="GFX_POL_wladislaw_anders"
+				small = GFX_portrait_POL_wladyslaw_anders_small
+			}
+		}
+		
+		corps_commander = {
+			traits = { armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_roman_abraham = {
+		name="Roman Abraham"
+		portraits = {
+			army = {
+				large="GFX_POL_roman_abraham"
+				small = GFX_portrait_Roman_Abraham_small
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_wincenty_kowalski = {
+		name=POL_wincenty_kowalski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_wincenty_kowalski"
+				small = "GFX_idea_POL_wincenty_kowalski"
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_kazimierz_sosnkowski = {
+		name=POL_kazimierz_sosnkowski
+		portraits = {
+			army = {
+				small="GFX_idea_POL_kazimierz_sosnkowski"
+				large="GFX_portrait_POL_kazimierz_sosnkowski"
+			}
+		}
+		corps_commander = {
+			traits = { defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+	### NAVY LEADERS ###
+
+	POL_stefan_frankowski = {
+		name=POL_stefan_frankowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_Stefan_Frankowski"
+				small = "GFX_idea_POL_stefan_frankowski"
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_karol_korytowski = {
+		name=POL_karol_korytowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_karol_korytowski"
+				small = "GFX_idea_POL_karol_korytowski"
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer superior_tactician }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_jozef_unrug = {
+		name=POL_josef_unrug
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_jozef_unrug"
+				small = "GFX_idea_POL_jozef_unrug"
+			}
+		}
+		navy_leader = {
+			traits = { war_hero }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	#Rydz-Smigly up there
+
+	POL_tomislaw_lupaszko = {
+		name=POL_tomislaw_lupaszko
+		portraits = {
+			army = {
+				small="GFX_idea_POL_tomislaw_lupaszko"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = POL_tomislaw_lupaszko
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	POL_wladyslaw_kalkus = {
+		name=POL_wladyslaw_kalkus
+		portraits = {
+			army = {
+				small="GFX_idea_POL_wladyslaw_kalkus"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = POL_wladyslaw_kalkus
+			ledger = air
+			allowed = {
+				original_tag = POL
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	#Sosnkowski up there
+
+
+	### NAVY CHIEFS ###
+
+	# Unrug up there
+
+	POL_xawery_czernicki = {
+		name=POL_xawery_czernicki
+		portraits = {
+			army = {
+				small="GFX_idea_POL_xawery_czernicki"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = POL_xawery_czernicki
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				navy_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	POL_jozef_zajac = {
+		name=POL_jozef_zajac
+		portraits = {
+			army = {
+				small="GFX_idea_POL_jozef_zajac"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = POL_jozef_zajac
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_ludomil_rayski = {
+		name=POL_ludomil_rayski
+		portraits = {
+			army = {
+				small="GFX_idea_POL_ludomil_rayski"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = POL_ludomil_rayski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Anders up there
+
+	POL_zygmunt_buhusz_szysko = {
+		name=POL_zygmunt_buhusz_szysko
+		portraits = {
+			army = {
+				small="GFX_idea_POL_zygmunt_buhusz_szysko"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_zygmunt_buhusz_szysko
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_stanislav_maczek = {
+		name=POL_stanislav_maczek
+		portraits = {
+			army = {
+				small="GFX_idea_POL_stanislav_maczek"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_stanislav_maczek
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_stanislaw_pawluc = {
+		name=POL_stanislaw_pawluc
+		portraits = {
+			army = {
+				small="GFX_idea_POL_stanislaw_pawluc"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_stanislaw_pawluc
+			ledger = air
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	POL_jan_zumbach = {
+		name = POL_jan_zumbach
+		portraits = {
+			army = {
+				small = GFX_portrait_POL_jan_zumbach_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_jan_zumbach
+			ledger = air
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = ENG
+					original_tag = COG
+					original_tag = KAT
+				}
+			}
+			traits = {
+				air_air_combat_training_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	### POLITICAL ADVISORS ###
+}
