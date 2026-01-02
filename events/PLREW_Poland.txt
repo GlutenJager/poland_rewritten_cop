@@ -540,14 +540,14 @@ country_event = {
 }
 
 country_event = { #Petru vs MEncwel
-	id = PLREW_poland.15
-	title = PLREW_poland.15.t
-	desc = PLREW_poland.15.d
+	id = PLREW_poland.10015
+	title = PLREW_poland.10015.t
+	desc = PLREW_poland.10015.d
 	
 	is_triggered_only = yes
 
 	option = {
-		name = PLREW_poland.15.a
+		name = PLREW_poland.10015.a
 		
 		random = {
             chance = 50
@@ -1105,7 +1105,6 @@ country_event = { # Przewidywalni
 	option = {
 		name = PLREW_poland.34.o2
 		create_country_leader = {
-			id = POL_borys_budka
 			name = "Borys Budka"
 			picture = "GFX_portraits_borys_budka"
 			ideology = euro_liberalism
@@ -1115,7 +1114,6 @@ country_event = { # Przewidywalni
 	option = {
 		name = PLREW_poland.34.o3
 		create_country_leader = {
-			id = POL_radek_sikorski
 			name = "Radek Sikorski"
 			picture = "GFX_portraits_radek_sikorski"
 			ideology = euro_liberalism

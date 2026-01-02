@@ -393,7 +393,7 @@ focus_tree = {
 					set_cosmetic_tag = POL_SANATION
 					add_ideas = POL_wojna_domowa
 					set_cosmetic_tag = POL_SANATION
-					kill_country_leader = POL_ignacy_moscicki
+                    			kill_country_leader = yes
 					add_country_leader_role = {
 					character = POL_edward_rydzsmigly
 					country_leader = {
@@ -4612,7 +4612,7 @@ focus_tree = {
 		completion_reward = {
 			PAL = {
 				create_country_leader = {
-					name = Ozjasz Goldberg
+					name = "Ozjasz Goldberg"
 					#picture = GFX
 					ideology = korwinism
 				}
@@ -6255,7 +6255,7 @@ focus = {
 		focus = POL_hot_dogi_dla_wszystkich
 	}
 	completion_reward = {
-		pOL = { country_event = PLREW_poland.53 }
+		POL = { country_event = PLREW_poland.53 }
 	}
 }
 focus = {
@@ -10828,7 +10828,7 @@ focus = {
 		}
 		completion_reward = {
 			POL = { country_event = PLREW_poland.40 }
-			POL = { country_event = { PLREW_poland.41 days = 15 }}
+			POL = { country_event = { id = PLREW_poland.41 days = 15 }}
 			add_political_power = 50
 			add_popularity = {
 				ideology = democratic
@@ -11854,74 +11854,54 @@ focus = {
 				type = annex_everything
 			}
 				if = {
-					limit = {
-						SLV = exists
-					}
+					limit = { SLV = { exists = yes } }
 
 					create_wargoal = {
 						target = SLV
 						type = annex_everything
 					}
-			}
-			if = {
-					limit = {
-						ALB = exists
-					}
+				}
+			if = { limit = { ALB = { exists = yes } }
 
-					create_wargoal = {
-						target = ALB
-						type = annex_everything
-					}
+				create_wargoal = {
+					target = ALB
+					type = annex_everything
+				}
 			}
-			if = {
-					limit = {
-						MAC = exists
-					}
+			if = { limit = { MAC = { exists = yes } }
 
-					create_wargoal = {
-						target = MAC
-						type = annex_everything
-					}
+				create_wargoal = {
+					target = MAC
+					type = annex_everything
+				}
 			}
-			if = {
-					limit = {
-						CRO = exists
-					}
+			if = { limit = { CRO = { exists = yes } }
 
-					create_wargoal = {
-						target = CRO
-						type = annex_everything
-					}
+				create_wargoal = {
+					target = CRO
+					type = annex_everything
+				}
 			}
-			if = {
-					limit = {
-						BOS = exists
-					}
+			if = { limit = { BOS = { exists = yes } }
 
-					create_wargoal = {
-						target = BOS
-						type = annex_everything
-					}
+				create_wargoal = {
+					target = BOS
+					type = annex_everything
+				}
 			}
-			if = {
-					limit = {
-						SER = exists
-					}
+			if = { limit = { SER = { exists = yes } }
 
-					create_wargoal = {
-						target = SER
-						type = annex_everything
-					}
+				create_wargoal = {
+					target = SER
+					type = annex_everything
+				}
 			}
-			if = {
-					limit = {
-						TRA = exists
-					}
+			if = { limit = { TRA = { exists = yes } }
 
-					create_wargoal = {
-						target = TRA
-						type = annex_everything
-					}
+				create_wargoal = {
+					target = TRA
+					type = annex_everything
+				}
 			}
 		}
 
@@ -12518,21 +12498,7 @@ focus = {
 				state = 64
 			}
 
-			87 = {
-				add_state_core = GEN
-			}
-			10 = {
-				add_state_core = GEN
-			}
-			90 = {
-				add_state_core = GEN
-			}
-			92 = {
-				add_state_core = GEN
-			}
-			88 = {
-				add_state_core = GEN
-			}
+
 			
 
 			GEN = {
