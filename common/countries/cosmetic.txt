@@ -686,6 +686,10 @@ POL_european_union = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
+POL_rzad_swiatowy = {
+	color = rgb { 8 13 75 }
+	color_ui = rgb { 8 13 75 }
+}
 POL_rzesza_wielkogermanska = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }

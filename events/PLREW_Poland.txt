@@ -899,12 +899,12 @@ country_event = { #zjednoczenie europy
 	option = { #Niemiecka dominacja TNO
 		name = PLREW_poland.29.b
 		set_cosmetic_tag = POL_rzesza_wielkogermanska
-		#news_event
+		#news_event #berlin germania zjedz czechy i pozmieniaj kolory reichskomisariatow
 	}
 	option = { #Czas na zarowadzenie Ze new World Order
 		name = PLREW_poland.29.c
-		set_cosmetic_tag = POL_european_union
-		#news_event
+		set_cosmetic_tag = POL_rzad_swiatowy
+		#news_event dodaj duch walki z ludzka natura
 	}
 }
 

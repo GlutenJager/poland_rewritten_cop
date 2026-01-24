@@ -920,6 +920,19 @@ POL_eurokommisarat_moskowien = { # decyzja o eurokomisariacie Moskwy
 					id = 3529
 					name = Bismarckgrad
 				}
+				set_province_name = {
+					id = 306
+					name = Steiner
+				}
+				set_province_name = {
+					id = 121
+					name = Jarosław
+				}
+				set_province_name = {
+					id = 6338
+					name = Haisenberg
+				}
+				
 
 				POL = {
 					add_state_core = 196
@@ -2513,6 +2526,7 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			    	POL_bop_low_decrease_effect = yes
 			}
         }
+	}
 
 
     
@@ -2734,9 +2748,9 @@ POL_ufundowanie_kosciolow = {
 	}
 
 
-	
-
 	}
+
+	
 
 	POL_balance_of_power_category = {
 
