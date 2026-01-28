@@ -698,6 +698,10 @@ FRA_eurorepublik = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
+MAN_ekspedycja_kolonialna = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
 ITA_eurorepublik = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
@@ -717,6 +721,90 @@ CZE_eurorepublik = {
 YUG_eurorepublik = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
+}
+YUG_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ITA_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+SLO_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+FRA_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ORB_reichkomisariat = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+EPA_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ENP_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EIB_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ENI_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EEN_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ESK_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ESC_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EWL_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EOS_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EMO_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EUK_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ESH_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EQA_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+EIR_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ETU_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
+}
+ETR_reichkomisariat = {
+	color = rgb { 60 54 60 }
+	color_ui = rgb { 115 115 115 }
 }
 ITA_eurorepublik = {
 	color = rgb { 0 10 120 }

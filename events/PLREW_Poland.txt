@@ -895,15 +895,314 @@ country_event = { #zjednoczenie europy
 		name = PLREW_poland.29.a
 		set_cosmetic_tag = POL_european_union
 		#news_event
+		if = {
+			limit = { CZE = { exists = yes } }
+			annex_country = { target = CZE transfer_troops = yes }
+		}
+		if = {
+			limit = { ORB = { exists = yes } }
+			annex_country = { target = ORB transfer_troops = yes }
+		}
+		if = {
+			limit = { EEN  = { exists = yes } }
+			annex_country = { target = EEN  transfer_troops = yes }
+		}
+		if = {
+			limit = { ESK = { exists = yes } }
+			annex_country = { target = ESK transfer_troops = yes }
+		}
+		if = {
+			limit = { EIB = { exists = yes } }
+			annex_country = { target = EIB transfer_troops = yes }
+		}
+		if = {
+			limit = { EIR = { exists = yes } }
+			annex_country = { target = EIR transfer_troops = yes }
+		}
+		if = {
+			limit = { ENI = { exists = yes } }
+			annex_country = { target = ENI transfer_troops = yes }
+		}
+		if = {
+			limit = { ENP = { exists = yes } }
+			annex_country = { target = ENP transfer_troops = yes }
+		}
+		if = {
+			limit = { EPA  = { exists = yes } }
+			annex_country = { target = EPA transfer_troops = yes }
+		}
+		if = {
+			limit = { ESC = { exists = yes } }
+			annex_country = { target = ESC transfer_troops = yes }
+		}
+		if = {
+			limit = { EWL = { exists = yes } }
+			annex_country = { target = EWL transfer_troops = yes }
+		}
+		if = {
+			limit = { SLO = { exists = yes } }
+			annex_country = { target = SLO transfer_troops = yes }
+		}
+		if = {
+			limit = { ITA = { exists = yes is_subject_of = POL } }
+			annex_country = { target = ITA transfer_troops = yes }
+		}
+		if = {
+			limit = { FRA = { exists = yes is_subject_of = POL } }
+			annex_country = { target = FRA transfer_troops = yes }
+		}
+		if = {
+			limit = { YUG = { exists = yes is_subject_of = POL } }
+			annex_country = { target = YUG transfer_troops = yes }
+		}
+		hidden_effect = {
+			142 = { add_core_of = POL }
+			920 = { add_core_of = POL }
+			921 = { add_core_of = POL }
+			922 = { add_core_of = POL }
+			110 = { add_core_of = POL }
+			143 = { add_core_of = POL }
+			923 = { add_core_of = POL }
+			144 = { add_core_of = POL }
+			924 = { add_core_of = POL }
+			925 = { add_core_of = POL }
+			148 = { add_core_of = POL }
+			722 = { add_core_of = POL }
+			147 = { add_core_of = POL }
+			929 = { add_core_of = POL }
+			150 = { add_core_of = POL }
+			149 = { add_core_of = POL }
+			930 = { add_core_of = POL }
+			146 = { add_core_of = POL }
+			926 = { add_core_of = POL }
+			927 = { add_core_of = POL }
+			928 = { add_core_of = POL }
+			111 = { add_core_of = POL }
+			145 = { add_core_of = POL }
+			124 = { add_core_of = POL }
+			910 = { add_core_of = POL }
+			37 = { add_core_of = POL }
+			911 = { add_core_of = POL }
+			99 = { add_core_of = POL }
+			337 = { add_core_of = POL }
+			100 = { add_core_of = POL }
+			101 = { add_core_of = POL }
+			666 = { add_core_of = POL }
+			918 = { add_core_of = POL }
+			917 = { add_core_of = POL }
+			38 = { add_core_of = POL }
+			916 = { add_core_of = POL }
+			141 = { add_core_of = POL }
+			919 = { add_core_of = POL }
+			140 = { add_core_of = POL }
+			913 = { add_core_of = POL }
+			139 = { add_core_of = POL }
+			915 = { add_core_of = POL }
+			138 = { add_core_of = POL }
+			36 = { add_core_of = POL }
+			7 = { add_core_of = POL }
+			35 = { add_core_of = POL }
+			309 = { add_core_of = POL }
+			695 = { add_core_of = POL }
+			977 = { add_core_of = POL }
+			6 = { add_core_of = POL }
+			34 = { add_core_of = POL }
+			980 = { add_core_of = POL }
+			213 = { add_core_of = POL }
+			216 = { add_core_of = POL }
+			215 = { add_core_of = POL }
+			113 = { add_core_of = POL }
+			134 = { add_core_of = POL }
+			135 = { add_core_of = POL }
+			119 = { add_core_of = POL }
+			130 = { add_core_of = POL }
+			132 = { add_core_of = POL }
+			129 = { add_core_of = POL }
+			128 = { add_core_of = POL }
+			338 = { add_core_of = POL }
+			125 = { add_core_of = POL }
+			127 = { add_core_of = POL }
+			123 = { add_core_of = POL }
+			126 = { add_core_of = POL }
+			122 = { add_core_of = POL }
+			120 = { add_core_of = POL }
+			133 = { add_core_of = POL }
+			136 = { add_core_of = POL }
+			121 = { add_core_of = POL }
+			931 = { add_core_of = POL }
+			131 = { add_core_of = POL }
+			933 = { add_core_of = POL }
+			117 = { add_core_of = POL }
+			849 = { add_core_of = POL }
+			156 = { add_core_of = POL }
+			115 = { add_core_of = POL }
+			114 = { add_core_of = POL }
+			164 = { add_core_of = POL }
+			2 = { add_core_of = POL }
+			157 = { add_core_of = POL }
+			162 = { add_core_of = POL }
+			161 = { add_core_of = POL }
+			158 = { add_core_of = POL }
+			159 = { add_core_of = POL }
+			160 = { add_core_of = POL }
+			850 = { add_core_of = POL }
+			736 = { add_core_of = POL }
+			804 = { add_core_of = POL }
+			105 = { add_core_of = POL }
+			802 = { add_core_of = POL }
+			970 = { add_core_of = POL }
+			934 = { add_core_of = POL }
+			44 = { add_core_of = POL }
+			805 = { add_core_of = POL }
+			185 = { add_core_of = POL }
+			186 = { add_core_of = POL }
+			182 = { add_core_of = POL }
+			187 = { add_core_of = POL }
+			164 = { add_core_of = POL }
+			183 = { add_core_of = POL }
+			165 = { add_core_of = POL }
+			794 = { add_core_of = POL }
+			167 = { add_core_of = POL }
+			166 = { add_core_of = POL }
+			168 = { add_core_of = POL }
+			793 = { add_core_of = POL }
+			174 = { add_core_of = POL }
+			172 = { add_core_of = POL }
+			168 = { add_core_of = POL }
+			791 = { add_core_of = POL }
+			174 = { add_core_of = POL }
+			790 = { add_core_of = POL }
+			171 = { add_core_of = POL }
+			41 = { add_core_of = POL }
+			175 = { add_core_of = POL }
+			789 = { add_core_of = POL }
+			173 = { add_core_of = POL }
+			170 = { add_core_of = POL }
+			169 = { add_core_of = POL }
+			788 = { add_core_of = POL }
+			290 = { add_core_of = POL }
+			177 = { add_core_of = POL }
+			181 = { add_core_of = POL }
+			180 = { add_core_of = POL }
+			112 = { add_core_of = POL }
+			795 = { add_core_of = POL }
+			179 = { add_core_of = POL }
+			118 = { add_core_of = POL }
+			9 = { add_core_of = POL }
+			75 = { add_core_of = POL }
+			70 = { add_core_of = POL }
+			71 = { add_core_of = POL }
+			73 = { add_core_of = POL }
+			664 = { add_core_of = POL }
+			975 = { add_core_of = POL }
+			109 = { add_core_of = POL }
+			104 = { add_core_of = POL }
+			45 = { add_core_of = POL }
+			107 = { add_core_of = POL }
+			764 = { add_core_of = POL }
+			108 = { add_core_of = POL }
+			106 = { add_core_of = POL }
+			803 = { add_core_of = POL }
+			731 = { add_core_of = POL }
+			47 = { add_core_of = POL }
+			184 = { add_core_of = POL }
+			155 = { add_core_of = POL }
+			974 = { add_core_of = POL }
+			43 = { add_core_of = POL }
+			973 = { add_core_of = POL }
+			154 = { add_core_of = POL }
+			83 = { add_core_of = POL }
+			76 = { add_core_of = POL }
+			82 = { add_core_of = POL }
+			84 = { add_core_of = POL }
+			81 = { add_core_of = POL }
+			46 = { add_core_of = POL }
+			79 = { add_core_of = POL }
+			80 = { add_core_of = POL }
+			971 = { add_core_of = POL }
+			77 = { add_core_of = POL }
+			766 = { add_core_of = POL }
+			78 = { add_core_of = POL }
+			192 = { add_core_of = POL }
+			834 = { add_core_of = POL }
+			198 = { add_core_of = POL }
+			48 = { add_core_of = POL }
+			801 = { add_core_of = POL }
+			211 = { add_core_of = POL }
+			212 = { add_core_of = POL }
+			341 = { add_core_of = POL }
+			340 = { add_core_of = POL }
+			797 = { add_core_of = POL }
+			347 = { add_core_of = POL }
+			339 = { add_core_of = POL }
+			164 = { add_core_of = POL }
+			183 = { add_core_of = POL }
+			116 = { add_core_of = POL }
+			
+		}
+		
 	}
 	option = { #Niemiecka dominacja TNO
 		name = PLREW_poland.29.b
 		set_cosmetic_tag = POL_rzesza_wielkogermanska
-		#news_event #berlin germania zjedz czechy i pozmieniaj kolory reichskomisariatow
+		create_country_leader = {
+			name = "Donald Franz Tusk"
+			picture = x
+			ideology = euro_nationalism
+			traits = {
+				mod_antypolak
+				mod_lubi_niemcy
+				GER_der_fuhrer
+				destroyer_of_worlds
+			}
+		}
+		if = {
+			limit = { CZE = { exists = yes } }
+			annex_country = { target = CZE transfer_troops = yes }
+		}
+		set_province_name = {
+			id = 6521
+			name = "Germania"
+		}
+		YUG = { set_cosmetic_tag = YUG_reichkomisariat }
+		ITA = { set_cosmetic_tag = ITA_reichkomisariat }
+		SLO = { set_cosmetic_tag = SLO_reichkomisariat }
+		FRA = { set_cosmetic_tag = FRA_reichkomisariat }
+		ORB = { set_cosmetic_tag = ORB_reichkomisariat }
+		EPA = { set_cosmetic_tag = EPA_reichkomisariat }
+		ENP = { set_cosmetic_tag = ENP_reichkomisariat }
+		EIB = { set_cosmetic_tag = EIB_reichkomisariat }
+		EEN = { set_cosmetic_tag = EEN_reichkomisariat }
+		ENI = { set_cosmetic_tag = ENI_reichkomisariat }
+		ESK = { set_cosmetic_tag = ESK_reichkomisariat }
+		ESC = { set_cosmetic_tag = ESC_reichkomisariat }
+		EWL = { set_cosmetic_tag = EWL_reichkomisariat }
+		EOS = { set_cosmetic_tag = EOS_reichkomisariat }
+		EMO = { set_cosmetic_tag = EMO_reichkomisariat }
+		EUK = { set_cosmetic_tag = EUK_reichkomisariat }
+		ESH = { set_cosmetic_tag = ESH_reichkomisariat }
+		EQA = { set_cosmetic_tag = EQA_reichkomisariat }
+		EIR = { set_cosmetic_tag = EIR_reichkomisariat }
+		ETU = { set_cosmetic_tag = ETU_reichkomisariat }
+		ETR = { set_cosmetic_tag = ETR_reichkomisariat }
+		#zagraj 
 	}
+		#news_event 
+	
 	option = { #Czas na zarowadzenie Ze new World Order
 		name = PLREW_poland.29.c
 		set_cosmetic_tag = POL_rzad_swiatowy
+		every_state = {
+			add_core_of = POL
+		}
+		every_country = {
+			
+			declare_war_on = {
+				target = POL
+				type = topple_government
+			}
+			
+		}
 		#news_event dodaj duch walki z ludzka natura
 	}
 }
@@ -1694,6 +1993,7 @@ country_event = { # dziwne praktyki w burgundii
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
+			#play
 		}
 	}
 

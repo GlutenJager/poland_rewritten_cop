@@ -6,6 +6,18 @@ country = {
             
         }
 
+        POL_wilhelm = {
+            picture = naciski_ue
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = 0.1
+                army_morale_factor = 0.2
+            }
+        }
+
         POL_european_pressure = {
             picture = naciski_ue
 

@@ -59,6 +59,12 @@ defined_text = {
         }
         localization_key = euro_liberalism
     }
+    text = {
+        trigger = {
+            has_country_leader_ideology = euro_nationalism
+        }
+        localization_key = euro_nationalism
+    }
     
     text = {
         trigger = {

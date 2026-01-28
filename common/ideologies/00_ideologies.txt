@@ -22,6 +22,10 @@ ideologies = {
 				can_be_randomly_selected = no
 				
 			}
+			euro_nationalism = {
+				can_be_randomly_selected = no
+				
+			}
 
 			kaczism = {
 				can_be_randomly_selected = no

@@ -11332,10 +11332,6 @@ focus = {
 					name = Dresden
 				}
 			set_province_name = {
-					id = 6521
-					name = Germania
-				}
-			set_province_name = {
 					id = 6282
 					name = Stettin
 				}
@@ -11355,6 +11351,9 @@ focus = {
 					id = 692
 					name = München
 				} 
+				set_capital = {
+					state =  64
+				}
 		}
 	}
 
@@ -11545,7 +11544,6 @@ focus = {
 				target = BHU
 				type = annex_everything
 			}
-			#decyzja na eurokomiisariat arabien
 		}
 		
 	}
@@ -11580,10 +11578,6 @@ focus = {
 				type = topple_government
 			}
 			create_wargoal = {
-				target = USA
-				type = annex_everything
-			}
-			create_wargoal = {
 				target = MON
 				type = annex_everything
 			}
@@ -11605,6 +11599,10 @@ focus = {
 			focus = POL_zdlawienie_skrajnosci
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = topple_government
+			}
 			create_wargoal = {
 				target = BRA
 				type = topple_government
@@ -11753,7 +11751,10 @@ focus = {
 			848 = { add_core_of = POL }
 			39 = { add_core_of = POL }
 			853 = { add_core_of = POL }
-			#jeszcze klajpeda, slowenia kraj sudecki i austria oraz szlezwig
+			72 = { add_core_of = POL }
+			69 = { add_core_of = POL }
+			74 = { add_core_of = POL }
+			972 = { add_core_of = POL }
 		}
 	}
 
@@ -12162,6 +12163,10 @@ focus = {
 				exists = yes
 				is_puppet_of = POL
 			}
+			ORB = {
+				exists = yes
+				is_puppet_of = POL
+			}
 			is_power_balance_in_range = {
 				id = POL_european_power_balance
 				range = POL_federalism_total_control_range
@@ -12263,6 +12268,9 @@ focus = {
 		prerequisite = {
 			focus = POL_armia_europejska
 		}
+		completion_reward = {
+			add_ideas = GER_air_innovations_2_idea
+		}
 		
 	}
 
@@ -12282,6 +12290,10 @@ focus = {
 			#news_event
 			create_wargoal = {
 				target = ENG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = IRE
 				type = annex_everything
 			}
 		}
@@ -12341,6 +12353,22 @@ focus = {
 				target = NZL
 				type = annex_everything
 			}
+			create_wargoal = {
+				target = INS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MAL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = INS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PHI
+				type = annex_everything
+			}
 			
 		}
 		
@@ -12358,9 +12386,276 @@ focus = {
 			ENG = {
 				exists = no
 			}
+			POR = {
+				exists = no
+			}
+			SPA = {
+				exists = no
+			}
 		}
 		prerequisite = {
 			focus = POL_koniec_Brexitu
+		}
+		completion_reward = {
+			POL ={ puppet = ETH }
+			ETH = {
+				create_country_leader = {
+					name = "Rada Afryki"
+					picture = x
+					ideology = euro_liberalism
+				}
+				set_cosmetic_tag = ETH_african_union
+				hidden_effect = {
+
+
+					908 = { add_core_of = ETH }
+					268 = { add_core_of = ETH }
+					550 = { add_core_of = ETH }
+					269 = { add_core_of = ETH }
+					559 = { add_core_of = ETH }
+					844 = { add_core_of = ETH }
+					835 = { add_core_of = ETH }
+					836 = { add_core_of = ETH }
+					837 = { add_core_of = ETH }
+					842 = { add_core_of = ETH }
+					843 = { add_core_of = ETH }
+					840 = { add_core_of = ETH }
+					841 = { add_core_of = ETH }
+					271 = { add_core_of = ETH }
+					839 = { add_core_of = ETH }
+					838 = { add_core_of = ETH }
+					543 = { add_core_of = ETH }
+					706 = { add_core_of = ETH }
+					708 = { add_core_of = ETH }
+					709 = { add_core_of = ETH }
+					903 = { add_core_of = ETH }
+					547 = { add_core_of = ETH }
+					904 = { add_core_of = ETH }
+					905 = { add_core_of = ETH }
+					546 = { add_core_of = ETH }
+					884 = { add_core_of = ETH }
+					548 = { add_core_of = ETH }
+					886 = { add_core_of = ETH }
+					885 = { add_core_of = ETH }
+					549 = { add_core_of = ETH }
+					887 = { add_core_of = ETH }
+					767 = { add_core_of = ETH }
+					551 = { add_core_of = ETH }
+					883 = { add_core_of = ETH }
+					552 = { add_core_of = ETH }
+					456 = { add_core_of = ETH }
+					457 = { add_core_of = ETH }
+					452 = { add_core_of = ETH }
+					770 = { add_core_of = ETH }
+					771 = { add_core_of = ETH }
+					981 = { add_core_of = ETH }
+					545 = { add_core_of = ETH }
+					542 = { add_core_of = ETH }
+					544 = { add_core_of = ETH }
+					896 = { add_core_of = ETH }
+					897 = { add_core_of = ETH }
+					275 = { add_core_of = ETH }
+					719 = { add_core_of = ETH }
+					681 = { add_core_of = ETH }
+					893 = { add_core_of = ETH }
+					541 = { add_core_of = ETH }
+					895 = { add_core_of = ETH }
+					894 = { add_core_of = ETH }
+					892 = { add_core_of = ETH }
+					891 = { add_core_of = ETH }
+					540 = { add_core_of = ETH }
+					889 = { add_core_of = ETH }
+					888 = { add_core_of = ETH }
+					890 = { add_core_of = ETH }
+					769 = { add_core_of = ETH }
+					768 = { add_core_of = ETH }
+					718 = { add_core_of = ETH }
+					538 = { add_core_of = ETH }
+					295 = { add_core_of = ETH }
+					796 = { add_core_of = ETH }
+					772 = { add_core_of = ETH }
+					539 = { add_core_of = ETH }
+					660 = { add_core_of = ETH }
+					773 = { add_core_of = ETH }
+					774 = { add_core_of = ETH }
+					297 = { add_core_of = ETH }
+					705 = { add_core_of = ETH }
+					704 = { add_core_of = ETH }
+					703 = { add_core_of = ETH }
+					702 = { add_core_of = ETH }
+					178 = { add_core_of = ETH }
+					699 = { add_core_of = ETH }
+					900 = { add_core_of = ETH }
+					901 = { add_core_of = ETH }
+					902 = { add_core_of = ETH }
+					558 = { add_core_of = ETH }
+					274 = { add_core_of = ETH }
+					776 = { add_core_of = ETH }
+					777 = { add_core_of = ETH }
+					779 = { add_core_of = ETH }
+					556 = { add_core_of = ETH }	
+					778 = { add_core_of = ETH }
+					899 = { add_core_of = ETH }
+					780 = { add_core_of = ETH }
+					700 = { add_core_of = ETH }
+					298 = { add_core_of = ETH }
+					296 = { add_core_of = ETH }
+					272 = { add_core_of = ETH }
+					701 = { add_core_of = ETH }
+					273 = { add_core_of = ETH }
+					663 = { add_core_of = ETH }
+					451 = { add_core_of = ETH }
+					449 = { add_core_of = ETH }
+					662 = { add_core_of = ETH }
+					450 = { add_core_of = ETH }
+					448 = { add_core_of = ETH }
+					661 = { add_core_of = ETH }
+					557 = { add_core_of = ETH }
+					786 = { add_core_of = ETH }
+					699 = { add_core_of = ETH }
+					514 = { add_core_of = ETH }
+					782 = { add_core_of = ETH }
+					898 = { add_core_of = ETH }
+					781 = { add_core_of = ETH }
+					515 = { add_core_of = ETH }
+					775 = { add_core_of = ETH }
+					783 = { add_core_of = ETH }
+					462 = { add_core_of = ETH }
+					461 = { add_core_of = ETH }
+					290 = { add_core_of = ETH }
+					459 = { add_core_of = ETH }
+					460 = { add_core_of = ETH }
+					513 = { add_core_of = ETH }
+					458 = { add_core_of = ETH }
+					665 = { add_core_of = ETH }
+
+				ETH ={
+
+					transfer_state = 908
+					transfer_state = 268
+					transfer_state = 550
+					transfer_state = 269
+					transfer_state = 559
+					transfer_state = 844
+					transfer_state = 835
+					transfer_state = 836
+					transfer_state = 837
+					transfer_state = 842
+					transfer_state = 843
+					transfer_state = 840
+					transfer_state = 841
+					transfer_state = 271
+					transfer_state = 839
+					transfer_state = 838
+					transfer_state = 543
+					transfer_state = 706
+					transfer_state = 708
+					transfer_state = 709
+					transfer_state = 903
+					transfer_state = 547
+					transfer_state = 904
+					transfer_state = 905
+					transfer_state = 546
+					transfer_state = 884
+					transfer_state = 548
+					transfer_state = 886
+					transfer_state = 885
+					transfer_state = 549
+					transfer_state = 887
+					transfer_state = 767
+					transfer_state = 551
+					transfer_state = 883
+					transfer_state = 552
+					transfer_state = 456
+					transfer_state = 457
+					transfer_state = 452
+					transfer_state = 770
+					transfer_state = 771
+					transfer_state = 981
+					transfer_state = 545
+					transfer_state = 542
+					transfer_state = 544
+					transfer_state = 896
+					transfer_state = 897
+					transfer_state = 275
+					transfer_state = 719
+					transfer_state = 681
+					transfer_state = 893
+					transfer_state = 541
+					transfer_state = 895
+					transfer_state = 894
+					transfer_state = 892
+					transfer_state = 891
+					transfer_state = 540
+					transfer_state = 889
+					transfer_state = 888
+					transfer_state = 890
+					transfer_state = 769
+					transfer_state = 768
+					transfer_state = 718
+					transfer_state = 538
+					transfer_state = 295
+					transfer_state = 796
+					transfer_state = 772
+					transfer_state = 539
+					transfer_state = 660
+					transfer_state = 773
+					transfer_state = 774
+					transfer_state = 297
+					transfer_state = 705
+					transfer_state = 704
+					transfer_state = 703
+					transfer_state = 702
+					transfer_state = 178
+					transfer_state = 699
+					transfer_state = 900
+					transfer_state = 901
+					transfer_state = 902
+					transfer_state = 558
+					transfer_state = 274
+					transfer_state = 776
+					transfer_state = 777
+					transfer_state = 779
+					transfer_state = 556
+					transfer_state = 778
+					transfer_state = 899
+					transfer_state = 780
+					transfer_state = 700
+					transfer_state = 298
+					transfer_state = 296
+					transfer_state = 272
+					transfer_state = 701
+					transfer_state = 273
+					transfer_state = 663
+					transfer_state = 451
+					transfer_state = 449
+					transfer_state = 662
+					transfer_state = 450
+					transfer_state = 448
+					transfer_state = 661
+					transfer_state = 557
+					transfer_state = 786
+					transfer_state = 699
+					transfer_state = 514
+					transfer_state = 782
+					transfer_state = 898
+					transfer_state = 781
+					transfer_state = 515
+					transfer_state = 775
+					transfer_state = 783
+					transfer_state = 462
+					transfer_state = 461
+					transfer_state = 290
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 513
+					transfer_state = 458
+					transfer_state = 665
+					
+
+				}
+				}
+			}
 		}
 		
 	}
@@ -12374,17 +12669,169 @@ focus = {
 		cost = 5
 		available = {
 			has_completed_focus = POL_zjednoczeni
+			CHI = {
+				exists = yes
+			}
+			MAN = {
+				exists = yes
+			}
 		}
 		prerequisite = {
 			focus = POL_zarzad_koloni_brytyjskich
-		}
-		prerequisite = {
 			focus = POL_unia_afrykanska
 		}
 
 		completion_reward = {
+			CHI = {
+				create_country_leader = {
+					name = "Ja-tsek Bartoczang"
+					picture = x
+					ideology = despotism
+				}
+			}
+			#play
+			MAN = {
+				create_country_leader = {
+					name = "Doktor Piotr Napierała"
+					picture = x
+					ideology = euro_liberalism
+				} 
+				
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.75
+				}
+		
+				set_cosmetic_tag = MAN_ekspedycja_kolonialna
+		
+
+					division_template = {
+						name = "Rekolonizatorzy"
+						priority = 1
+						division_names_group = MAN_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+						
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						create_unit = {
+							division = "name = \"Rekolonizatorzy\" division_template = \"Rekolonizatorzy\" start_experience_factor = 1.0" 
+							owner = MAN
+						}
+						
+					}
+				
+			}
+
+			POL = { puppet = MAN }
+
+			CHI = {
+				declare_war_on = {
+					target = MAN
+					type = annex_everything
+				}
+			}
+
 			create_wargoal = {
-				target = TIB
+				target = CHI
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MON
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TAN
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -12392,11 +12839,47 @@ focus = {
 				type = annex_everything
 			}
 			create_wargoal = {
+				target = KHM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TIB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NEP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BHU
+				type = annex_everything
+			}
+			create_wargoal = {
 				target = XSM
 				type = annex_everything
 			}
 			create_wargoal = {
-				target = CHI
+				target = GSM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NXM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PRC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SHX
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = XIC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SIC
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -12408,7 +12891,15 @@ focus = {
 				type = annex_everything
 			}
 			create_wargoal = {
-				target = SHX
+				target = GDC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SND
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = HBC
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -12416,13 +12907,10 @@ focus = {
 				type = annex_everything
 			}
 			create_wargoal = {
-				target = MAN
+				target = SIA
 				type = annex_everything
 			}
-			create_wargoal = {
-				target = PHI
-				type = annex_everything
-			}
+
 		}
 		
 	}
@@ -12469,6 +12957,7 @@ focus = {
 			GER = {
 				add_ideas = POL_chaos
 			}
+			add_ideas = POL_wilhelm
 		}
 	}
 	
@@ -12513,7 +13002,7 @@ focus = {
 			focus = POL_sen_wilhelma
 		}
 		available = {
-			GER = { exists = yes }
+			GER = { exists = no }
 			has_completed_focus = POL_powrot_do_europy
 			GER = {
 				has_civil_war = no
@@ -12594,47 +13083,56 @@ focus = {
 			has_army_manpower = { size > 700000 }
 		}
 		completion_reward = {
-			add_state_core = 8
-			add_state_core = 28
-			add_state_core = 912
-			add_state_core = 50
-			add_state_core = 978
-			add_state_core = 912
-			add_state_core = 54 
-			add_state_core = 53 
-			add_state_core = 52 
-			add_state_core = 42
-			add_state_core = 51
-			add_state_core = 55
-			add_state_core = 56
-			add_state_core = 59
-			add_state_core = 57
-			add_state_core = 58
-			add_state_core = 909
-			add_state_core = 61
-			add_state_core = 60
-			add_state_core = 65 
-			add_state_core = 66
-			add_state_core = 67
-			add_state_core = 64
-			add_state_core = 62
-			add_state_core = 68
-			add_state_core = 63 
-			add_state_core = 8
-			add_state_core = 5
-			add_state_core = 85
-			add_state_core = 807
-			add_state_core = 86
-			add_state_core = 762 
-			add_state_core = 763
-			add_state_core = 188
+			978 = { add_core_of = POL }
+			50 = { add_core_of = POL }
+			54 = { add_core_of = POL }
+			53 = { add_core_of = POL }
+			52 = { add_core_of = POL }
+			55 = { add_core_of = POL }
+			51 = { add_core_of = POL }
+			42 = { add_core_of = POL }
+			56 = { add_core_of = POL }
+			57 = { add_core_of = POL }
+			59 = { add_core_of = POL }
+			909 = { add_core_of = POL }
+			58 = { add_core_of = POL }
+			61 = { add_core_of = POL }
+			60 = { add_core_of = POL }
+			65 = { add_core_of = POL }
+			67 = { add_core_of = POL }
+			66 = { add_core_of = POL }
+			
+			64 = { add_core_of = POL }
+			62 = { add_core_of = POL }
+			68 = { add_core_of = POL }
+			63 = { add_core_of = POL }
+			8 = { add_core_of = POL }
+			763 = { add_core_of = POL }
+			5 = { add_core_of = POL }
+			85 = { add_core_of = POL }
+			807 = { add_core_of = POL }
+			86 = { add_core_of = POL }
+			102 = { add_core_of = POL }
+			912 = { add_core_of = POL }
+			188 = { add_core_of = POL }
+			976 = { add_core_of = POL }
+			4 = { add_core_of = POL }
+			152 = { add_core_of = POL }
+			153 = { add_core_of = POL }
+			848 = { add_core_of = POL }
+			39 = { add_core_of = POL }
+			853 = { add_core_of = POL }
+			72 = { add_core_of = POL }
+			75 = { add_core_of = POL }
+			972 = { add_core_of = POL }
+			28 = { add_core_of = POL }
 
 
 			set_capital = {
 				state = 64
 			}
 
-
+			puppet = GEN
 			
 
 			GEN = {
@@ -12760,8 +13258,6 @@ focus = {
 				transfer_state = 96
 				transfer_state = 94
 				transfer_state = 93
-				transfer_state = 91
-				transfer_state = 89
 			}
 			add_opinion_modifier = {
 				target = SOV
@@ -12790,9 +13286,94 @@ focus = {
 		available = {
 			has_completed_focus = POL_powrot_mocarstw_centralnych
 		}
+		bypass = {
+			LIT = { exists = no }
+			LAT = { exists = no }
+			EST = { exists = no }
+		}
 
 		completion_reward = {
-			#zaprosmy baltow do frakcji
+			
+			add_to_faction = LIT
+			add_to_faction = LAT
+
+			hidden_effect = {
+
+				LIT = {
+					add_state_core = 814
+					transfer_state = 814
+
+					add_state_core = 784
+					transfer_state = 784
+
+					add_state_core = 97
+					transfer_state = 97
+
+					add_state_core = 814
+					transfer_state = 814
+
+					add_state_core = 95
+					transfer_state = 95
+
+				set_politics = {
+					ruling_party = democratic
+				}
+				add_popularity = {
+				ideology = democratic
+				popularity = 0.40
+				}
+			}
+			SOV = {
+				transfer_state = 810
+			}
+			LAT = {
+
+					add_state_core = 12
+					transfer_state = 12
+
+					add_state_core = 808
+					transfer_state = 808
+
+					add_state_core = 809
+					transfer_state = 809
+
+					add_state_core = 190
+					transfer_state = 190
+
+					add_state_core = 811
+					transfer_state = 811
+
+					add_state_core = 812
+					transfer_state = 812
+
+					add_state_core = 13
+					transfer_state = 13
+
+					add_state_core = 191
+					transfer_state = 191
+
+					add_state_core = 813
+					transfer_state = 813
+
+
+
+				set_politics = {
+					ruling_party = democratic
+				}
+				add_popularity = {
+				ideology = democratic
+				popularity = 0.40
+				}
+			}
+			POL = { puppet = LIT }
+			POL = { puppet = LAT }
+
+			LIT = { set_cosmetic_tag = GREATER_LIT_neutrality }
+			LAT = { set_cosmetic_tag = BAL_UNIFIED_neutrality }
+				
+			}
+			
+			 
 		}
 	}
 
@@ -12831,7 +13412,7 @@ focus = {
 		completion_reward = {
 			if = {
 					limit = {
-						HOL = exists
+						HOL = { exists = yes }
 					}
 
 					create_wargoal = {
@@ -12841,7 +13422,7 @@ focus = {
 			}
 			if = {
 					limit = {
-						BEL = exists
+						BEL = { exists = yes }
 					}
 
 					create_wargoal = {
@@ -12851,7 +13432,7 @@ focus = {
 			}
 			if = {
 					limit = {
-						LUX = exists
+						LUX = { exists = yes }
 					}
 
 					create_wargoal = {
@@ -12863,7 +13444,7 @@ focus = {
 	}
 	
 	focus = {
-		id = POL_koncepcja_wspolnoty_gospodarzczej #dodaj fabrykiwojskowe
+		id = POL_koncepcja_wspolnoty_gospodarzczej 
 		icon = GFX_focus_AUS_the_evidenzburo_democratic
 		x = 0
 		y = 3
@@ -12871,6 +13452,52 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_Ponowne_zintegrowanie
+		}
+		completion_reward = {
+			every_faction_member = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
 		}
 	}
 
@@ -12936,8 +13563,7 @@ focus = {
 			focus = POL_pruski_militaryzm
 		}
 		completion_reward = {
-			#news event
-			#odblokowuje decyzje mittleeuropy
+			add_research_slot = 2
 		}
 	}
 
@@ -12969,7 +13595,8 @@ focus = {
 			focus = POL_powrot_mocarstw_centralnych
 		}
 		completion_reward = {
-			#dodaj do czech i wegier duchy podbijajajce demkow, jak beda mialy jej duzo to sie polaczą w federacje wyszechradzką
+			CZE = { add_ideas = { monarchist_support_var }}
+			HUN = { add_ideas = { monarchist_support_var }}
 		}
 	}
 
@@ -12986,7 +13613,12 @@ focus = {
 			focus = POL_powrot_mocarstw_centralnych
 		}
 		completion_reward = {
-			#dodaj bulgarie do frakcji, turcje
+			puppet = TUR
+			puppet = BUL
+			add_to_faction = TUR 
+			add_to_faction = BUL 
+			BUL = { set_cosmetic_tag = BUL_neutrality }
+			TUR = { set_cosmetic_tag = TUR_GREATER_TURKEY_neutrality }
 		}
 	}
 
@@ -13002,8 +13634,60 @@ focus = {
 		prerequisite = {
 			focus = POL_wzmocnienie_mittleeuropy
 		}
+		available = {
+			HUN = {
+			neutrality > 0.2
+			}
+			CZE = {
+			neutrality > 0.2
+			}
+		}
 		completion_reward = {
-			#bulgaria i turcja moga dostac rzeczy, a wyszechrad dyplomatycznie transylwanie i chorwacje
+			puppet = HUN 
+
+			transfer_state = 69
+			add_state_core = 69
+			transfer_state = 74
+			add_state_core = 74
+
+			TUR = {
+				annex_country = {
+					target = GRE
+				}
+				every_owned_state = {
+					add_core_of = TUR
+				}
+			}
+
+			HUN = {
+			transfer_state = 82
+			transfer_state = 764
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 45
+
+				annex_country = {
+					target = CZE
+				}
+				set_cosmetic_tag = HUN_AUS_danubian_state
+				every_owned_state = {
+					add_core_of = HUN
+				}
+			
+			BUL = {
+			transfer_state = 731 
+			transfer_state = 184
+			transfer_state = 106
+			transfer_state = 803
+			transfer_state = 971
+			transfer_state = 77 
+			}
+
+			GEN = {
+				transfer_state = 80
+			}
+			}
 		}
 	}
 
@@ -13044,7 +13728,14 @@ focus = {
 				target = DEN
 				type = annex_everything
 			}
-			#zapros szwecje i danie (warunek) do frakcji
+			create_wargoal = {
+				target = NOR
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = SWE
+				type = puppet_wargoal_focus
+			}
 		}
 	}
 
@@ -13058,7 +13749,16 @@ focus = {
 			focus = POL_hegemonia_niemiecka
 		}
 		completion_reward = {
-			#zaprasza pozostalepanstwa do frakcji (warunki)
+			add_to_faction = YUG
+			add_to_faction = ROM
+			add_to_faction = ALB
+			puppet = YUG
+			puppet = ALB
+			puppet = ROM
+			create_wargoal = {
+				target = ITA
+				type = puppet_wargoal_focus
+			}
 		}
 	}
 
@@ -13106,7 +13806,10 @@ focus = {
 			focus = POL_integracja_balkanska
 		}
 		completion_reward = {
-			#wywoluje domowke w usa z bidonem
+			USA = { start_civil_war = {
+				ideology = neutrality
+				size = 0.7
+			} }
 		}
 	}
 
@@ -13149,7 +13852,11 @@ focus = {
 			focus = POL_hegemonia_niemiecka
 		}
 		completion_reward = {
-			#daje cory
+			add_political_power = 300
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 25000
+			}
 		}
 	}
 
@@ -13163,7 +13870,11 @@ focus = {
 			focus = POL_Przywrocenie_granic_z_traktatu_brzeskego
 		}
 		completion_reward = {
-			#daje turcji cory na gruzje i krym
+			TUR = {
+			add_state_core = 230
+			add_state_core = 231
+			add_state_core = 137
+			}
 		}
 	}
 
@@ -13183,22 +13894,22 @@ focus = {
 			}
 			if = {
 					limit = {
-						UKR = exists
+						UKR = { exists = yes }
 					}
 
 					create_wargoal = {
 						target = UKR
-						type = annex_everything
+						type = puppet_wargoal_focus
 					}
 			}
 			if = {
 					limit = {
-						BLR = exists
+						BLR = { exists = yes }
 					}
 
 					create_wargoal = {
 						target = BLR
-						type = annex_everything
+						type = puppet_wargoal_focus
 					}
 			}
 			
@@ -13206,8 +13917,8 @@ focus = {
 	}
 
 	focus = {
-		id = POL_zadbanie_o_nasze_kolonie #napierdala napierdala bartoczanga, musza istniec chiny, jesli istnieja kom to zosataj zaanektowane
-		icon = GFX_focus_GER_eastern_grand_duchies
+		id = POL_zadbanie_o_nasze_kolonie
+		icon = GFX_focus_GER_create_asian_reichskommissariat
 		x = 4
 		y = 1
 		relative_position_id = POL_hegemonia_niemiecka
@@ -13215,7 +13926,7 @@ focus = {
 			focus = POL_hegemonia_niemiecka
 		}
 		completion_reward = {
-			#przekaz tsingdao nam
+			transfer_state = 743
 		}
 	}
 
@@ -13240,6 +13951,26 @@ focus = {
 		prerequisite = {
 			focus = POL_honolulu_i_papua
 		}
+		completion_reward = {
+			#event o buncie w afryce
+			every_state = {
+				limit = {
+					is_claimed_by = COG
+				}
+				transfer_state_to = COG
+			}
+			COG = {
+					create_country_leader = {
+						name = "Czerwony Jamal"
+						picture = x
+						ideology = stalinism
+					}
+					declare_war_on = {
+						target = POL
+						type = puppet_wargoal_focus
+					}
+			}
+		}
 	}
 
 	focus = {
@@ -13256,6 +13987,12 @@ focus = {
 		}
 		prerequisite = {
 			focus = POL_ostateczne_powalenie_trzeciego_kuzyna
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = puppet_wargoal_focus
+			}
 		}
 	}
 
