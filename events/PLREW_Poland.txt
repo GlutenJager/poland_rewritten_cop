@@ -294,7 +294,7 @@ country_event = { # Śmierć Janusza Korwina-Mikke
 	}
 	option = { # Pora na propolskie przywództwo na prawicy
 		name = PLREW_poland.1101.l
-		complete_national_focus = POL_przewrót_narodowców
+		complete_national_focus = POL_przewrot_narodowcow
 	}
 	option = { # tO WiNA żYDÓW!!!1!
 		name = PLREW_poland.1101.m

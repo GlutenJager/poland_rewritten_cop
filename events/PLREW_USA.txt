@@ -1,0 +1,340 @@
+﻿
+######################
+###PLREW###
+######################
+
+country_event = {
+    id = usa.177
+    title = usa.177.t
+    desc = usa.177.d
+    picture = GFX_event_pis_frakcje
+    is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+		release_puppet = PHI
+		name = usa.177.a
+		create_country_leader = {
+			name = "Joe Biden"
+			picture = "GFX_portraits_Joe_Biden"
+			ideology = conservatism
+		}
+       
+		hidden_effect = {
+
+		TRU = {transfer_state = 381 }
+		TRU = {transfer_state = 387 }
+		TRU = {transfer_state = 388 }
+		TRU = {transfer_state = 380 }
+		TRU = {transfer_state = 377 }
+		TRU = {transfer_state = 389 }
+		TRU = {transfer_state = 390 }
+		TRU = {transfer_state = 384 }
+		TRU = {transfer_state = 392 }
+		TRU = {transfer_state = 394 }
+		TRU = {transfer_state = 393 }
+		TRU = {transfer_state = 383 }
+		TRU = {transfer_state = 373 }
+		TRU = {transfer_state = 374 }
+		TRU = {transfer_state = 375 }
+		TRU = {transfer_state = 372 }
+		TRU = {transfer_state = 371 }
+		TRU = {transfer_state = 370 }
+		TRU = {transfer_state = 368 }
+		TRU = {transfer_state = 367 }
+		TRU = {transfer_state = 366 }
+		TRU = {transfer_state = 365 }
+		TRU = {transfer_state = 364 }
+		TRU = {transfer_state = 363 }
+		TRU = {transfer_state = 369 }
+		TRU = {transfer_state = 396 }
+		TRU = {transfer_state = 261 }
+		TRU = {transfer_state = 816 }
+		TRU = {transfer_state = 360 }
+		TRU = {transfer_state = 463}
+
+		TRU = {
+			division_template = {
+			name = "Rednecs"  	# Standard formation for frontline divisions
+
+			division_names_group = USA_INF_01
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+				engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+			}
+		}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 387
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 388
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 381
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 380
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 377
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 389
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 390
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 384
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 382
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 394
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 393
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 383
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 373
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 374
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 375
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 372
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 371
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 370
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 368
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 367
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 366
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 365
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 364
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 363
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 369
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 396
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 816
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 360
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 463
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 363
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 363
+				}create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+				create_unit = {
+					division = "name = \"Rednecs\" division_template = \"Rednecs\" start_experience_factor = 0.3" 
+					owner = TRU
+                    			                prioritize_location = 261
+				}
+
+			}			
+		}
+
+
+		
+        381 = { add_core_of = TRU }
+		388 = { add_core_of = TRU }
+		387 = { add_core_of = TRU }
+		380 = { add_core_of = TRU }
+		377 = { add_core_of = TRU }
+		389 = { add_core_of = TRU }
+		390 = { add_core_of = TRU }
+		384 = { add_core_of = TRU }
+		392 = { add_core_of = TRU }
+		394 = { add_core_of = TRU }
+		393 = { add_core_of = TRU }
+		383 = { add_core_of = TRU }
+		373 = { add_core_of = TRU }
+		374 = { add_core_of = TRU }
+		375 = { add_core_of = TRU }
+		372 = { add_core_of = TRU }
+		371 = { add_core_of = TRU }
+		370 = { add_core_of = TRU }
+		368 = { add_core_of = TRU }
+		367 = { add_core_of = TRU }
+		366 = { add_core_of = TRU }
+		365 = { add_core_of = TRU }
+		363 = { add_core_of = TRU }
+		369 = { add_core_of = TRU }
+		396 = { add_core_of = TRU }
+		261 = { add_core_of = TRU }
+		816 = { add_core_of = TRU }
+		360 = { add_core_of = TRU }
+		463 = { add_core_of = TRU }
+
+		386 = { add_core_of = TRU }
+		383 = { add_core_of = TRU }
+		379 = { add_core_of = TRU }
+		378 = { add_core_of = TRU }
+		382 = { add_core_of = TRU }
+		376 = { add_core_of = TRU }
+		391 = { add_core_of = TRU }
+		395 = { add_core_of = TRU }
+		358 = { add_core_of = TRU }
+		357 = { add_core_of = TRU }
+		359 = { add_core_of = TRU }
+		362 = { add_core_of = TRU }
+		361 = { add_core_of = TRU }
+		629 = { add_core_of = TRU }
+
+		TRU = {set_cosmetic_tag = TRU_kaczism }
+
+		}
+
+		 USA = {
+		declare_war_on = { target = TRU type = annex_everything }
+		}
+
+		
+	    
+	}
+}
+
+
+
+
+

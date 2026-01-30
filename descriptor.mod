@@ -8,6 +8,7 @@ tags={
 	"Graphics"
 }
 name="Poland Rewritten: Modern Day"
-path="mod/poland_rewritten"
-supported_version="1.17.*"
 picture="thumbnail.png"
+supported_version="1.17.*"
+path="C:/Users/Bartosz/Documents/Paradox Interactive/Hearts of Iron IV/mod/poland_rewritten"
+remote_file_id="3656235857"

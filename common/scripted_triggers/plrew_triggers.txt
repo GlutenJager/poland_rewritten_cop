@@ -64,6 +64,14 @@ centrum_is_avaliable = {
 		has_completed_focus = POL_opcja_dziwna
 	}
 }
+dziwne_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_prawica
+		has_completed_focus = POL_opcja_lewica
+		has_completed_focus = POL_opcja_anarchia
+		has_completed_focus = POL_opcja_centrum
+	}
+}
 lewica_is_avaliable = {
 	NOT = {
 		has_completed_focus = POL_opcja_prawica

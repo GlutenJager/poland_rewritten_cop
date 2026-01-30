@@ -96,14 +96,7 @@ guiTypes = {
 			size = { width = 255 height = 60 }
 			clipping = no
 					
-#			instantTextboxType = {
-#				name = "party"
-#				position = { x = 20 y = 2 }
-#				font = "hoi_18mbs"
-#				text = "party"
-#				maxWidth = 155
-#				maxHeight = 20
-#			}
+			
 			
 			instantTextboxType = { # ideologia
 				name = "ideology"

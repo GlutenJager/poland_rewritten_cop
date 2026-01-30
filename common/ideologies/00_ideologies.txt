@@ -113,7 +113,7 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 
-			post-kaczism = {
+			post_kaczism = {
 				can_be_randomly_selected = no
 			}
 		}
@@ -181,11 +181,14 @@ ideologies = {
 
 			# MOD
 
-			alt-left = {
+			alt_left = {
 				can_be_randomly_selected = no
 			}
 
 			narodowy_liberalizm = {
+				can_be_randomly_selected = no
+			}
+			agrarianism = {
 				can_be_randomly_selected = no
 			}
 		}
@@ -262,15 +265,11 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 
-			neo-korwinism = {
+			neo_korwinism = {
 				can_be_randomly_selected = no
 			}
 
-			agrarianism = {
-				can_be_randomly_selected = no
-			}
-
-			neo-kaczism = {
+			neo_kaczism = {
 				can_be_randomly_selected = no
 			}
 
