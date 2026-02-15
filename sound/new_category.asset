@@ -1,0 +1,8 @@
+######################################
+
+category = {
+ name = "Polish Speeches"
+ soundeffects = {
+	polske_trzeba_zlepperowac
+	}
+}

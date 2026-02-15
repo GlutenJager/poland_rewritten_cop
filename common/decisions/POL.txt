@@ -478,6 +478,10 @@ POL_po_europejska_dominacja = {
 			}
 			POL_bop_medium_decrease_effect = yes
 				puppet = { target = ESK }
+				set_autonomy = {
+					target = ESK
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -532,6 +536,10 @@ POL_po_europejska_dominacja = {
 				puppet = { target = ENI }
 
 			POL_bop_medium_decrease_effect = yes
+				set_autonomy = {
+					target = ENI
+					autonomy_state = autonomy_eu_member
+				}
 
 			}
         }
@@ -631,6 +639,11 @@ POL_po_europejska_dominacja = {
 				puppet = { target = EOS }
 
 			    	POL_bop_medium_decrease_effect = yes
+				
+				set_autonomy = {
+					target = EOS
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -694,6 +707,11 @@ POL_po_europejska_dominacja = {
 				puppet = { target = ORB }
 
 				POL_bop_medium_decrease_effect = yes
+
+				set_autonomy = {
+					target = ORB
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -837,6 +855,11 @@ POL_po_europejska_dominacja = {
 				puppet = { target = EUK }
 
 			    	POL_bop_medium_decrease_effect = yes
+
+				set_autonomy = {
+					target = EUK
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1022,6 +1045,11 @@ POL_eurokommisarat_moskowien = { # decyzja o eurokomisariacie Moskwy
 			}
 
 				puppet = { target = EMO }
+
+				set_autonomy = {
+					target = EMO
+					autonomy_state = autonomy_eu_member
+				}
 
 			}
         }
@@ -1285,6 +1313,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			}
 
 				puppet = { target = ETR }
+				set_autonomy = {
+					target = ETR
+					autonomy_state = autonomy_eu_member
+				}
 
 			}
         }
@@ -1377,6 +1409,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = ESH }
 
 			    	POL_bop_medium_decrease_effect = yes
+				set_autonomy = {
+					target = ESH
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1429,6 +1465,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = EIR }
 
 			    	POL_bop_low_decrease_effect = yes
+				set_autonomy = {
+					target = EIR
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1496,6 +1536,11 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = EEN }
 
 			    	POL_bop_medium_decrease_effect = yes
+
+				set_autonomy = {
+					target = EEN
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1538,6 +1583,11 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = EWL }
 
 			    	POL_bop_low_decrease_effect = yes
+
+				set_autonomy = {
+					target = EWL
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1598,6 +1648,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = ESC }
 
 			    	POL_bop_low_decrease_effect = yes
+				set_autonomy = {
+					target = ESC
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1681,6 +1735,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = ENP }
 
 			    	POL_bop_low_decrease_effect = yes
+				set_autonomy = {
+					target = ENP
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1750,6 +1808,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = EPA }
 
 			    	POL_bop_low_decrease_effect = yes
+				set_autonomy = {
+					target = EPA
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -1931,6 +1993,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = ITA }
 
 			    	POL_bop_low_decrease_effect = yes
+					set_autonomy = {
+					target = ITA
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -2049,6 +2115,11 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = EIB }
 
 			    	POL_bop_medium_decrease_effect = yes
+
+				set_autonomy = {
+					target = EIB
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -2161,6 +2232,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			}
 
 				puppet = { target = EQA }
+				set_autonomy = {
+					target = EQA
+					autonomy_state = autonomy_eu_member
+				}
 
 			}
         }
@@ -2273,6 +2348,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			}
 
 				puppet = { target = ETU }
+				set_autonomy = {
+					target = ETU
+					autonomy_state = autonomy_eu_member
+				}
 
 			}
         }
@@ -2322,6 +2401,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			    	POL_bop_low_decrease_effect = yes
 				CZE = {
 					set_cosmetic_tag = CZE_eurorepublik
+				}
+				set_autonomy = {
+					target = CZE
+					autonomy_state = autonomy_eu_member
 				}
 			}
         }
@@ -2376,6 +2459,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = SLO }
 
 			    	POL_bop_low_decrease_effect = yes
+					set_autonomy = {
+					target = SLO
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -2528,6 +2615,10 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				puppet = { target = YUG }
 
 			    	POL_bop_low_decrease_effect = yes
+				set_autonomy = {
+					target = yug
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -2822,7 +2913,14 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				set_politics = {
 					ruling_party = democratic
 				}
+
+				
 			}
+
+			set_autonomy = {
+					target = sau
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 
@@ -3228,7 +3326,12 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 				set_politics = {
 					ruling_party = democratic
 				}
+
 			}
+			set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_colony
+				}
 			}
         }
 
@@ -3656,6 +3759,11 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 				#set_cosmetic_tag =
 			}
 
+			set_autonomy = {
+					target = MAN
+					autonomy_state = autonomy_colony
+				}
+
 			#worldnew
 			}
         }
@@ -3930,6 +4038,10 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 				}
 				#set_cosmetic_tag =
 			}
+			set_autonomy = {
+					target = TRU
+					autonomy_state = autonomy_colony
+				}
 			}
         }
 
@@ -4233,6 +4345,11 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 					}
 				#set_cosmetic_tag =
 			}
+
+			set_autonomy = {
+					target = BRA
+					autonomy_state = autonomy_colony
+				}
 			}
         }
 
@@ -4344,7 +4461,7 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 
 				
 
-				BRA = {
+				MEX = {
 					create_country_leader = {
 						name = "Kartel Norte"
 						picture = x
@@ -4352,6 +4469,10 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 					}
 				#set_cosmetic_tag =
 			}
+			set_autonomy = {
+					target = MEX
+					autonomy_state = autonomy_colony
+				}
 			}
         }
 
@@ -4430,6 +4551,10 @@ POL_imperial_federation = { # decyzja o Federacji kolonialnej
 					}
 				#set_cosmetic_tag =
 			}
+			set_autonomy = {
+					target = ISR
+					autonomy_state = autonomy_eu_member
+				}
 			}
         }
 

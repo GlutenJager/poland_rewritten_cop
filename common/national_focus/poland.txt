@@ -1057,6 +1057,8 @@ focus_tree = {
 
 			# custom_effect_tooltip = POL_nowi_generalowie_doradcy
 			hidden_effect = {
+				play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 				set_cosmetic_tag = POL_kaczism
 				remove_ideas = POL_sejmersi
 				news_event = { id = PLREW_world_news.2 }
@@ -1120,7 +1122,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_opcja_ziobro
+		id = POL_opcja_ziobro 
 		icon = GFX_focus_POL_opcja_ziobro
 		x = -2
 		y = 1
@@ -1765,7 +1767,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POL_rozwalenie_gospodarki
+		id = POL_rozwalenie_gospodarki #event z stonoga i tez dzwiek
 		icon = GFX_focus_POL_rozwalenie_gospodarki
 		x = 0
 		y = 10
@@ -1788,6 +1790,10 @@ focus_tree = {
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
+			}
+			hidden_effect = {
+				play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 			}
 		}
 	}
@@ -4143,6 +4149,8 @@ focus_tree = {
 					popularity = 0.1
 				}
 				mark_focus_tree_layout_dirty = yes
+				play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 			}
 		}
 	}
@@ -4833,6 +4841,8 @@ focus_tree = {
 			remove_ideas = POL_wrogowie_wewnetrzni
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
+				play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 			}
 		}
 	}
@@ -5833,6 +5843,8 @@ focus_tree = {
 				}
 				promote_character = POL_grzegorz_braun
 				mark_focus_tree_layout_dirty = yes
+				play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 			}
 	}
 	}
@@ -6436,6 +6448,10 @@ focus_tree = {
 	}
 	completion_reward = {
 		POL = { country_event = PLREW_poland.46 }
+		hidden_effect = {
+			play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
+		}
 	}
 }
 
@@ -7239,6 +7255,8 @@ focus = {
 				}
 				promote_character = POL_robert_winnicki
 				mark_focus_tree_layout_dirty = yes
+				play_song = "Silencio"
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 			}
 		}
 		

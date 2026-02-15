@@ -1,0 +1,12 @@
+#################
+#Polish Speeches#
+#################
+
+soundeffect = {
+	name = "polske_trzeba_zlepperowac"
+	sounds = {
+		sound = polske_trzeba_zlepperowac
+	}
+	volume = 1.5
+}
+
