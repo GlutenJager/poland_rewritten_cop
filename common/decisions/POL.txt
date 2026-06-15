@@ -128,17 +128,13 @@ POL_civil_war_decisions = {
 				UKR = {
                     set_state_owner = 91
                     set_state_owner = 89
+					set_state_owner = 93
 
                     set_state_controller = 91
                     set_state_controller = 89
+					set_state_controller = 93
 
 					set_cosmetic_tag = UKR_UPA
-					declare_war_on = {
-						target = PSX
-					}
-					declare_war_on = {
-						target = POL
-					}
                     set_politics = { ruling_party = fascism }
                     add_popularity = {
                         ideology = fascism
@@ -195,32 +191,97 @@ POL_civil_war_decisions = {
 							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
 							owner = UKR
 						}
+					}
+				}
+
+				BLR = {
+                    set_state_owner = 94
+                    set_state_owner = 95
+					set_state_owner = 96
+
+                    set_state_controller = 94
+                    set_state_controller = 95
+					set_state_controller = 96
+
+                    set_politics = { ruling_party = communism }
+                    add_popularity = {
+                        ideology = communism
+                        popularity = 1
+                    }
+                    add_popularity = {
+                        ideology = communism
+                        popularity = 0.7
+                    }
+					division_template = {
+						name = "Białoruskie legiony chłopskie"
+						priority = 1
+						division_names_group = BLR_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+						prioritize = { 94 }
 						create_unit = {
-							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
-							owner = UKR
+							division = "name = \"Białoruskie legiony chłopskie\" division_template = \"Białoruskie legiony chłopskie\" start_experience_factor = 1.0" 
+							owner = BLR
 						}
 						create_unit = {
-							division = "name = \"Ukraińska Powstańcza Armia\" division_template = \"Ukraińska Powstańcza Armia\" start_experience_factor = 1.0" 
-							owner = UKR
+							division = "name = \"Białoruskie legiony chłopskie\" division_template = \"Białoruskie legiony chłopskie\" start_experience_factor = 1.0" 
+							owner = BLR
+						}
+						create_unit = {
+							division = "name = \"Białoruskie legiony chłopskie\" division_template = \"Białoruskie legiony chłopskie\" start_experience_factor = 1.0" 
+							owner = BLR
+						}
+						create_unit = {
+							division = "name = \"Białoruskie legiony chłopskie\" division_template = \"Białoruskie legiony chłopskie\" start_experience_factor = 1.0" 
+							owner = BLR
+						}
+						create_unit = {
+							division = "name = \"Białoruskie legiony chłopskie\" division_template = \"Białoruskie legiony chłopskie\" start_experience_factor = 1.0" 
+							owner = BLR
 						}
 					}
 				}
 
-				POL = {
+                
+				
+				PSX = {
+					declare_war_on = {
+						target = BLR
+						type = annex_everything
+					}
 					declare_war_on = {
 						target = UKR
 						type = annex_everything
 					}
 				}
-                
-				every_country = {
-					limit = {
-						original_tag = POL
+
+				POL = {
+					declare_war_on = {
+						target = BLR
+						type = annex_everything
 					}
 					declare_war_on = {
 						target = UKR
+						type = annex_everything
 					}
 				}
+				
 			}
 
 		}
@@ -300,6 +361,179 @@ POL_pis_polityka_zagraniczna = {
             }
         }
     }
+
+	POL_rekompensata_rumuńska = { # decyzja o oddaniu Węgrom Słowacji (stan 69)
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+            controls_state = 69              # Bratysława (Słowacja)
+                     # Czechosłowacja nie może istnieć
+
+            HUN = {
+				AND = {
+					exists = yes
+					OR = {
+						is_in_faction_with = POL
+						is_subject_of = POL
+					}
+				}
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+        }
+
+        fire_only_once = yes
+        days_remove = 15
+        
+        cost = 20
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        complete_effect = {
+        
+            ROM = {
+				transfer_state = 69
+                add_state_core = 69
+
+            }
+        }
+    }
+
+	POL_konfederacja_renska = { # decyzja o oddaniu Węgrom Słowacji (stan 69)
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+            controls_state = 69              # Bratysława (Słowacja)
+                     # Czechosłowacja nie może istnieć
+
+            HUN = {
+				AND = {
+					exists = yes
+					OR = {
+						is_in_faction_with = POL
+						is_subject_of = POL
+					}
+				}
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+        }
+
+        fire_only_once = yes
+        days_remove = 15
+        
+        cost = 20
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        complete_effect = {
+        
+            HUN = {
+				transfer_state = 69
+                add_state_core = 69
+
+            }
+        }
+    }
+
+	POL_protektorat_lechistanu = { # rosja zmienia sie w lechistan i rzadzi tam cyborg lech kaczynski
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+            controls_state = 69              # Bratysława (Słowacja)
+                     # Czechosłowacja nie może istnieć
+
+            HUN = {
+				AND = {
+					exists = yes
+					OR = {
+						is_in_faction_with = POL
+						is_subject_of = POL
+					}
+				}
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+        }
+
+        fire_only_once = yes
+        days_remove = 15
+        
+        cost = 20
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        complete_effect = {
+        
+            HUN = {
+				transfer_state = 69
+                add_state_core = 69
+
+            }
+        }
+    }
+
+	POL_cokolwiek = { # event niech bedzie pochwalony jaroslaw kaczynski i zbigniew ziobro zawsze dziewica, polska naszych marzen,w tle jaroslaw kaczynski sloncem nam jest
+
+        icon = decision_generic_nationalism
+
+        available = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+            controls_state = 69              # Bratysława (Słowacja)
+                     # Czechosłowacja nie może istnieć
+
+            HUN = {
+				AND = {
+					exists = yes
+					OR = {
+						is_in_faction_with = POL
+						is_subject_of = POL
+					}
+				}
+            }
+        }
+
+        visible = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+        }
+
+        fire_only_once = yes
+        days_remove = 15
+        
+        cost = 20
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        complete_effect = {
+        
+            HUN = {
+				transfer_state = 69
+                add_state_core = 69
+
+            }
+        }
+    }
+
 }
 
 POL_po_europejska_dominacja = {

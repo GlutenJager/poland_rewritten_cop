@@ -1152,6 +1152,75 @@ POL_samuela_torkowska = {
 			
 	}
 
+	POL_klaun_z_koszalina = {
+		name = "Klaun z Koszalina"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_kto_doradcow_wybral_z_cyrku
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_szur = {
+		name = "Szur Szurski"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_kto_doradcow_wybral_z_cyrku
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_seba = {
+		name = "Seba Narodowy"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_kto_doradcow_wybral_z_cyrku
+			}
+		}
+			skill = 4
+			attack_skill = 12
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		} 
+			
+	}
+
 
 
 
@@ -1989,15 +2058,7 @@ POL_samuela_torkowska = {
 				large = "GFX_portraits_Elzbieta_Witek"
 			}
 		}
-		corps_commander = {
-			visible = { has_completed_focus = POL_opcja_pis }
-			traits = { }
-			skill = 4
-			attack_skill = 6
-			defense_skill = 4
-			planning_skill = 6
-			logistics_skill = 2
-		}
+		
 		field_marshal = {
 			visible = { has_completed_focus = POL_opcja_pis }
 			traits = { }
@@ -2030,6 +2091,25 @@ POL_samuela_torkowska = {
 			logistics_skill = 2
 		}
 	}
+	POL_marcin_romanowski = {
+		name = "Marcin Romanowski"
+		portraits = {
+			army = {
+				large = "GFX_portraits_Marcin_Romanowski"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				has_completed_focus = POL_powrot_rymanowskiego 	
+			}
+			traits = { fortress_buster guerilla_fighter politically_connected }
+			skill = 3
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
 	POL_adrian_klarenbach = {
 		name = "Adrian Klarenbach"
 		portraits = {
@@ -2044,7 +2124,7 @@ POL_samuela_torkowska = {
 					has_completed_focus = POL_emerytura_w_szwecji
 				}
 			}
-			traits = { }
+			traits = { politically_connected }
 			skill = 3
 			attack_skill = 4
 			defense_skill = 4
@@ -2061,7 +2141,7 @@ POL_samuela_torkowska = {
 		}
 		corps_commander = {
 			visible = { has_completed_focus = POL_emerytura_w_szwecji }
-			traits = { }
+			traits = { politically_connected }
 			skill = 3
 			attack_skill = 7
 			defense_skill = 5
@@ -2083,7 +2163,7 @@ POL_samuela_torkowska = {
 				has_completed_focus = POL_opcja_centrum
 				}
 		}
-			traits = { }
+			traits = { infantry_expert }
 			skill = 3
 			attack_skill = 8
 			defense_skill = 4
@@ -2100,7 +2180,7 @@ POL_samuela_torkowska = {
 		}
 		corps_commander = {
 			visible = { has_completed_focus = POL_opcja_pis }
-			traits = { }
+			traits = { cavalry_officer }
 			skill = 3
 			attack_skill = 4
 			defense_skill = 5

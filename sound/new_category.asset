@@ -4,5 +4,9 @@ category = {
  name = "Polish Speeches"
  soundeffects = {
 	polske_trzeba_zlepperowac
+	hymn_pisu
+	pis_wygrywa
+	red_duck_in_the_sky
+	stonoga
 	}
 }

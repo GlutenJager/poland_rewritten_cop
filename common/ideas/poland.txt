@@ -47,6 +47,20 @@ country = {
             }
         }
 
+        POL_brzozowy_zawrot_głowy = {
+            picture = jp2
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.005
+                political_power_gain = 0.20
+                consumer_goods_factor = -0.05
+                supply_consumption_factor = 0.1
+            }
+        }
+
 		POL_jp2 = {
             picture = jp2
 
@@ -84,6 +98,19 @@ country = {
                 army_org = -10
                 command_power_gain = -0.05
                 army_chief_cost_factor = 0.15
+            }
+        }
+         POL_zatruta_wisla = {
+            picture = zatruta_wisla
+
+            allowed = {
+                original_tag = POL
+            }
+
+            modifier = {
+                supply_consumption_factor = 0.1
+                stability_factor = -0.05
+                research_speed_factor = -0.1
             }
         }
         POL_broken_justice_system = {

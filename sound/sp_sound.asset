@@ -1,5 +1,29 @@
 sound = 
 {
 	name = "polske_trzeba_zlepperowac"
-	file = "pol_speech/plzlep.wav"
+	file = "focus/plzlep.wav"
+}
+
+sound = 
+{
+	name = "hymn_pisu"
+	file = "focus/hymnpis.wav"
+}
+
+sound = 
+{
+	name = "pis_wygrywa"
+	file = "focus/piswygryw.wav"
+}
+
+sound = 
+{
+	name = "stonoga"
+	file = "focus/stonoga.wav"
+}
+
+sound = 
+{
+	name = "red_duck_in_the_sky"
+	file = "focus/red_duck_in_the_sky.wav"
 }

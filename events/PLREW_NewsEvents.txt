@@ -6,6 +6,8 @@ news_event = { #lepper
 	desc = PLREW_world_news.1.d
 	picture = GFX_world_news_lepper
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 
 	option = {
 		name = PLREW_world_news.1.o1
@@ -17,6 +19,8 @@ news_event = { #PIS
 	desc = PLREW_world_news.2.d
 	picture = GFX_world_news_pis
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 
 	option = {
 		name = PLREW_world_news.2.o1
@@ -166,6 +170,32 @@ news_event = {
 	
 	option = {
 		name = PLREW_world_news.13.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.14 #przewrót polskiej szlachty w prusach wschodnich
+	title = PLREW_world_news.14.t
+	desc = PLREW_world_news.14.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.14.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.15 #regnum kaczanum (znaleziono lecha)
+	title = PLREW_world_news.15.t
+	desc = PLREW_world_news.15.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.15.o1
 	}
 }
 

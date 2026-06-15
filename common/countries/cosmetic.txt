@@ -670,13 +670,17 @@ TBE_third_bulgarian_empire_neutrality = {
 }
 
 # PLREW
-POL_IV_Rp = {
-	color = rgb { 44 28 84 }
-	color_ui = rgb { 44 28 84 }
-}
 PAL_braun = {
 	color = hsv { 0.05 0.3 1 }
 	color_ui = hsv { 0.05 0.25 1.2 }
+}
+POL_regnum_kaczanum = {
+	color = rgb { 150 50 20  }
+	color_ui = rgb { 150 50 20  }
+}
+POL_imperium_smolenskie = {
+	color = rgb { 150 50 20  }
+	color_ui = rgb { 150 50 20  }
 }
 POL_korona_krolestwa_polskiego = {
 	color = rgb { 188 35 36 }
@@ -845,6 +849,10 @@ POL_lepperism_prl = {
 POL_kaczism = {
 	color = rgb { 44 28 84 }
 	color_ui = rgb { 44 28 84 }
+}
+POL_iv_rp = {
+	color = rgb { 30 6 140 }
+	color_ui = rgb { 30 6 140 }
 }
 POL_konfa = {
 	color = rgb { 180 30 30 }

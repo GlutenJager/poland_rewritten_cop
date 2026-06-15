@@ -110,9 +110,6 @@ country_event = { # oPOzycja strajkuje
 	option = {
 		name = PLREW_poland.5.k
 	}
-	option = {
-		name = PLREW_poland.5.l
-	}
 }
 # 6
 country_event = { # Ojciec Dyrektor
@@ -609,6 +606,7 @@ country_event = {
 	title = PLREW_poland.16.t
 	desc = PLREW_poland.16.d
 
+	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
@@ -1545,7 +1543,7 @@ country_event = { #ultimatum na sowieta europejskie ukraina
 	desc = PLREW_poland.36.d
 
 	picture = GFX_report_event_lithuanian_ultimatum
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Sure!
@@ -2134,6 +2132,637 @@ country_event = { # niemcy mnie biją
 	}
 }
 
+#ultimatum dla RUMUNI PIS
+country_event = {
+	id = PLREW_poland.61
+	title = PLREW_poland.61.t
+	desc = PLREW_poland.61.d
+	
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.61.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.6101 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.61.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = refused_help }
+			country_event = { hours = 2 id = PLREW_poland.6102 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+#Spain says yes
+country_event = {
+	id = PLREW_poland.6101
+	title = PLREW_poland.6101.t
+	desc = PLREW_poland.6101.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.6101.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			puppet = { target = FROM }
+		}
+	}
+}
+
+#spain says no
+country_event = {
+	id = PLREW_poland.6102
+	title = PLREW_poland.6102.t
+	desc = PLREW_poland.6102.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.6102.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+
+
+#ultimatum dla RUMUNI oddaj moldawie PIS
+country_event = {
+	id = PLREW_poland.62
+	title = PLREW_poland.62.t
+	desc = PLREW_poland.62.d
+	
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.62.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.6201 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.62.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = refused_help }
+			country_event = { hours = 2 id = PLREW_poland.6202 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+#Spain says yes
+country_event = {
+	id = PLREW_poland.6201
+	title = PLREW_poland.6201.t
+	desc = PLREW_poland.6201.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.6201.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			transfer_state = 78
+			transfer_state = 79
+			transfer_state = 80
+			transfer_state = 766
+		}
+	}
+}
+
+#spain says no
+country_event = {
+	id = PLREW_poland.6202
+	title = PLREW_poland.6202.t
+	desc = PLREW_poland.6202.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.6202.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+
+
+
+#pis rzada zjednoczenia jugo
+country_event = {
+	id = PLREW_poland.63
+	title = PLREW_poland.63.t
+	desc = PLREW_poland.63.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.63.a
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.6301 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.63.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.6302 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.6301
+	title = PLREW_poland.6301.t
+	desc = PLREW_poland.6301.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.6301.a
+		ai_chance = {
+			base = 30
+		}
+		annex_country = { target = FROM transfer_troops = yes }
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.6302
+	title = PLREW_poland.6302.t
+	desc = PLREW_poland.6302.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.6302.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+
+
+
+
+
+
+#ultimatum dla danii
+country_event = {
+	id = PLREW_poland.64
+	title = PLREW_poland.64.t
+	desc = PLREW_poland.64.d
+	
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.64.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.6401 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.64.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = refused_help }
+			country_event = { hours = 2 id = PLREW_poland.6402 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+#Spain says yes
+country_event = {
+	id = PLREW_poland.6401
+	title = PLREW_poland.6401.t
+	desc = PLREW_poland.6401.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.6401.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			transfer_state = 910
+		}
+	}
+}
+
+#spain says no
+country_event = {
+	id = PLREW_poland.6402
+	title = PLREW_poland.6402.t
+	desc = PLREW_poland.6402.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.6402.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+
+
+
+
+#ultimatum dla reichu PIS
+country_event = {
+	id = PLREW_poland.65
+	title = PLREW_poland.65.t
+	desc = PLREW_poland.65.d
+	
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.65.a
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.6501 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.65.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = refused_help }
+			country_event = { hours = 2 id = PLREW_poland.6502 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+#Spain says yes
+country_event = {
+	id = PLREW_poland.6501
+	title = PLREW_poland.6501.t
+	desc = PLREW_poland.6501.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.6501.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			transfer_state = 762
+			transfer_state = 67
+			transfer_state = 807
+			transfer_state = 86
+			transfer_state = 85
+		}
+	}
+}
+
+#spain says no
+country_event = {
+	id = PLREW_poland.6502
+	title = PLREW_poland.6502.t
+	desc = PLREW_poland.6502.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.6502.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+
+	option = { #moze stop
+		name = PLREW_poland.6502.b
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
+
+country_event = { 
+	id = PLREW_poland.66
+	title = PLREW_poland.66.t
+	desc = PLREW_poland.66.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.66.o1
+	}
+}
 
 ###########################
 # Work In Progress Events
@@ -2150,7 +2779,7 @@ country_event = { # Kaminski - bojka z antkiem
 
 		tag = POL
 		has_completed_focus = POL_opcja_macierewicz
-		date > 1937.12.30
+		date = 1937.12.30
 	}
 
 	option = {
@@ -2168,9 +2797,8 @@ country_event = { # Braun gasi chanuke
 	trigger = {
 
 		tag = POL
-		date > 1939.1.15
+		date = 1939.1.15
 		NOT = { 
-			original_tag = POL
 			has_completed_focus = POL_braun
 			has_completed_focus = POL_opcja_macierewicz
 			has_completed_focus = POL_opcja_kamraci
@@ -2188,7 +2816,12 @@ country_event = { # Niemcy wypowiadają nam wojnę
 	desc = POL_mod_events.17.d
 	picture = GFX_MOD_event_niemcy_wypowiadaja_wojne
 	fire_only_once = yes
-	is_triggered_only = yes
+	
+	trigger = {
+		tag = POL
+		has_war_with = GER
+		NOT = { has_completed_focus = POL_opcja_tusk }
+	}
 
 	option = {
 		name = POL_mod_events.17.o1
@@ -2203,7 +2836,13 @@ country_event = { # Niemcy w waszawie
 	desc = POL_mod_events.18.d
 	picture = GFX_MOD_event_niemcy_wypowiadaja_wojne
 	fire_only_once = yes
-	is_triggered_only = yes
+
+	trigger = {
+		tag = POL
+		has_war_with = GER
+		10 = { is_controlled_by = GER }
+		NOT = { has_completed_focus = POL_opcja_tusk }
+	}
 
 	option = {
 		name = POL_mod_events.18.o1

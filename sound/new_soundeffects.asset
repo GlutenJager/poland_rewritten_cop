@@ -10,3 +10,34 @@ soundeffect = {
 	volume = 1.5
 }
 
+soundeffect = {
+	name = "hymn_pisu"
+	sounds = {
+		sound = hymn_pisu
+	}
+	volume = 1.5
+}
+
+soundeffect = {
+	name = "pis_wygrywa"
+	sounds = {
+		sound = pis_wygrywa
+	}
+	volume = 1.5
+}
+
+soundeffect = {
+	name = "stonoga"
+	sounds = {
+		sound = stonoga
+	}
+	volume = 1.5
+}
+
+soundeffect = {
+	name = "red_duck_in_the_sky"
+	sounds = {
+		sound = red_duck_in_the_sky
+	}
+	volume = 1.5
+}
