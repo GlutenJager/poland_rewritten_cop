@@ -2764,6 +2764,19 @@ country_event = {
 	}
 }
 
+country_event = { #event o rafinerii w gdańsku
+	id = PLREW_poland.67
+	title = PLREW_poland.67.t
+	desc = PLREW_poland.67.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.67.o1
+	}
+}
+
 ###########################
 # Work In Progress Events
 ###########################

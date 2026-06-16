@@ -983,6 +983,9 @@ focus_tree = {
 			}
 			add_political_power = 200
 			every_owned_state = {
+				limit = {
+					is_core_of = POL
+				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1123,7 +1126,7 @@ focus_tree = {
 			focus = POL_mlodziez_wszechpolska_focus
 		}
 		completion_reward = {
-			custom_effect_tooltip = nowi_generalowie
+			custom_effect_tooltip = POL_nowy_doradca
 		}
 	}	
 
@@ -1221,7 +1224,7 @@ focus_tree = {
 				country_leader = {
 					ideology = kaczism
 					expire = "1965.1.1.1"
-					traits = { mod_pan_prezes dictator }
+					traits = { mod_pan_prezes dictator mod_kaczafi }
 					id=-1
 				}
 			}
@@ -1268,6 +1271,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0
 			}
+			add_ideas = POL_kaczafi_spirit
 			hidden_effect = {
 				promote_character = POL_zbigniew_ziobro
 				mark_focus_tree_layout_dirty = yes
@@ -1306,6 +1310,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.1
 			}
+			add_ideas = POL_kaczafi_spirit
 			hidden_effect = {
 				promote_character = POL_janusz_kowalski
 				mark_focus_tree_layout_dirty = yes
@@ -1340,6 +1345,7 @@ focus_tree = {
 					id=-1
 				}
 			}
+			add_ideas = POL_kaczafi_spirit
 			add_stability = 0.1
 			add_popularity = {
 				ideology = democratic
@@ -1384,6 +1390,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.15
 			}
+			add_ideas = POL_kaczafi_spirit
 			hidden_effect = {
 				promote_character = POL_rada_liderow_pis
 				mark_focus_tree_layout_dirty = yes
@@ -1806,7 +1813,33 @@ focus_tree = {
 		cost = 2.86
 		prerequisite = {
 			focus = POL_dziedzictwo_olszewskiego	
-		}#dodaj firme produkującą wyp piechoty o nazwie kaczka
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
 	}
 	focus = {
 		id = POL_menel_europy
@@ -1927,7 +1960,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { 
-					ROOT = {
+					POL = {
 						has_country_leader = {
 							character = POL_jaroslaw_kaczynski
 							ruling_only = yes
@@ -3370,6 +3403,16 @@ focus_tree = {
 					picture = x
 					ideology = conservatism
 				}
+				create_country_leader = {
+					name = "Wiktor Orban"
+					picture = x
+					ideology = stalinism
+				}
+				create_country_leader = {
+					name = "Wiktor Orban"
+					picture = x
+					ideology = despotism
+				}
 			}
 			puppet = HUN
 		}
@@ -3757,6 +3800,9 @@ focus_tree = {
 				}
 				}
 				add_core_of = POL
+			}
+			annex_country = {
+				target = HUN
 			}
 			create_wargoal = {
 				target = SPA
@@ -4362,10 +4408,10 @@ focus_tree = {
 			focus = POL_opcja_konfa
 		}
 		completion_reward = {
-			add_stability = 0.15
-			add_party_popularity = {
+			add_stability = 0.05
+			add_popularity = {
 				ideology = neutrality
-				popularity = 0.15
+				popularity = 0.1
 			}
 		}
 	}
@@ -4401,6 +4447,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.10
 			}
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -4414,6 +4461,7 @@ focus_tree = {
 			focus = POL_likwidacja_dochodowego
 		}
 		completion_reward = {
+			remove_ideas = POL_european_pressure
 			# dodaj generalow bosaka i mentzena
 		}
 	}
@@ -4777,7 +4825,30 @@ focus_tree = {
 			focus = POL_przejrzenie_wiplera
 		}
 		completion_reward = {
-			remove_ideas = POL_european_pressure
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 		}
 		
 	}
@@ -4946,6 +5017,10 @@ focus_tree = {
 			focus = POL_gandalf_bialy
 		}
 		completion_reward = {
+			add_ideas = free_trade
+			every_state = {
+				add_core_of = POL
+			}
 			94 = { remove_core_of = BLR }
 				95 = { remove_core_of = BLR }
 				96 = { remove_core_of = BLR }
@@ -5131,10 +5206,8 @@ focus_tree = {
 			focus = POL_browar_mentzen
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = POL_fixed_justice_system
-				add_idea = POL_private_lawyers
-			}
+			add_ideas = POL_private_lawyers
+			
 		}
 	}
 	focus = {
@@ -5299,7 +5372,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = free_trade
-			add_ideas = POL_zerowy_pit
 		}
 	}
 	focus = {
@@ -5931,7 +6003,7 @@ focus_tree = {
 
 
 	focus = {
-		id = POL_ustawa_lobbystowska #dodaje duch wplywy lobbystow
+		id = POL_ustawa_lobbystowska 
 		icon = GFX_focus_POL_ustawa_lobbystowska
 		x = -6
 		y = 9
@@ -5945,7 +6017,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_rozwiazanie_kwestii_korwinowskiej
+		id = POL_rozwiazanie_kwestii_korwinowskiej #remowe zlych generalow
 		icon = GFX_focus_POL_rozwiazanie_kwestii_korwinowskiej
 		x = -4
 		y = 11
@@ -5982,6 +6054,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_ujarzmienie_aspergika
 		}
+		completion_reward = {
+			add_ideas = POL_cesarz_spirit
+		}
 	}
 	focus = {
 		id = POL_inba_naftowa
@@ -5993,9 +6068,23 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_liberalizm_nie_taki_dobry
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+		}
 	}
 	focus = {
-		id = POL_dofinansowanie_abw #zawiaz abw
+		id = POL_dofinansowanie_abw 
 		icon = GFX_focus_POL_dofinansowanie_abw
 		x = -6
 		y = 7
@@ -6017,7 +6106,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_inba_z_ukrainskim_zbozem #cel wojenny na upa
+		id = POL_inba_z_ukrainskim_zbozem 
 		icon = GFX_focus_POL_inba_z_ukrainskim_zbozem
 		x = -4
 		y = 8
@@ -6026,9 +6115,12 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_ujarzmienie_aspergika
 		}
+		completion_reward = {
+			add_manpower = 400000
+		}
 	}
 	focus = {
-		id = POL_powrot_do_socjali #dodaj 500 plus
+		id = POL_powrot_do_socjali
 		icon = GFX_focus_POL_powrot_do_sociali
 		x = -4
 		y = 10
@@ -6042,7 +6134,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_umowy_z_wielkimi_koncernami #dodaj fabryki
+		id = POL_umowy_z_wielkimi_koncernami 
 		icon = GFX_umowy_z_wielkimi_koncernami
 		x = -6
 		y = 8
@@ -6067,7 +6159,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_konfedepis #wipler zostaje agentem i dodaje sie mechanika frakcyjnosci pisu, gdzie zostaje on liderem koliberalnego pisu
+		id = POL_konfedepis 
 		icon = GFX_focus_POL_konfedepis
 		x = -4
 		y = 12
@@ -6082,9 +6174,42 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_negocjacje_z_obajtkiem
 		}
+		completion_reward = {
+			set_party_name = {
+			ideology = democratic
+			long_name = PiS_CENTRUM_LONG
+			name = PiS_CENTRUM_SHORT
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = PiS_LEWICA_LONG
+			name = PiS_LEWICA_SHORT
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = PiS_PRAWICA_LONG
+			name = PiS_PRAWICA_SHORT
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = NIEPODLEGLOSC_LONG
+			name = NIEPODLEGLOSC_SHORT
+		}
+		create_country_leader = {
+			name = "Dominik Tarczyński"
+			picture = x
+			ideology = alt_left
+		}
+		create_country_leader = {
+			name = "Beata Szydło"
+			picture = x
+			ideology = leninism
+		}
+		promote_character = POL_jaroslaw_kaczynski
+		}
 	}
 	focus = {
-		id = POL_pisowska_taktyka_ue #duch menel europy jak na pisie
+		id = POL_pisowska_taktyka_ue 
 		icon = GFX_focus_POL_pisowska_taktyka_w_ue
 		x = -4
 		y = 13
@@ -6103,9 +6228,6 @@ focus_tree = {
 				popularity = 0.10
 			}
 			
-			hidden_effect = {
-				remove_ideas = POL_european_pressure
-			}
 		}
 	}
 
@@ -17186,7 +17308,19 @@ focus = {
 			focus = POL_produkcja_taniej_artylerii
 		}
 		completion_reward = {
-			# boost do research speed
+			add_research_slot = 1
+			add_tech_bonus = {
+    		name = przemysl_wojskowy
+    		bonus = 0.5
+    		uses = 3
+    		category = infantry_weapons
+			}
+			add_tech_bonus = {
+    		name = przemysl_wojskowy_armaty
+    		bonus = 0.6
+    		uses = 1
+    		category = artillery
+			}
 		}
 	}
 	focus = {
@@ -17398,6 +17532,12 @@ focus = {
 		}
 		completion_reward = {
 			add_ideas = POL_za_wielka_polske_spirit
+			add_tech_bonus = {
+    		name = doktryna
+    		bonus = 0.5
+    		uses = 2
+    		category = land_doctrine
+			}
 		}
 	}
 
@@ -17411,19 +17551,24 @@ focus = {
 
 	focus = {
 		id = POL_przebudzenie_polskiej_gospodarki
-		icon = GFX_goal_unknown
-		cost = 0
+		icon = GFX_focus_generic_monetary_union
+		cost = 2
 		x = 48
 		y = 1
 		completion_reward = {
-			# + pp, stabilka i 1 research slot
-			# wypełnia focusy: wydobycie, przemysl, strat. inwestycje
+			add_political_power = 300
+			add_stability = 0.05
+			add_research_slot = 1
+			complete_national_focus = POL_wydobycie
+			complete_national_focus = POL_przemysl
+			complete_national_focus = POL_strategiczne_inwestycje
+			complete_national_focus = POL_szkoły_ekonomiczne
 		}
 	}
 
 	focus = {
 		id = POL_wydobycie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = {
 			focus = POL_przebudzenie_polskiej_gospodarki
 		}
@@ -17432,75 +17577,136 @@ focus = {
 		y = 2
 		relative_position_id = POL_przebudzenie_polskiej_gospodarki
 		completion_reward = {
-			# nic, automatycznie się robi
+			add_political_power = 5
 		}
 	}
 
 	focus = {
-		id = POL_poszukiwanie_ropy #wymysle nazwy jakies ciekawe
-		icon = GFX_goal_unknown
+		id = POL_poszukiwanie_ropy 
+		icon = GFX_focus_generic_american_investments
 		prerequisite = {
 			focus = POL_wydobycie
 		}
-		cost = 0
+		cost = 5
 		x = -2
 		y = 1
 		relative_position_id = POL_wydobycie
 		completion_reward = {
-			# zwieksza jednostki ropy w kraju
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = POL_rafineria_w_gdansku
-		icon = GFX_goal_unknown # szejkowie arabscy
+		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = {
 			focus = POL_poszukiwanie_ropy
 		}
-		cost = 0
+		cost = 4
 		x = -2
 		y = 2
 		relative_position_id = POL_wydobycie
+		available = {
+			has_full_control_of_state = 807
+			has_full_control_of_state = 85
+		}
 		completion_reward = {
-			# to co w tytule
-			# planuję dodać jakiś smaczek dotyczący afery... czyli event pojawiajacy sie jesli idziesz w pis
-			# ... z obajtkiem i arabia saud. (ścieżka pisu)
+			807 = {
+			add_building_construction = {
+				type = fuel_silo
+				level = 3
+			}
+			
+		}
+		85 = {
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 5
+			}
+			
+		}
+		if = {
+			limit = { has_completed_focus = POL_opcja_pis }
+			POL = { country_event = { id = PLREW_poland.67 } }
+		}
 		}
 	}
 
 	focus = {
 		id = POL_huta_katowice
-		icon = GFX_goal_unknown # zrób nawiązanie do huty katowice błagam XD
+		icon = GFX_focus_generic_aluminum
 		prerequisite = {
 			focus = POL_wydobycie
 		}
-		cost = 0
+		cost = 4
 		x = 0
 		y = 1
+		available = {
+			has_full_control_of_state = 762
+		}
 		relative_position_id = POL_wydobycie
 		completion_reward = {
-			# zwieksza jednostki stali w kraju mozna specyficznie w katowicach
+			762 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = POL_fabryki_gum
-		icon = GFX_goal_unknown # durex
+		icon = GFX_focus_generic_improve_roads
 		prerequisite = {
 			focus = POL_wydobycie
 		}
-		cost = 0
+		cost = 3
 		x = 2
 		y = 1
 		relative_position_id = POL_wydobycie
 		completion_reward = {
-			# zwieksza jednostki gumy w kraju
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = POL_przemysl
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organize_wreckers
 		prerequisite = {
 			focus = POL_przebudzenie_polskiej_gospodarki
 		}
@@ -17509,131 +17715,216 @@ focus = {
 		y = 1
 		relative_position_id = POL_przebudzenie_polskiej_gospodarki
 		completion_reward = {
-			# nic, automatycznie się robi
+			add_political_power = 5
 		}
 	}
 
 	focus = {
 		id = POL_zagraniczni_inwestorzy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_merge_plants
 		prerequisite = {
 			focus = POL_przemysl
 		}
 		available = {
-			# world tension > 50% lepiej nie... dalbym 20
+			has_war_support > 0.5
 		}
-		cost = 0
+		cost = 5
 		x = -2
 		y = 1
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# + civ
+			
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
 		}
 	}
 
 
 	focus = {
 		id = POL_popularyzacja_polskich_firm 
-		icon = GFX_goal_unknown # żabka, orlen...
+		icon = GFX_focus_AFG_a_modern_economy
 		prerequisite = {
 			focus = POL_zagraniczni_inwestorzy
 		}
-		cost = 0
+		cost = 4
 		x = -2
 		y = 2
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# + civ
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = POL_polskie_imperium_przemyslowe
-		icon = GFX_goal_unknown # żabka, orlen...
+		icon = GFX_focus_POL_expand_polish_intelligence
 		prerequisite = {
 			focus = POL_popularyzacja_polskich_firm
 		}
 		mutually_exclusive = {
 			focus = POL_jeden_pocisk_jeden_niemiec
 		}
-		cost = 0
+		cost = 3
 		x = -2
 		y = 3
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# spirit na rozwoj przemyslu cywilnego
+			add_ideas = POL_polskie_imperium_przemyslowe_spirit
 		}
 	}
 
 	focus = {
 		id = POL_zwiekszenie_wydatkow_na_zbrojenie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SMB_purchase_aircraft
 		prerequisite = {
 			focus = POL_przemysl
 		}
 		available = {
-			# world tension > 50%
+			has_war_support > 0.5
 		}
-		cost = 0
+		cost = 6
 		x = 0
 		y = 1
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# partial mob
+			add_ideas = war_economy
 		}
 	}
 
 	focus = {
 		id = POL_fabryki_amunicji
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_prepare_for_the_inevitable
 		prerequisite = {
 			focus = POL_przemysl
 		}
-		cost = 0
+		cost = 4
 		x = 2
 		y = 1
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# + mil
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
-	focus = { # kurwa na nic madrzejszego nie wpadlem
+	focus = { 
 		id = POL_bron_dla_polskiego_zolnierza
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SMB_blue_water_fleet
 		prerequisite = {
 			focus = POL_fabryki_amunicji
 		}
-		cost = 0
+		cost = 5
 		x = 2
 		y = 2
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# + mil
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+			}
 		}
 	}
 
-	focus = { # ta sama uwaga co poprzednio
+	focus = { 
 		id = POL_jeden_pocisk_jeden_niemiec
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_consolidate_sanation_government
 		prerequisite = {
 			focus = POL_bron_dla_polskiego_zolnierza
 		}
 		mutually_exclusive = {
 			focus = POL_polskie_imperium_przemyslowe
 		}
-		cost = 0
+		cost = 5
 		x = 2
 		y = 3
 		relative_position_id = POL_przemysl
 		completion_reward = {
-			# spirit na rozwoj przemyslu militarnego
+			add_ideas = POL_jeden_lezy_skibidi
 		}
 	}
 
 	focus = {
 		id = POL_strategiczne_inwestycje
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_the_four_year_plan
 		prerequisite = {
 			focus = POL_przebudzenie_polskiej_gospodarki
 		}
@@ -17641,57 +17932,88 @@ focus = {
 		x = 5
 		y = 1
 		relative_position_id = POL_przebudzenie_polskiej_gospodarki
-		
+		completion_reward = {
+			add_political_power = 5
+		}
 	}
 
 	focus = {
 		id = POL_budowa_elektrowni_atomowych
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_nuclear_development
 		prerequisite = {
 			focus = POL_strategiczne_inwestycje
 		}
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		relative_position_id = POL_strategiczne_inwestycje
 		completion_reward = {
-			# decyzje z inwestycją w atom
+			add_tech_bonus = {
+			name = energia_atomowa
+			bonus = 0.5
+			uses = 2
+			category = nuclear
+			}
 		}
 	}
 
 	focus = {
 		id = POL_centralny_port_komunikacyjny
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_warsaw_main_station
 		prerequisite = {
 			focus = POL_strategiczne_inwestycje
 		}
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = POL_strategiczne_inwestycje
 		completion_reward = {
-			# decyzje z cpk
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			add_stability = 0.05
 		}
 	}
 
 	focus = {
 		id = POL_uniwersytet_warszawski
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PER_rebuild_persepolis
 		prerequisite = {
 			focus = POL_centralny_port_komunikacyjny
 		}
-		cost = 20
+		cost = 5
 		x = 1
 		y = 2
 		relative_position_id = POL_strategiczne_inwestycje
 		completion_reward = {
-			# decyzje z cpk
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = POL_collegium_humanum
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_luso_tropicalism
 		prerequisite = {
 			focus = POL_centralny_port_komunikacyjny
 			focus = POL_budowa_elektrowni_atomowych
@@ -17699,12 +18021,12 @@ focus = {
 		available = {
 			has_completed_focus = POL_opcja_pis
 		}
-		cost = 20
+		cost = 6
 		x = -1
 		y = 2
 		relative_position_id = POL_strategiczne_inwestycje
 		completion_reward = {
-			# decyzje z cpk
+			add_political_power = 500
 		}
 	}
 
@@ -17717,7 +18039,7 @@ focus = {
 		available = {
 			has_completed_focus = POL_opcja_tusk
 		}
-		cost = 10
+		cost = 6
 		x = 3
 		y = 1
 		relative_position_id = POL_strategiczne_inwestycje
@@ -17751,11 +18073,11 @@ focus = {
 
 	focus = {
 		id = POL_szkoły_ekonomiczne
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		prerequisite = {
 			focus = POL_przebudzenie_polskiej_gospodarki
 		}
-		cost = 20
+		cost = 0
 		x = 8
 		y = 1
 		relative_position_id = POL_strategiczne_inwestycje
@@ -17766,11 +18088,11 @@ focus = {
 
 	focus = {
 		id = POL_doktryna_marksistowska
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		prerequisite = {
 			focus = POL_szkoły_ekonomiczne
 		}
-		cost = 20
+		cost = 10
 		x = -3
 		y = 1
 		relative_position_id = POL_szkoły_ekonomiczne
@@ -17795,11 +18117,11 @@ focus = {
 
 	focus = {
 		id = POL_szkoła_austriacka
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_befriend_austria
 		prerequisite = {
 			focus = POL_szkoły_ekonomiczne
 		}
-		cost = 20
+		cost = 10
 		x = 3
 		y = 1
 		relative_position_id = POL_szkoły_ekonomiczne
@@ -17825,11 +18147,11 @@ focus = {
 
 	focus = {
 		id = POL_doktryna_keynesistowska
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_british_trade
 		prerequisite = {
 			focus = POL_szkoły_ekonomiczne
 		}
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		relative_position_id = POL_szkoły_ekonomiczne
@@ -17860,11 +18182,11 @@ focus = {
 
 	focus = {
 		id = POL_szkoła_chicagowska
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_befriend_usa
 		prerequisite = {
 			focus = POL_szkoły_ekonomiczne
 		}
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = POL_szkoły_ekonomiczne
@@ -17893,11 +18215,11 @@ focus = {
 
 	focus = {
 		id = POL_szkoła_krakowska
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		prerequisite = {
 			focus = POL_szkoły_ekonomiczne
 		}
-		cost = 20
+		cost = 10
 		x = 5
 		y = 1
 		
