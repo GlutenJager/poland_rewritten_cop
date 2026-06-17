@@ -44,8 +44,9 @@
   POL_opcja_anarchia_desc: "Dostępne w evencie"
   POL_opcja_dziwna_desc: "Dostępne w evencie"
 
-
-
+####
+#DRZEWKO LEPPER
+####
   POL_opcja_lepper: "§YSamoobrona§!"
   POL_opcja_lepper_desc: "Samoobrona, partia Andrzeja Leppera - chłopa o poglądach socjalistyczno-konserwatywnych, może poprowadzić kraj do wielkości."
   POL_przywrocenie_kontrwywiadu: "Przywrócenie kontrwywiadu"
@@ -93,6 +94,10 @@
   POL_pomniki_Keynesa: "Pomnik Keynesa"
   POL_dorodne_zniwa: "Dorodne żniwa"
   POL_dorodne_zniwa_desc: "Po pozbyciu się najważniejszych zagrożeń i zLepperowaniu kraju, pora na to by rolnicy zebrali plony."
+
+####
+#DRZEWKO PIS
+#####
 
   POL_opcja_pis: "§2PiS§!"
   POL_opcja_pis_desc: "Prawo i Sprawiedliwość - partia Jarosława Kaczyńskiego o poglądach centro-prawicowych i konserwatywno-etatystycznych, to partia, która poprowadzi kraj do wielkości w imię proletariatu."
@@ -219,19 +224,95 @@
 
   # DRZEWKO WOJSKOWE
   POL_reorganizacja_armii: "Reorganizacja armii"
+  POL_reorganizacja_armii_desc: "Nasza armia jest rozbita! Trzeba ją przeorganizować żebyśmy mieli jakiekolwiek szanse na zwycięstwo w wojnie domowej!"
   POL_nacisk_na_piechote: "Nacisk na piechotę"
+  POL_nacisk_na_piechote_desc: "Piechota; czyli najważniejsza część armii Polskiej. Jeśli chcemy przetrwać musimy ją unowocześnić!"
   POL_obrona_ojczyzny: "Obrona ojczyzny"
+  POL_obrona_ojczyzny_desc: "Jeszcze Polska nie zginęła! Musimy bronić naszej ojczyzny za wszelką cene! Niech żyje Polska!"
   POL_wytrzymala_armia: "Wytrzymała armia"
+  POL_wytrzymala_armia_desc: "Nasza armia musi wytrzymać nacisk wrogów Państwa Polskiego z każdej strony, niech każdy Polak łapie za karabin, wszyscy jesteśmy żołnierzami!"
   POL_produkcja_taniej_artylerii: "Przewaga ogniowa"
+  POL_produkcja_taniej_artylerii_desc: "Artyleria - Królowa Wojny, jeśli nasze Państwo ma przetrwać, musimy wprowadzić ją do produkcji masowej."
   POL_badania_wojskowe: "Badania wojskowe"
+  POL_badania_wojskowe_desc: "Armia Polska jest zacofana, musimy ją unowocześnić aby utrzymać niepodległość."
   POL_szybkie_okopy: "Partyzantka"
+  POL_szybkie_okopy_desc: "Trzeba rozwinąć naszych agentów Polskiej partyzantki, w razie najazdu ze strony innych mocarstw, nasza partyzantka da sobie z nimi rade"
   POL_masowa_produkcja_schronow: "Masowa produkcja schronów"
+  POL_masowa_produkcja_schronow_desc: "Musimy postawić bunkry na naszych granicach i w większych miastach, musimy przygotować się na najgorsze..."
   POL_motoryzacja_wojska: "Motoryzacja wojska"
+  POL_motoryzacja_wojska_desc: "Piechota w wojsku Polskim? Tak, ale musimy przyjąć nowe technologie i pomysły. Czas motoryzacji Polskiej Armii."
   POL_produkcja_tanich_pojazdow: "Produkcja tanich pojazdów"
+  POL_produkcja_tanich_pojazdow_desc: "Podpisaliśmy umowę z Fiatem, będą teraz produkować pojazdy militarne dla naszej armii."
   POL_stymulacja_przemyslu_motoryzacyjnego: "Stymulacja przemysłu motoryzacyjnego"
+  POL_stymulacja_przemyslu_motoryzacyjnego_desc: "Nasze ciężarówki wojskowe nie powinny być na licencji obcych mocarstw, musimy sami przekształcić fabryki wojskowe na produkcje samochodów dla naszego wojska."
   POL_wsparcie_z_powietrza: "Wsparcie z powietrza"
+  POL_wsparcie_z_powietrza_desc: "Samoloty - najważniejsza część armii, bez kontroli przestworzy, nasza armia nie wytrzyma długo bombardowań ze strony wroga!"
   POL_natarcie_na_wroga: "Natarcie na wroga"
+  POL_natarcie_na_wroga_desc: "Nie możemy się tylko bronić, w końcu wrogowie nas przełamią a każdy wie, że najlepszą obroną jest atak."
   POL_predkosc_sie_liczy: "Wojna błyskawiczna"
+  POL_predkosc_sie_liczy_desc: "Czasy Wielkiej Wojny już za nami, myśl wojenna idzie na przód a my razem z nią. Dość linii okopów na całym froncie. Widzimy jak Niemcy radzą sobie dzięki swojemu Blitzkriegowi, więc i my musimy dostosować się do wojny błyskawicznej!"
   POL_masowa_produkcja_logistyki: "Masowa produkcja logistyki"
+  POL_masowa_produkcja_logistyki_desc: "Bez wsparcia i logistyki nikt nie wygra wojny - broń, czołgi, sprzęt wsparcia i artyleria nie dotrą na czas jeśli nie rozwiniemy naszych linii kolejowych i logistyki!"
   POL_za_wielka_polske: "Za Wielką Polskę!"
+  POL_za_wielka_polske_desc: "Nasza armia przeszła wielką rekonstrukcje od czasu wojny domowej! Czas nadszedł by obce mocarstwa znów na samą myśl Wielkiej Armii Polskiej zatrząsły się ze strachu i pomyślały 2 razy zanim na nas najadą! Jeszcze Polska nie zginęła, za Polske!"
   POL_odzyskanie_utraconych_ziem: "Odzyskanie utraconych ziem"
+  POL_odzyskanie_utraconych_ziem_desc: "Te szkopy najechały nasze ziemie gdy my byliśmy pogrążeni w chaosie wojny domowej. Nadszedł czas by wyzwolić Polaków którzy są pod okupacją, Ci którzy chcą wrócić do ojczyzny! Nie lękajcie się, wasze wyzwolenie nadchodzi bracia i siostry Narodu Polskiego!"
+
+
+####
+#DRZEWKO GOSPODARCZE
+####
+
+
+POL_przebudzenie_polskiej_gospodarki: "Przebudzenie Polskiej Gospodarki"
+POL_przebudzenie_polskiej_gospodarki_desc: "Nasza gospodarka podupadła. W trakcie gdy inni ciągle rozwijają swoją, nasza była w stagnacji. Wkrótce się to zmieni!"
+POL_wydobycie: "W poszukiwaniu surowców"
+POL_wydobycie_desc: "Jak Polska długa i szeroka mamy dużo surowców których nie wykorzystujemy, a sprowadzamy od obcych. Aby nasza gospodarka rosła, musimy postarać się o wydobywanie ich tu!"
+POL_poszukiwanie_ropy: "Czarne złoto w Polsce?"
+POL_poszukiwanie_ropy_desc: "Znaleźliśmy złoża ropy w Polsce! Choć są one niewielkie muszą nam narazie wystarczyć. W niedalekiej przyszłości zajmiemy się produkcją paliwa syntetycznego"
+POL_rafineria_w_gdansku: "Polskie rafinerie nad Morzem Bałtyckim"
+POL_rafineria_w_gdansku_desc: "Nowe rafinerie powstają nad Morzem Bałtyckim z dnia na dzień. Niedługo Polska będzie niezależna od obcej ropy. Nasze czołgi nie będą zaopatrywane rosyjską ani amerykańską ropą tylko polską!"
+POL_huta_katowice: "Nowe huty w Katowicach"
+POL_huta_katowice_desc: "Nowe huty w Katowiach zaczynają produkcję. Polska produkcja stali rozpędza się coraz bardziej!"
+POL_fabryki_gum: "Syntetyczna guma w Polsce"
+POL_fabryki_gum_desc: "Nareszcie! Nowe fabryki syntetycznej gumy powstają, już niedługo zostaną one wykorzystane w celach militarnych a nasza ekonomia bedzię płynąć gumą i ropą!"
+POL_przemysl_desc: "Nasz przemysł jest ciągle w tyle za innymi państwami europejskimi. Musimy je doścignąć jeśli nasza ekonomia ma mieć swoje wielkie boom."
+POL_przemysl: "Polski przemysł"
+POL_zagraniczni_inwestorzy: "Inwestyjce zza granicy"
+POL_zagraniczni_inwestorzy_desc: "Polska w końcu jest dostrzegana na scenie międzynarodowej! Inwestorzy z europy, ameryki i azji budują tu fabryki dla przemysłu cywilnego, który będzie wspierał wojskowy w razie wojny! Polska gospodarka rusza pełną parą!"
+POL_popularyzacja_polskich_firm: "Polskie firmy inwestują!"
+POL_popularyzacja_polskich_firm_desc: "W końcu nadeszło! Polskie firmy odżyły dzięki inwestycją zza granicy i działaniom polskiego rządu. Nasi inwestują coraz bardziej w nasz piękny kraj, dzięki temu gospodarka odżywa!"
+POL_polskie_imperium_przemyslowe: "Rozbudowa Polskich firm!"
+POL_polskie_imperium_przemyslowe_desc: "Nasze firmy stają się wielkimi graczami na europejskim rynku. Coraz więcej naszych firm powstaje w europie i ameryce. Dzięki temu nasza gospodarka zosatnie odciążona."
+POL_zwiekszenie_wydatkow_na_zbrojenie: "Polskie fabryki zbrojeniowe."
+POL_zwiekszenie_wydatkow_na_zbrojenie_desc: "Teraz jak przemysł cywilny odżył a nasza populacja może żyć spokojnie, czas na fabryki wojskowe, które będą napędzać Polską machine wojenną!"
+POL_fabryki_amunicji: "Polska gospodarka wojenna"
+POL_fabryki_amunicji_desc: "Nasza machina wojenna nabiera tępa! Coraz więcej fabryk wojskowych powstaje w Polsce. Musimy produkować coraz to więcej sprzętu wojskowego. Teraz gdy nasi sąsiedzi się zbroją, my nie zostajemy bez odpowiedzi!"
+POL_bron_dla_polskiego_zolnierza: "Polski żołnierz nie gorszy niż Niemiecki!"
+POL_bron_dla_polskiego_zolnierza_desc: "Kim jest żołnierz bez karabinu? Musimy dotrzymać tępa popytowi karabinów dla żołnierzy którzy będą walczyć za naszą ojczyzne. Wszyscy jesteśmy żołnierzami."
+POL_jeden_pocisk_jeden_niemiec: "Jeden pocisk na jednego niemca!"
+POL_jeden_pocisk_jeden_niemiec_desc: "Nasz przemysł wojenny jest najwięszky w historii! Nie możemy zaprzestać teraz, potrzebujemy więcej pocisków do karabinów! Jeden pocisk - jeden martwy szkop!"
+POL_strategiczne_inwestycje: "Inwestycje w gospodarke"
+POL_strategiczne_inwestycje_desc: "Nie wystarczą nam inwestycje zza graniczne, Polski rząd również musi inwestować w rozwój Polskiej gospodarki!"
+POL_budowa_elektrowni_atomowych: "Polski atom"
+POL_budowa_elektrowni_atomowych_desc: "Atom - nowa technologia która może zostać wykorzystana do zapewnienia elektryczności dla Polaków, ale też jako broń niszczycielskiego rażenia dla naszych wrogów...."
+POL_centralny_port_komunikacyjny: "Infrastruktura Polska"
+POL_centralny_port_komunikacyjny_desc: "Nasza infrastruktura leży w gruzach, lecz nie portwa to długo. Rząd właśnie wprowadza nowe udogodnienia nie tylko dla cywilów ale też dla szybkiego przemarszu wojsk"
+POL_nasza_kolej: "Polskie koleje"
+POL_nasza_kolej_desc: "W Polsce potrzeba więcej koleji aby ułatwić życie nie tylko obywatelom ale też ułatwić przewóz kolejowy dóbr wojskowych na linie frontu!"
+POL_uniwersytet_warszawski: "Odbudowa Uniwersytetu w Warszawie"
+POL_uniwersytet_warszawski_desc: "Uniwersytet Warszawski został prawie całkowicie zniszczony w trakcie wojny domowej. Polska inteligencja napewno się ucieszy gdy dowie się że rząd ma w planach go odbudować."
+POL_collegium_humanum: "Dyplomy dla wszystkich"
+POL_collegium_humanum_desc: "Niestety nie wszyscy w rządzie mają dyplomy warte polityków, więc aby nie zrobić z siebie pośmiewiska na scenie europejskiej, za 'małą opłatą' rozdamy dyplom dla każdego Polskiego polityka który będzie tego chciał."
+POL_szkoly_ekonomiczne: "Szkoły ekonomiczne"
+POL_szkoly_ekonomiczne_desc: "Potrzebujemy porad ekonomistów dzięki którym nasza ekonomia w końcu będzie doprowadzona do poziomu innych mocarstw."
+POL_doktryna_marksistowska: "Ekonomia sowiecka"
+POL_doktryna_marksistowska_desc: "Żeby w Polsce żyło się dobrze trzeba spojrzeć na przykład Marksa, u sowietów nie wyszło to za dobrze, ale to nie Rosja! Zabierzemy bogatym, rozdamy biednym. Napewno wyjdzie to na dobre..."
+POL_doktryna_keynesistowska: "Ekonomia angielska"
+POL_doktryna_keynesistowska_desc: "Musimy wziąść przykład z anglików, ich ekonomia rozrosła się dzięki wykorzystywaniu innych narodów. Może i nie jest to humanitarne ale Polska nam za to podziękuje gdy zobaczy że prześcignęliśmy Niemców ekonomicznie."
+POL_szkola_chicagowska: "Ekonomia amerykańska"
+POL_szkola_chicagowska_desc: "Wolny rynek - to jest to! Skoro amerykanom wyszło to w miare dobrze, to my Polacy dopracujemy to co im nie wyszło i wprowadzimy kapitalizm."
+POL_szkola_austriacka: "Ekonomia austriacka"
+POL_szkola_austriacka_desc: "Czy naprawde potrzebujemy handlu z innymi państwami? W końcu znaleźliśmy tyle surowców tu - w Polsce. Jeśli nasza ekonomia ma wytrzymać musimy osiągnąc autarkie - niezależność od innych!"
+POL_szkola_krakowska: "Ekonomia Polska, bo jaka inna?"
+POL_szkola_krakowska_desc: "Po co mamy spoglądać na inne kraje którym i tak idzie gorzej od nas? Co mamy innego do wyboru niż posłuchać naszych ekonomistów i rozpracować ekonomie według Polskich standardów!"

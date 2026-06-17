@@ -17562,7 +17562,7 @@ focus = {
 			complete_national_focus = POL_wydobycie
 			complete_national_focus = POL_przemysl
 			complete_national_focus = POL_strategiczne_inwestycje
-			complete_national_focus = POL_szkoły_ekonomiczne
+			complete_national_focus = POL_szkoly_ekonomiczne
 		}
 	}
 
@@ -18072,7 +18072,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_szkoły_ekonomiczne
+		id = POL_szkoly_ekonomiczne
 		icon = GFX_focus_generic_self_management
 		prerequisite = {
 			focus = POL_przebudzenie_polskiej_gospodarki
@@ -18090,17 +18090,17 @@ focus = {
 		id = POL_doktryna_marksistowska
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		prerequisite = {
-			focus = POL_szkoły_ekonomiczne
+			focus = POL_szkoly_ekonomiczne
 		}
 		cost = 10
 		x = -3
 		y = 1
-		relative_position_id = POL_szkoły_ekonomiczne
+		relative_position_id = POL_szkoly_ekonomiczne
 		mutually_exclusive = {
 			focus = POL_doktryna_keynesistowska
-			focus = POL_szkoła_chicagowska
-			focus = POL_szkoła_austriacka
-			focus = POL_szkoła_krakowska
+			focus = POL_szkola_chicagowska
+			focus = POL_szkola_austriacka
+			focus = POL_szkola_krakowska
 		} 
 		available = {
 			OR = { 
@@ -18116,20 +18116,20 @@ focus = {
 	}
 
 	focus = {
-		id = POL_szkoła_austriacka
+		id = POL_szkola_austriacka
 		icon = GFX_focus_generic_befriend_austria
 		prerequisite = {
-			focus = POL_szkoły_ekonomiczne
+			focus = POL_szkoly_ekonomiczne
 		}
 		cost = 10
 		x = 3
 		y = 1
-		relative_position_id = POL_szkoły_ekonomiczne
+		relative_position_id = POL_szkoly_ekonomiczne
 		mutually_exclusive = {
 			focus = POL_doktryna_keynesistowska
-			focus = POL_szkoła_chicagowska
+			focus = POL_szkola_chicagowska
 			focus = POL_doktryna_marksistowska
-			focus = POL_szkoła_krakowska
+			focus = POL_szkola_krakowska
 		} 
 		available = {
 			OR = { 
@@ -18154,12 +18154,12 @@ focus = {
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = POL_szkoły_ekonomiczne
+		relative_position_id = POL_szkoly_ekonomiczne
 		mutually_exclusive = {
 			focus = POL_doktryna_marksistowska
-			focus = POL_szkoła_chicagowska
-			focus = POL_szkoła_austriacka
-			focus = POL_szkoła_krakowska
+			focus = POL_szkola_chicagowska
+			focus = POL_szkola_austriacka
+			focus = POL_szkola_krakowska
 		} 
 		available = {
 			OR = { 
@@ -18181,20 +18181,20 @@ focus = {
 	}
 
 	focus = {
-		id = POL_szkoła_chicagowska
+		id = POL_szkola_chicagowska
 		icon = GFX_focus_generic_befriend_usa
 		prerequisite = {
-			focus = POL_szkoły_ekonomiczne
+			focus = POL_szkoly_ekonomiczne
 		}
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = POL_szkoły_ekonomiczne
+		relative_position_id = POL_szkoly_ekonomiczne
 		mutually_exclusive = {
 			focus = POL_doktryna_keynesistowska
 			focus = POL_doktryna_marksistowska
-			focus = POL_szkoła_austriacka
-			focus = POL_szkoła_krakowska
+			focus = POL_szkola_austriacka
+			focus = POL_szkola_krakowska
 		} 
 
 		available = {
@@ -18214,20 +18214,20 @@ focus = {
 	}
 
 	focus = {
-		id = POL_szkoła_krakowska
+		id = POL_szkola_krakowska
 		icon = GFX_focus_generic_industry_3
 		prerequisite = {
-			focus = POL_szkoły_ekonomiczne
+			focus = POL_szkoly_ekonomiczne
 		}
 		cost = 10
 		x = 5
 		y = 1
 		
-		relative_position_id = POL_szkoły_ekonomiczne
+		relative_position_id = POL_szkoly_ekonomiczne
 		mutually_exclusive = {
 			focus = POL_doktryna_keynesistowska
-			focus = POL_szkoła_chicagowska
-			focus = POL_szkoła_austriacka
+			focus = POL_szkola_chicagowska
+			focus = POL_szkola_austriacka
 			focus = POL_doktryna_marksistowska
 		} 
 		available = {
