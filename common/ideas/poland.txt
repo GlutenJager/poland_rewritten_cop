@@ -211,7 +211,7 @@ country = {
             }
         }
         POL_reformed_abw = {
-            picture = zreformowane_abw
+            picture = GFX_idea_generic_volunteer_expedition_bonus
 
             allowed = {
                 original_tag = POL
@@ -375,6 +375,7 @@ country = {
             }
         }
         POL_wojsko_polskie = {
+            picture = GFX_idea_POL_april_constitution
             allowed = {
             original_tag = POL
             }
@@ -384,6 +385,7 @@ country = {
             }
         }
         POL_wojsko_polskie_piechota_1 = {
+            picture = GFX_idea_POL_april_constitution
             allowed = {
             original_tag = POL
             }
@@ -398,6 +400,7 @@ country = {
             }
         }
         POL_wojsko_polskie_piechota_2 = {
+            picture = GFX_idea_POL_april_constitution
             allowed = {
             original_tag = POL
             }
@@ -415,6 +418,7 @@ country = {
             }
         }
         POL_wojsko_polskie_motoryzacja_1 = {
+            picture = GFX_idea_POL_april_constitution
             allowed = {
             original_tag = POL
             }
@@ -428,6 +432,7 @@ country = {
             }
         }
         POL_wojsko_polskie_motoryzacja_2 = {
+            picture = GFX_idea_POL_april_constitution
             allowed = {
             original_tag = POL
             }
@@ -443,6 +448,7 @@ country = {
             }
         }
         POL_za_wielka_polske_spirit = {
+            picture = GFX_idea_SWE_hodgepodge_of_equipment
             allowed = {
             original_tag = POL
             }
@@ -453,6 +459,7 @@ country = {
             }
         }
         POL_tania_artyleria_spirit = {
+            picture = GFX_idea_SIA_redirected_military_funds
             allowed = {
             original_tag = POL
             }
@@ -464,6 +471,7 @@ country = {
             }
         }
         POL_okopana_armia_spirit = {
+            picture = GFX_idea_SWE_let_free_all_guns
             allowed = {
             original_tag = POL
             }
@@ -477,6 +485,7 @@ country = {
             }
         }
         POL_tania_motoryzacja_spirit = {
+            picture = GFX_idea_SWE_per_albin_bus
             allowed = {
             original_tag = POL
             }
@@ -493,6 +502,7 @@ country = {
 
         }
         POL_pobudzona_motoryzacja_spirit = {
+            picture = GFX_idea_tur_sectarian_woes
             allowed = {
             original_tag = POL
             }
@@ -503,6 +513,7 @@ country = {
             }
         }
         POL_wsparcie_z_powietrza_spirit = {
+            picture = GFX_idea_JAP_mitsubishi_airplanes
             allowed = {
             original_tag = POL
             }
@@ -514,6 +525,7 @@ country = {
             }
         }
         POL_masowa_produkcja_schronow_spirit = {
+            picture = GFX_idea_generic_fortify_the_borders
             allowed = {
             original_tag = POL
             }
@@ -523,6 +535,7 @@ country = {
             }
         }
         POL_masowa_produkcja_logistyki_spirit = {
+            picture = GFX_idea_PRC_china_railway_construction_corporation
             allowed = {
             original_tag = POL
             }
@@ -534,6 +547,7 @@ country = {
             }
         }
         POL_trybunal_niekonstytucyjny = {
+            picture = GFX_idea_prc_low_popular_support
             allowed = {
                 original_tag = POL
             }
@@ -631,6 +645,7 @@ country = {
             }
         }
         POL_wojna_domowa = {
+            picture = GFX_idea_JAP_free_asia_pacific
             allowed = {
                 original_tag = POL
             }
@@ -641,6 +656,7 @@ country = {
         }
 
         POL_zerowy_pit = {
+            picture = GFX_idea_ITA_devaluated_lira
             allowed = {
                 original_tag = POL
             }
@@ -709,6 +725,7 @@ country = {
         }
 
         POL_wplywy_lobbystow_wipler = {
+            picture = GFX_idea_anti_soviet_pact
             allowed = {
                 original_tag = POL
             }
@@ -749,6 +766,7 @@ country = {
         }
 
         POL_pakt_migracyjny = {
+            picture = GFX_idea_hol_the_fourth_ally
             allowed = {
                 original_tag = POL
             }
@@ -761,6 +779,7 @@ country = {
     }
 
     POL_pakt_migracyjny_2 = {
+            picture = GFX_idea_hol_the_fourth_ally
             allowed = {
                 original_tag = POL
             }
@@ -873,6 +892,7 @@ country = {
         }
 
          POL_polnische_wehrmacht = {
+            picture = GFX_idea_GER_fan_prussian_militarism
             allowed = {
                 original_tag = POL
             }
@@ -889,6 +909,7 @@ country = {
             }
         }
         POL_pakt_migracyjny = {
+            picture = GFX_idea_hol_the_fourth_ally
             allowed = {
                 original_tag = POL
             }
@@ -901,6 +922,7 @@ country = {
 
         }
         POL_przyjecie_euro = {
+            picture = GFX_idea_gre_political_instability
             allowed = {
                 original_tag = POL
             }
@@ -953,6 +975,7 @@ country = {
         }
 
         POL_koniec_5g = {
+            picture = GFX_idea_gre_aete
             allowed = {
                 original_tag = POL
             }
@@ -966,6 +989,7 @@ country = {
         }
 
          POL_sprzeczna_doktryna = {
+            picture = GFX_idea_gre_schachtplan2
             allowed = {
                 original_tag = POL
             }
@@ -1034,6 +1058,7 @@ country = {
         }
 
         POL_zerowy_pis = {
+            picture = GFX_idea_GER_wage_war_on_capitalism
             allowed = {
                 original_tag = POL
             }
@@ -1059,6 +1084,7 @@ country = {
         }
 
         POL_zniesienie_malzenstw = {
+            picture = GFX_idea_ger_mefo_bills_payment
             allowed = {
                 original_tag = POL
             }
@@ -1087,6 +1113,7 @@ country = {
         }
 
         POL_wolnosc_slowa = {
+            picture = GFX_idea_ger_bulwark_against_bolshevism
             allowed = {
                 original_tag = POL
             }
@@ -1099,6 +1126,7 @@ country = {
         }
 
          POL_kosciol_w_szkole = {
+            picture = GFX_idea_ITA_papal_state_ns
             allowed = {
                 original_tag = POL
             }
@@ -1203,6 +1231,7 @@ country = {
         }
 
         POL_chaos = {
+            picture = GFX_idea_generic_syndicalism
             allowed = {
                 original_tag = POL
             }
@@ -1216,6 +1245,7 @@ country = {
         }
 
           POL_polskie_imperium_przemyslowe_spirit = {
+            picture = GFX_idea_generic_women_in_the_army
             allowed = {
                 original_tag = POL
             }
@@ -1230,6 +1260,7 @@ country = {
         }
 
         POL_jeden_lezy_skibidi = {
+            picture = GFX_idea_generic_secret_police
             allowed = {
                 original_tag = POL
             }
