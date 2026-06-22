@@ -529,6 +529,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/konfederacja/focus_POL_usuniecie_korwina.dds"
 	}
 
+	SpriteType = {
+		name = GFX_focus_POL_opcja_korwin
+		texturefile = "gfx/interface/goals/konfederacja/korwinnadaluwladzy.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_opcja_zabij_korwin
+		texturefile = "gfx/interface/goals/konfederacja/zabiciekorwina.dds"
+	}
+
 	# Mentzen
 
 	SpriteType = {
@@ -725,6 +735,167 @@ spriteTypes = {
 		name = GFX_focus_POL_wolnosci_oddac_nie_umiem
 		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_wolnosci_oddac_nie_umiem.dds"
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = GFX_focus_POL_opcja_braun
+		texturefile = "gfx/interface/goals/konfederacja/braun/opcja_braun.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_kkp
+		texturefile = "gfx/interface/goals/konfederacja/braun/kkp.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_antysoc_antykap
+		texturefile = "gfx/interface/goals/konfederacja/braun/antysocantykap.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_dziwne_dymy
+		texturefile = "gfx/interface/goals/konfederacja/braun/dziwnedymy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_gasnica_w_domu
+		texturefile = "gfx/interface/goals/konfederacja/braun/gasnicawkazdymdomu.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_legacy_of_korwin
+		texturefile = "gfx/interface/goals/konfederacja/braun/legacyofkorwin.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_lib_monarchia
+		texturefile = "gfx/interface/goals/konfederacja/braun/libmonarch.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_mateusz_jakob
+		texturefile = "gfx/interface/goals/konfederacja/braun/mateuszjakob.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_stop_propagandzie_zboczen
+		texturefile = "gfx/interface/goals/konfederacja/braun/stoppropagandziezboczen.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_ucieczka_z_eu
+		texturefile = "gfx/interface/goals/konfederacja/braun/ucieczkazeu.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_warto_golic_brode
+		texturefile = "gfx/interface/goals/konfederacja/braun/wartogolicbrode.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_wielkie_ksiestwo
+		texturefile = "gfx/interface/goals/konfederacja/braun/wielkieksiestwo.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_wojna_z_lidlem
+		texturefile = "gfx/interface/goals/konfederacja/braun/wojnazlidlem.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_yoda_byl_zydem
+		texturefile = "gfx/interface/goals/konfederacja/braun/yodazyd.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_zniszczyc_zydokomune
+		texturefile = "gfx/interface/goals/konfederacja/braun/zniszczmyzydokomune.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = GFX_focus_POL_byl_taki_czlowiek
+		texturefile = "gfx/interface/goals/konfederacja/korwin/byltakiczlowiek.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_fundacja_kisiela
+		texturefile = "gfx/interface/goals/konfederacja/korwin/fundacjakisiela.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_koronacja
+		texturefile = "gfx/interface/goals/konfederacja/korwin/koronacja.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_korwin_cyborg
+		texturefile = "gfx/interface/goals/konfederacja/korwin/korwincyborg.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_korwin_z_piwnicy
+		texturefile = "gfx/interface/goals/konfederacja/korwin/korwinzpiwnicy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_krul_abdykuje
+		texturefile = "gfx/interface/goals/konfederacja/korwin/krulabdykuje.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_kto_nie_pracuje
+		texturefile = "gfx/interface/goals/konfederacja/korwin/ktoniepracuje.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_nie_uzywam_slowa_na_g
+		texturefile = "gfx/interface/goals/konfederacja/korwin/nieuzywamslowanag.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_ozjasz_goldberg
+		texturefile = "gfx/interface/goals/konfederacja/korwin/ozjaszgoldberg.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_paruwex
+		texturefile = "gfx/interface/goals/konfederacja/korwin/paruwex.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_sentymenty_rzplitej
+		texturefile = "gfx/interface/goals/konfederacja/korwin/sentymenty1rp.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_usuniecie_wieku_wyborow
+		texturefile = "gfx/interface/goals/konfederacja/korwin/usunwiekwyb.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_wws
+		texturefile = "gfx/interface/goals/konfederacja/korwin/wws.dds"
+	}
+	
+
 
 
 

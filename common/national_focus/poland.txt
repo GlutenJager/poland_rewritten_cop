@@ -5229,7 +5229,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_korwin_nadal_u_wladzy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_opcja_korwin
 		x = -7
 		y = 1
 		relative_position_id = POL_pierwszy_kongres_w_wolnej_polsce
@@ -5312,7 +5312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_parowex 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_paruwex
 		x = 0
 		y = 1
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5390,7 +5390,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_byl_taki_czlowiek 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_byl_taki_czlowiek
 		x = -2
 		y = 2
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5447,7 +5447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ja_nie_urzywam_slowa_na_g #event bojkot tfu gejow
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_nie_uzywam_slowa_na_g
 		x = -6
 		y = 4
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5461,7 +5461,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ozjasz_goldberg 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_ozjasz_goldberg
 		x = 2
 		y = 11
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5483,7 +5483,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_kto_nie_pracuje #chcacemu nie dzieje sie krzywda spirit
-		icon = GFX_focus_AFG_sugar_factory
+		icon = GFX_focus_POL_kto_nie_pracuje
 		x = -4
 		y = 4
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5494,7 +5494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_wws 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_wws
 		x = -4
 		y = 3
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5546,7 +5546,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_usun_wiek_wyborczy #dodaj duch z wieksza iloscia manpowera 
-		icon = GFX_focus_POL_nationalist_education
+		icon = GFX_focus_POL_usuniecie_wieku_wyborow
 		x = 0
 		y = 3
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5585,7 +5585,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_koronacja #event z koronacja, korwin zmienia sie w krula korwina
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_koronacja
 		x = -2
 		y = 4
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5652,7 +5652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_krul_abdykuje #berkowicz przejmuje wladze
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_krul_abdykuje
 		x = -1
 		y = 8
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5669,7 +5669,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_korwin_cyborg #korwin zmienia sie w cyborga
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_korwin_cyborg
 		x = 1
 		y = 8
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5686,7 +5686,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_korwin_z_szafy #dodaj event z korwinem z piwnicy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_korwin_z_piwnicy
 		x = 0
 		y = 10
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5697,8 +5697,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_fundacja_kisiela #dodaj firme fundacja kisiela
-		icon = GFX_goal_unknown
+		id = POL_fundacja_kisiela 
+		icon = GFX_focus_POL_fundacja_kisiela
 		x = 0
 		y = 11
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -5706,10 +5706,13 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_korwin_z_szafy
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = POL_Sentymenty_IRP #dodaj duch dajacy premie do ataku w corach i obrony
-		icon = GFX_focus_LIT_restore_order
+		icon = GFX_focus_POL_sentymenty_rzplitej
 		x = 0
 		y = 12
 		relative_position_id = POL_korwin_nadal_u_wladzy
@@ -6234,7 +6237,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_koniec_cukru
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_opcja_zabij_korwin
 		x = 7
 		y = 1
 		relative_position_id = POL_pierwszy_kongres_w_wolnej_polsce
@@ -6273,7 +6276,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_braun
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_opcja_braun
 		x = -7
 		y = 1
 		relative_position_id = POL_koniec_cukru
@@ -6321,7 +6324,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_kkp 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_kkp
 		x = 0
 		y = 1
 		relative_position_id = POL_braun
@@ -6371,7 +6374,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_stop_propagandzie_zboczeń 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_stop_propagandzie_zboczen
 		x = 2
 		y = 2
 		relative_position_id = POL_braun
@@ -6385,7 +6388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_dziwne_dymy 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_dziwne_dymy
 		x = 2
 		y = 3
 		relative_position_id = POL_braun
@@ -6399,7 +6402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_gasnica_w_kazdym_domu 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_gasnica_w_domu
 		x = -2
 		y = 3
 		relative_position_id = POL_braun
@@ -6433,7 +6436,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_sposcizna_prezesa 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_legacy_of_korwin
 		x = 0
 		y = 4
 		relative_position_id = POL_braun
@@ -6481,7 +6484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_dofinansowania_z_Moskwy 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_panslavic_nationalism
 		x = 2
 		y = 7
 		relative_position_id = POL_braun
@@ -6534,7 +6537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ucieczka_z_eurokolchozu 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_ucieczka_z_eu
 		x = -2
 		y = 6
 		relative_position_id = POL_braun
@@ -6643,7 +6646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_zniszczmy_zydokomune 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_zniszczyc_zydokomune
 		x = 2
 		y = 5
 		relative_position_id = POL_braun
@@ -6674,7 +6677,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_wielkie_księstwo 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_wielkie_ksiestwo
 		x = 0
 		y = 7
 		relative_position_id = POL_braun
@@ -6732,7 +6735,7 @@ focus_tree = {
 }
 	focus = {
 		id = POL_mateusz_jakob 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_mateusz_jakob
 		x = 1
 		y = 8
 		relative_position_id = POL_braun
@@ -6781,7 +6784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_wojna_z_lidlem 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_wojna_z_lidlem
 		x = -3
 		y = 10
 		relative_position_id = POL_braun
@@ -6832,7 +6835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_warto_golic_brode 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_warto_golic_brode
 		x = 2
 		y = 1
 		relative_position_id = POL_braun
@@ -6846,7 +6849,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_libertarianska_monarchia 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_lib_monarchia
 		x = 3
 		y = 8
 		relative_position_id = POL_braun
@@ -6863,7 +6866,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_antykapiatlistyczny_antysocjalizm 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_antysoc_antykap
 		x = 3
 		y = 9
 		relative_position_id = POL_braun
@@ -6877,7 +6880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_czy_yoda_byl_zydem 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_yoda_byl_zydem
 		x = 3
 		y = 10
 		relative_position_id = POL_braun
