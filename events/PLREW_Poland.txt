@@ -2777,6 +2777,153 @@ country_event = { #event o rafinerii w gdańsku
 	}
 }
 
+
+#rzadanie aneksji litwy 
+country_event = {
+	id = PLREW_poland.68
+	title = PLREW_poland.68.t
+	desc = PLREW_poland.68.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.68.a
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.6801 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.68.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.6802 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.6801
+	title = PLREW_poland.6801.t
+	desc = PLREW_poland.6801.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.5901.a
+		ai_chance = {
+			base = 30
+		}
+		annex_country = { target = FROM transfer_troops = yes }
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.6802
+	title = PLREW_poland.6802.t
+	desc = PLREW_poland.6802.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.6802.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###########################
 # Work In Progress Events
 ###########################

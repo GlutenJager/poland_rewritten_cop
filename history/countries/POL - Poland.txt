@@ -129,6 +129,9 @@ recruit_character = POL_witold_pilecki
 recruit_character = POL_vladislav_korchits
 recruit_character = POL_wojtek
 # MOD LEADERS
+
+recruit_character = POL_stas_zoltek
+recruit_character = POL_wlodzimierz_czarzasty
 recruit_character = POL_zgromadzenie
 recruit_character = POL_andrzej_lepper
 recruit_character = POL_donald_tusk
@@ -154,6 +157,20 @@ recruit_character = POL_janusz_korwin_mikke
 recruit_character = POL_dobromir_sosnierz
 
 # MOD ADVISORS
+recruit_character = POL_sebastian_piton
+recruit_character = POL_dominika_korwin_mike
+recruit_character = POL_ludwig_von_mises
+recruit_character = POL_milton_friedman
+recruit_character = POL_marcin_osadowski
+recruit_character = POL_andrzej_nowak
+recruit_character = POL_leszek_moczulski
+recruit_character = POL_ryszard_petru
+recruit_character = POL_marcin_mozdzonek
+recruit_character = POL_pawel_usiadek
+recruit_character = POL_bartosz_bochenczak
+recruit_character = POL_kazimierz_marcinkiewicz
+recruit_character = POL_zbigniew_bogucki
+recruit_character = POL_adam_niedzielski
 recruit_character = POL_mariusz_blaszczak
 recruit_character = POL_daniel_obajtek
 recruit_character = POL_przemyslaw_czarnek

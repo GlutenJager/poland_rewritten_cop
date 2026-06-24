@@ -59,6 +59,62 @@ characters = {
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	# PLREW COUNTRY LEADERS
 
 	POL_zgromadzenie = {
@@ -146,7 +202,51 @@ characters = {
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 9
+			defense_skill = 8
+			planning_skill = 7
+			logistics_skill = 8
+			visible = {
+				OR = {
+					has_completed_focus = POL_opcja_lepper
+					has_completed_focus = POL_opcja_kamraci
+					has_completed_focus = POL_szuranie
+					has_completed_focus = POL_przewrot_narodowcow
+
+				}
+			}
+		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# konfa konfunia
 
@@ -157,6 +257,7 @@ characters = {
 				large = GFX_portraits_janusz_korwin_mikke
 			}
 		}
+		
 	}
 
 	POL_slawomir_mentzen = {
@@ -165,6 +266,12 @@ characters = {
 			civilian = {
 				large = GFX_portraits_slawomir_mentzen
 			}
+		}
+		country_leader = {
+			ideology = neo_korwinism
+			traits = { }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 
@@ -198,6 +305,25 @@ characters = {
 				large = GFX_portraits_artur_dziambor
 			}
 		}
+		advisor={ 
+			cost = 150
+			slot = political_advisor
+			idea_token = POL_artur_dziambor
+			available = {
+				OR = {
+				has_completed_focus = POL_przejrzenie_wiplera
+				has_completed_focus = POL_sosnierz
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				}
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				popular_figurehead2
+			}
+		}
+		
 	}
 
 	POL_dobromir_sosnierz = {
@@ -205,6 +331,25 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portraits_artur_dziambor
+			}
+		}
+		advisor={ 
+			cost = 150
+			slot = political_advisor
+			idea_token = POL_dobromir_sosnierz
+			available = {
+				OR = {
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_przejrzenie_wiplera
+				has_completed_focus = POL_dziambor
+				has_completed_focus = POL_opcja_akap
+				}
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_libertarianski_mesjasz
 			}
 		}
 	}
@@ -227,16 +372,21 @@ characters = {
 		}
 		field_marshal = {
 			visible = { 
-				has_completed_focus = POL_opcja_konfa
+				OR = {
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_braun
+				has_completed_focus = POL_przewrot_narodowcow
 				has_completed_focus = POL_kto_w_gasnicach_znalazl_bombe
 				has_completed_focus = POL_opcja_kamraci
+				}
 			}
 			skill = 2
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 4 # wybitne skille pierdolenia glupot 
-			logistics_skill = 1
+			attack_skill = 7
+			defense_skill = 7
+			planning_skill = 12 # wybitne skille pierdolenia glupot 
+			logistics_skill = 9
 		}
+		
 	}
 
 	POL_robert_winnicki = {
@@ -246,7 +396,41 @@ characters = {
 				large = GFX_portraits_robert_winnicki
 			}
 		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 7
+			defense_skill =7
+			planning_skill = 7
+			logistics_skill = 7
+			
+			visible = {
+				has_completed_focus = POL_krzysiu_narodowy_libek
+			}
+		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# pisiory
 
@@ -314,6 +498,11 @@ characters = {
 				large = GFX_portraits_mateusz_morawiecki
 			}
 		}
+		country_leader = {
+			ideology = kaczism
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 
 	POL_rada_liderow_pis = {
@@ -324,6 +513,103 @@ characters = {
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	POL_wlodzimierz_czarzasty = {
+		name = "Włodzimierz Czarzasty"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_korwin_mikke
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { stalin_heart_of_steel skillful_diplomat }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	POL_stas_zoltek = {
+		name = "Stanisław Żółtek"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_korwin_mikke
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -385,6 +671,23 @@ POL_Ryszard_Wilk = {
 			planning_skill = 7
 			logistics_skill = 7
 		} 
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { political_chameleon }
+			idea_token = POL_stanislaw_tyszka
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR ={
+				has_completed_focus = POL_wolnosciowcy
+				has_completed_focus = POL_usuniecie_korwina
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_przewrot_narodowcow
+				}
+			}
+		}
 			
 	}
 
@@ -410,6 +713,22 @@ POL_Ryszard_Wilk = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
+		} 
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_paz_krula }
+			idea_token = POL_konrad_berkowicz
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_awansuj_berkowitza
+				has_completed_focus = POL_wolnosciowcy
+				has_completed_focus = POL_usuniecie_korwina
+				has_completed_focus = POL_braun
+			}
 		} 
 			
 	}
@@ -805,6 +1124,18 @@ POL_Ryszard_Wilk = {
 			planning_skill = 3
 			logistics_skill = 2
 		} 
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { minister_of_the_interior_abate }
+			idea_token = POL_roman_fritz
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_szuranie
+			}
+		}
 			
 	}
 
@@ -854,6 +1185,18 @@ POL_Ryszard_Wilk = {
 			planning_skill = 4
 			logistics_skill = 4
 		} 
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { GER_monarchist_jurist }
+			idea_token = POL_wlodzimierz_skalik
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_szuranie
+			}
+		}
 			
 	}
 
@@ -879,6 +1222,21 @@ POL_Ryszard_Wilk = {
 			planning_skill = 4
 			logistics_skill = 5
 		} 
+
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			traits = { mod_chlopka }
+			idea_token = POL_michal_wawer
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+				}
+			}
+		}
 			
 	}
 
@@ -944,6 +1302,7 @@ POL_Ryszard_Wilk = {
 				has_completed_focus = POL_usunac_balcerowicza
 				has_completed_focus = POL_zniszczmy_zydokomune
 				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_braun
 
 			}
 		}
@@ -1000,6 +1359,20 @@ POL_Ryszard_Wilk = {
 			planning_skill = 6
 			logistics_skill = 5
 		} 
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			traits = { nationalist_journalist }
+			idea_token = POL_michal_wawer
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+				}
+			}
+		}
 			
 	}
 
@@ -1099,6 +1472,19 @@ POL_samuela_torkowska = {
 			defense_skill = 5
 			planning_skill = 5
 			logistics_skill = 4
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_prorosyjska_wataha }
+			idea_token = POL_jacek_wilk
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_braun
+			}
 		} 
 			
 	}
@@ -1209,6 +1595,7 @@ POL_samuela_torkowska = {
 		corps_commander = {
 			visible = { 
 				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
 				has_completed_focus = POL_kto_doradcow_wybral_z_cyrku
 			}
 		}
@@ -1220,6 +1607,51 @@ POL_samuela_torkowska = {
 		} 
 			
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1254,7 +1686,12 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_KO_Zieloni }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_KO_Zieloni
+				has_completed_focus = POL_opcja_anarchia
+				}
+	 		}
 			traits = {}
 			skill=1
 			attack_skill=9
@@ -1426,7 +1863,12 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_opcja_tusk }
+			visible = {
+				OR = {
+				 has_completed_focus = POL_opcja_tusk 
+				 has_completed_focus = POL_braun
+				}
+			}
 			traits = {}
 			skill=1
 			attack_skill=6
@@ -1502,7 +1944,12 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_KO_Agrounia }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_KO_Agrounia 
+				has_completed_focus =  POL_opcja_agrarna
+				}
+		}
 			traits = {}
 			skill=4
 			attack_skill=5
@@ -1559,7 +2006,12 @@ POL_samuela_torkowska = {
 		}
 		
 		field_marshal = {
-			visible = { has_completed_focus = POL_premier_z_krakowa }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_premier_z_krakowa 
+				has_completed_focus = POL_rokita
+				}
+			}
 			traits = { }
 			skill = 6
 			attack_skill = 8
@@ -1587,6 +2039,40 @@ POL_samuela_torkowska = {
 			logistics_skill = 10
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# MOD ADVISORS
 
@@ -1658,6 +2144,13 @@ POL_samuela_torkowska = {
 			traits = {
 				mod_batyr
 			}
+		}
+		corps_commander = {
+			skill = 6
+			attack_skill = 8
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 5
 		}
 	}
 
@@ -1745,7 +2238,11 @@ POL_samuela_torkowska = {
 				original_tag = POL
 			}
 			available = {
-				has_completed_focus = GFX_opcja_lepper
+				OR = {
+				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_dofinansowania_z_Moskwy
+				}
 			}
 		}
 	}
@@ -1766,6 +2263,7 @@ POL_samuela_torkowska = {
 			}
 			available = {
 				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_opcja_pis
 			}
 		}
 	}
@@ -1806,7 +2304,11 @@ POL_samuela_torkowska = {
 				original_tag = POL
 			}
 			available = {
+				OR = {
 				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_kamraci
+				}
 			}
 		}
 	}
@@ -1848,7 +2350,11 @@ POL_samuela_torkowska = {
 				original_tag = POL
 			}
 			available = {
-				always = no
+				OR = {
+					has_completed_focus = POL_wolnosciowcy
+					has_completed_focus = POL_ase
+					has_completed_focus = POL_opcja_petru
+				}
 			}
 		}
 	}
@@ -1869,10 +2375,453 @@ POL_samuela_torkowska = {
 				original_tag = POL
 			}
 			available = {
-				always = no
+				has_completed_focus = POL_ja_tymi_rekoma
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	POL_sebastian_piton = {
+		name = "Sebastian Pitoń"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_mlodziez_wszechpolska_focus
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { minority_leader }
+			idea_token = POL_sebastian_piton
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR ={
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_braun
+				}
+			}
+		}
+	}
+
+	POL_dominika_korwin_mikke = {
+		name = "Dominika Korwin-Mikke"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_krulowa }
+			idea_token = POL_dominika_korwin_mikke
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_braun
+					has_completed_focus = POL_korwin_nadal_u_wladzy
+				}
+			}
+		}
+	}
+
+	POL_ludwig_von_mises = {
+		name = "Ludwig von Mises"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { AUS_treasurer_of_the_monarchy }
+			idea_token = POL_ludwig_von_mises
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_ase
+					has_completed_focus = POL_zapros_zagranicznych_ekspertow
+					has_completed_focus = POL_polski_paleolibertarianizm
+				}
+			}
+		}
+	}
+
+	POL_milton_friedman = {
+		name = "Milton_Friedman"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { industry_reformer }
+			idea_token = POL_milton_friedman
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_ase
+					has_completed_focus = POL_zapros_zagranicznych_ekspertow
+					has_completed_focus = POL_wolnosciowcy
+				}
+			}
+		}
+	}
+
+	POL_marcin_osadowski = {
+		name = "Marcin Osadowski"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { fascist_orchestrator fascist_corporatist }
+			idea_token = POL_marcin_osadowski
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_kamraci
+					has_completed_focus = POL_braun
+					has_completed_focus = POL_mlodziez_wszechpolska_focus
+				}
+			}
+		}
+	}
+
+	POL_andrzej_nowak = {
+		name = "Andrzej Nowak"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { old_figurehead mod_Profesor_uj }
+			idea_token = POL_andzrej_nowak
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_kamraci
+					has_completed_focus = POL_braun
+					has_completed_focus = POL_przewrot_narodowcow
+					has_completed_focus = POL_opcja_pis
+					has_completed_focus = POL_opcja_lepper
+				}
+			}
+		}
+	}
+
+	POL_leszek_moczulski = {
+		name = "Leszek Moczulski"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { fascist_demagogue fascist_militia_leader }
+			idea_token = POL_leszek_moczulski
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_kamraci
+					has_completed_focus = POL_przewrot_narodowcow
+					has_completed_focus = POL_opcja_macierewicz
+				}
+			}
+		}
+	}
+
+	POL_ryszard_petru = {
+		name = "Ryszard Petru"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { captain_of_industry }
+			idea_token = POL_ryszard_petru
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_centrum
+					has_completed_focus = POL_wolnosciowcy
+					has_completed_focus = POL_debata_z_petru
+				}
+			}
+		}
+	}
+
+	POL_marcin_mozdzonek = {
+		name = "Marcin Możdżonek"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_sportowiec }
+			idea_token = POL_marcin_mozdzonek
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_usuniecie_korwina
+					has_completed_focus = POL_przewrot_narodowcow
+				}
+			}
+		}
+	}
+
+	POL_pawel_usiadek = {
+		name = "Paweł Usiądek"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { political_manipulator }
+			idea_token = POL_pawel_usiadek
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_usuniecie_korwina
+					has_completed_focus = POL_korwin_nadal_u_wladzy
+				}
+			}
+		}
+	}
+	POL_bartosz_bochenczak = {
+		name = "Bartosz Bocheńczak"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { ambitious_negotiator_neutrality }
+			idea_token = POL_bartosz_bochenczak
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_usuniecie_korwina
+					has_completed_focus = POL_korwin_nadal_u_wladzy
+				}
+			}
+		}
+	}
+	POL_kazimierz_marcinkiewicz = {
+		name = "Kazimierz Marcinkiewicz"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { skillful_diplomat }
+			idea_token = POL_kazimierz_marcinkiewicz
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_pis
+					has_completed_focus = POL_opcja_lepper
+				}
+			}
+		}
+	}
+	POL_zbigniew_bogucki = {
+		name = "Zbigniew Bogucki"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		corps_commander = {
+			visible = { 
+				OR ={
+				has_completed_focus = POL_karol_nawrocki_prezydentem_polski
+				}
+			 }
+			traits = { politically_connected guerilla_fighter }
+			skill=2
+			attack_skill=6
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		}
+	
+
+	POL_adam_niedzielski = {
+		name = "Adam Niedzielski"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			traits = { mod_zdrowia }
+			idea_token = POL_adam_niedzielski
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+				OR = {
+					has_completed_focus = POL_opcja_pis
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# PLREW GENERALS
 
@@ -1901,7 +2850,12 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_przyjaciele_z_moskwy }
+			visible = { 
+				OR ={
+				has_completed_focus = POL_przyjaciele_z_moskwy
+				has_completed_focus = POL_dofinansowania_z_Moskwy
+				}
+			 }
 			traits = { politically_connected }
 			skill=2
 			attack_skill=7
@@ -1920,7 +2874,12 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_przyjaciele_z_moskwy }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przyjaciele_z_moskwy
+				has_completed_focus = POL_dofinansowania_z_Moskwy
+				}
+			 }
 			traits = { politically_connected }
 			skill=3
 			attack_skill=5
@@ -1939,7 +2898,13 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_opcja_prawica }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_pis 
+				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_ujarzmienie_aspergika
+				}
+		}
 			traits = {}
 			skill=1
 			attack_skill=3
@@ -1958,7 +2923,13 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_opcja_prawica }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_pis 
+				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_ujarzmienie_aspergika
+				}
+		}
 			traits = { }
 			skill=2
 			attack_skill=5
@@ -1985,15 +2956,7 @@ POL_samuela_torkowska = {
 			planning_skill = 4
 			logistics_skill = 1
 		}
-		field_marshal = {
-			visible = { has_completed_focus = POL_zalozmy_kaczorowi_x }
-			traits = { }
-			skill = 3
-			attack_skill = 6
-			defense_skill = 3
-			planning_skill = 5
-			logistics_skill = 2
-		}
+		
 	}
 
 	POL_ryszard_terlecki = {
@@ -2023,7 +2986,13 @@ POL_samuela_torkowska = {
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = POL_opcja_prawica }
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_pis
+				has_completed_focus = POL_opcja_lepper
+				has_completed_focus = POL_opcja_kamraci
+				}
+		}
 			traits = { }
 			skill = 1
 			attack_skill = 5
@@ -2095,7 +3064,7 @@ POL_samuela_torkowska = {
 		name = "Marcin Romanowski"
 		portraits = {
 			army = {
-				large = "GFX_portraits_Marcin_Romanowski"
+				#large = "GFX_portraits_Marcin_Romanowski"
 			}
 		}
 		corps_commander = {
@@ -2227,7 +3196,7 @@ POL_samuela_torkowska = {
 		name = "Roman Giertych"
 		portraits = {
 			army = {
-				large = "GFX_portraits_Roman_Giertych"
+				#large = "GFX_portraits_Roman_Giertych"
 			}
 		}
 		corps_commander = {
@@ -2249,7 +3218,7 @@ POL_samuela_torkowska = {
 		name = "Aldona Skiergiełło"
 		portraits = {
 			army = {
-				large = "GFX_portraits_Aldona_Skiergiello"
+				#large = "GFX_portraits_Aldona_Skiergiello"
 			}
 		}
 		corps_commander = {
@@ -2268,7 +3237,7 @@ POL_samuela_torkowska = {
 		name = "Krzysztof Jackowski"
 		portraits = {
 			army = {
-				large = "GFX_portraits_Krzysztof_Jackowski"
+				#large = "GFX_portraits_Krzysztof_Jackowski"
 			}
 		}
 		corps_commander = {
@@ -2287,7 +3256,7 @@ POL_samuela_torkowska = {
 		name = "Krzysztof Rutkowski"
 		portraits = {
 			army = {
-				large = "GFX_portraits_Krzysztof_Rutkowski"
+				#large = "GFX_portraits_Krzysztof_Rutkowski"
 			}
 		}
 		corps_commander = {
@@ -2338,6 +3307,66 @@ POL_samuela_torkowska = {
 	}
 	
 	# PLREW GENERALS - END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2486,6 +3515,68 @@ POL_slawosz_uznanski = {
 			traits = { air_warfare_theorist }
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2831,28 +3922,101 @@ POL_wojtek_drewniak = {
 		}
 	}
 
-	POL_dawider = {
-        name=POL_dawider
-        portraits = {
-            army = {
-                small="GFX_idea_POL_zygmunt_buhusz_szysko"
-            }
-        }
-        advisor = {
-            slot = high_command
-            idea_token = POL_dawider
-            allowed = {
-                original_tag = POL
-            }
-            traits = {
-                mod_kosmopolita
-            }
-            cost = 150
-            ai_will_do = {
-                factor = 1.000
-            }
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

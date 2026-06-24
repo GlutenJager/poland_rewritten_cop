@@ -68,6 +68,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_POL_decydujace_posiedzenie.dds"
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	# Po buncie (opcje)
 	SpriteType = {
 		name = "GFX_focus_POL_opcja_lewica"
@@ -85,6 +102,50 @@ spriteTypes = {
 		name = "GFX_focus_POL_opcja_anarchia"
 		texturefile = "gfx/interface/goals/focus_POL_opcja_anarchia.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_POL_opcja_centrum"
+		texturefile = "gfx/interface/goals/centrum.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# Samoobrona
 	SpriteType = {
@@ -167,6 +228,58 @@ spriteTypes = {
 		name = "GFX_focus_POL_zaoranie_korwinistow"
 		texturefile = "gfx/interface/goals/samoobrona/focus_POL_zaoranie_korwinistow.dds"
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# PiS - partia
 	SpriteType = {
@@ -487,6 +600,40 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_imperium_smolenskie.dds"
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	# Konfa
 
 	SpriteType = {
@@ -538,6 +685,57 @@ spriteTypes = {
 		name = GFX_focus_POL_opcja_zabij_korwin
 		texturefile = "gfx/interface/goals/konfederacja/zabiciekorwina.dds"
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	# Mentzen
 
@@ -753,6 +951,21 @@ spriteTypes = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	SpriteType = {
 		name = GFX_focus_POL_opcja_braun
 		texturefile = "gfx/interface/goals/konfederacja/braun/opcja_braun.dds"
@@ -894,10 +1107,266 @@ spriteTypes = {
 		name = GFX_focus_POL_wws
 		texturefile = "gfx/interface/goals/konfederacja/korwin/wws.dds"
 	}
+	SpriteType = {
+		name = GFX_focus_POL_leg_femboizm
+		texturefile = "gfx/interface/goals/konfederacja/korwin/legalizujfemboy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_awans_berkowicza
+		texturefile = "gfx/interface/goals/konfederacja/korwin/awansberk.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_korwin_na_pyrkonie
+		texturefile = "gfx/interface/goals/konfederacja/korwin/korwinnapyrkon.dds"
+	}
 	
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = GFX_focus_POL_opcja_wolnosciowcy
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/wolnosciowcy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_rozw_sejmu
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/rozwsejmu.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_powrot_leroya
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/powrotleroya.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_hot_dog
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/hotdogi.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_dziambor
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/dziambor.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_sosnierz
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/sosnierz.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_kucanie
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/kucanie.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_mdw
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/mdw.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_heil_korwin
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/heilkorwin.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_golo_i_wesolo
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/goloiwesolo.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_ankap_kulesza
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/ankapkulesza.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_wolna_europa
+		texturefile = "gfx/interface/goals/konfederacja/wolnosciowcy/wolnaeuropa.dds"
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = GFX_focus_POL_opcja_narodowcy
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/narodowcy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_jp2_wielkim_czlowiekeim
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/jp2wielkimczlowiekiembyl.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_konfa_ruch_narodowy
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/konfaruchnarodowy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_nauki_z_dmowskiego
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/naukizdmowskiego.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_opcja_bosak
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/narolibekbosak.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_narodowe_pedalstwo
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/pedalstwonarodowe.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_piasecki_fajen
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/piaseckitezfajen.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_drugi_rzym
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/wielkopolska2gimrzymem.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_mussolinista_winnicki
+		texturefile = "gfx/interface/goals/konfederacja/narodowcy/mussolinistawinnicki.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = GFX_focus_POL_opcja_kamraci
+		texturefile = "gfx/interface/goals/kamraci/opcjakamraci.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_jablon_vel_olszanski
+		texturefile = "gfx/interface/goals/kamraci/jablonolszanski.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_panstwo_narodowe
+		texturefile = "gfx/interface/goals/kamraci/panstwonarodowe.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_paleczka
+		texturefile = "gfx/interface/goals/kamraci/paleczka.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_jaszczur_w_choroszczy
+		texturefile = "gfx/interface/goals/kamraci/jaszczurwchoroszczy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_quo_vadis
+		texturefile = "gfx/interface/goals/kamraci/quovadis.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_czolem_wielkiej_lechii
+		texturefile = "gfx/interface/goals/kamraci/czolemwielkeijlechii.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_onr
+		texturefile = "gfx/interface/goals/kamraci/onr.dds"
+	}
+
+	
+	
 
 
 	###########				 ######
