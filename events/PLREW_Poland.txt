@@ -2866,7 +2866,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #Awesome!
-		name = PLREW_poland.5901.a
+		name = PLREW_poland.6801.a
 		ai_chance = {
 			base = 30
 		}
@@ -2894,6 +2894,1006 @@ country_event = {
 		}
 	}
 }
+
+
+
+#pertraktacje z niemcami
+country_event = {
+	id = PLREW_poland.69
+	title = PLREW_poland.69.t
+	desc = PLREW_poland.69.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #badzmy ostrozni
+		name = PLREW_poland.69.a
+		
+		GER = {
+			country_event = { hours = 2 id = PLREW_poland.6901 }
+		}
+	}
+
+	option = { #Niech oddadza wszystko
+		name = PLREW_poland.69.b
+		
+		GER = {
+			country_event = { hours = 2 id = PLREW_poland.6902 }
+		}
+	}
+}
+
+# ultimatum mniejsze
+country_event = {
+	id = PLREW_poland.6901
+	title = PLREW_poland.6901.t
+	desc = PLREW_poland.6901.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #no
+		name = PLREW_poland.6901.a
+				ai_chance = {
+			base = 20
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.69002 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+
+	option = { #yes
+		name = PLREW_poland.6901.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.69001 }
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.69001
+	title = PLREW_poland.69001.t
+	desc = PLREW_poland.69001.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #yes
+		name = PLREW_poland.69001.a
+		ai_chance = {
+			base = 30
+		}
+		86 = { transfer_state_to = POL }
+		807 = { transfer_state_to = POL }
+		86 = { add_core_of = POL }
+		807 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		85 = { add_core_of = POL  }
+
+		188 = { transfer_state_to = POL }
+		5 = { transfer_state_to = POL }
+		763 = { transfer_state_to = POL }
+		67 = { transfer_state_to = POL }
+		85 = { transfer_state_to = POL }
+		
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.69002
+	title = PLREW_poland.69002.t
+	desc = PLREW_poland.69002.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #yes
+		name = PLREW_poland.69002.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+		86 = { add_core_of = POL }
+		807 = { add_core_of = POL }
+	}
+}
+
+
+# ultimatum wieksze
+country_event = {
+	id = PLREW_poland.6902
+	title = PLREW_poland.6902.t
+	desc = PLREW_poland.6902.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #yea
+		name = PLREW_poland.6902.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			
+			country_event = { hours = 2 id = PLREW_poland.690001 }
+
+		}
+	}
+
+	option = { #no
+		name = PLREW_poland.6901.b
+		
+		ai_chance = {
+			base = 30
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.690002 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.690001
+	title = PLREW_poland.69001.t
+	desc = PLREW_poland.69001.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #yes
+		name = PLREW_poland.69001.a
+		ai_chance = {
+			base = 30
+		}
+		86 = { transfer_state_to = POL }
+		807 = { transfer_state_to = POL }
+		86 = { add_core_of = POL }
+		807 = { add_core_of = POL }
+		85 = { transfer_state_to = POL }
+		5 = { transfer_state_to = POL }
+		85 = { add_core_of = POL }
+		63 = { transfer_state_to = POL }
+		68 = { transfer_state_to = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { transfer_state_to = POL }
+		67 = { transfer_state_to = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		62 = { transfer_state_to = POL }
+		62 = { add_core_of = POL }
+		188 = { transfer_state_to = POL }
+		763 = { transfer_state_to = POL }
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.690002
+	title = PLREW_poland.69002.t
+	desc = PLREW_poland.69002.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #yes
+		name = PLREW_poland.69002.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+		86 = { add_core_of = POL }
+		807 = { add_core_of = POL }
+		85 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		62 = { add_core_of = POL }
+		
+	}
+}
+
+
+
+country_event = { #event decydujacy o lennach
+	id = PLREW_poland.70
+	title = PLREW_poland.70.t
+	desc = PLREW_poland.70.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #wszystko nasze
+		name = PLREW_poland.70.o1
+		
+		11 = { add_core_of = POL }
+		814 = { add_core_of = POL }
+		189 = { add_core_of = POL }
+		815 = { add_core_of = POL }
+
+		190 = { add_core_of = POL }
+		809 = { add_core_of = POL }
+
+		808 = { add_core_of = POL }
+
+		207 = { add_core_of = POL }
+		242 = { add_core_of = POL }
+		243 = { add_core_of = POL }
+		241 = { add_core_of = POL }
+		225 = { add_core_of = POL }
+		193 = { add_core_of = POL }
+		194 = { add_core_of = POL }
+		204 = { add_core_of = POL }
+		206 = { add_core_of = POL }
+		224 = { add_core_of = POL }
+
+		199 = { add_core_of = POL }
+		201 = { add_core_of = POL }
+		198 = { add_core_of = POL }
+		202 = { add_core_of = POL }
+		203 = { add_core_of = POL }
+		259 = { add_core_of = POL }
+		226 = { add_core_of = POL }
+		221 = { add_core_of = POL }
+
+		197 = { add_core_of = POL }
+		192 = { add_core_of = POL }
+		834 = { add_core_of = POL }
+		
+	}
+	option = { #lepeij postawic na decentralizację
+		name = PLREW_poland.70.o2
+
+		814 = { transfer_state_to = LIT }
+		189 = { transfer_state_to = LIT }
+		815 = { transfer_state_to = LIT }
+		95 = { transfer_state_to = LIT }
+		11 = { transfer_state_to = LIT }
+		95 = { add_core_of = LIT }
+		96 = { transfer_state_to = LIT }
+		96 = { add_core_of = LIT }
+		784 = { transfer_state_to = LIT }
+		784 = { add_core_of = LIT }
+		97 = { transfer_state_to = LIT }
+		97 = { add_core_of = LIT }
+		94 = { transfer_state_to = LIT }
+		94 = { add_core_of = LIT }
+
+		93 = { transfer_state_to = UKR }
+		93 = { add_core_of = UKR }
+
+		808 = { transfer_state_to = EOS }
+		808 = { add_core_of = EOS }
+
+		190 = { transfer_state_to = LAT }
+		190 = { add_core_of = LAT }
+		809 = { transfer_state_to = LAT }
+		809 = { add_core_of = LAT }
+
+		810 = { transfer_state_to = EST }
+		810 = { add_core_of = EST }
+		12 = { transfer_state_to = EST }
+		12 = { add_core_of = EST }
+
+		puppet = EST
+		puppet = EOS
+		puppet = LAT
+		puppet = UKR
+		puppet = LIT
+		
+	}
+	
+}
+
+
+
+country_event = { #event decydujacy o oddaniu ziemii litewskich
+	id = PLREW_poland.71
+	title = PLREW_poland.71.t
+	desc = PLREW_poland.71.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #wszystko nasze
+		name = PLREW_poland.71.o1
+
+		199 = { transfer_state_to = UKR }
+		201 = { transfer_state_to = UKR }
+		198 = { transfer_state_to = UKR }
+		202 = { transfer_state_to = UKR }
+		203 = { transfer_state_to = UKR }
+		259 = { transfer_state_to = UKR }
+		226 = { transfer_state_to = UKR }
+		221 = { transfer_state_to = UKR }
+		197 = { transfer_state_to = UKR }
+		192 = { transfer_state_to = UKR }
+		834 = { transfer_state_to = UKR }
+
+		207 = { transfer_state_to = LIT }
+		242 = { transfer_state_to = LIT }
+		243 = { transfer_state_to = LIT }
+		241 = { transfer_state_to = LIT }
+		225 = { transfer_state_to = LIT }
+		193 = { transfer_state_to = LIT }
+		194 = { transfer_state_to = LIT }
+		204 = { transfer_state_to = LIT }
+		206 = { transfer_state_to = LIT }
+		224 = { transfer_state_to = LIT }
+		
+	
+		
+	}
+	
+}
+
+
+
+
+country_event = { #rozbicie ukrainskiego ruchu oporu
+	id = PLREW_poland.72
+	title = PLREW_poland.72.t
+	desc = PLREW_poland.72.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.72.o1
+		add_manpower = -1000
+		add_stability = -0.1
+		add_war_support = 0.2
+	}
+}
+
+
+
+
+
+#rzadanie slowacji
+country_event = {
+	id = PLREW_poland.73
+	title = PLREW_poland.73.t
+	desc = PLREW_poland.73.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.73.a
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.7301 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.73.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.7302 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.7301
+	title = PLREW_poland.7301.t
+	desc = PLREW_poland.7301.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.7301.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 72
+		}
+		HUN = {
+			transfer_state = 664
+			transfer_state = 73
+		}
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.7302
+	title = PLREW_poland.7302.t
+	desc = PLREW_poland.7302.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.7302.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+
+#rzadanie rumunii
+country_event = {
+	id = PLREW_poland.74
+	title = PLREW_poland.74.t
+	desc = PLREW_poland.74.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.74.a
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.7401 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.74.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.7402 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.7401
+	title = PLREW_poland.7401.t
+	desc = PLREW_poland.7401.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.7401.a
+		ai_chance = {
+			base = 30
+		}
+		if = {
+			limit = {
+				UKR = { exists = yes }
+				LIT = { exists = yes }
+				LAT = { exists = yes }
+			}
+			POL = {
+				puppet = MOL
+			}
+			78 = { transfer_state_to = MOL }
+			79 = { transfer_state_to = MOL }
+			766 = { transfer_state_to = MOL }
+
+		
+		}
+		else = {
+			78 = { transfer_state_to = POL }
+			79 = { transfer_state_to = POL }
+			766 = { transfer_state_to = POL }
+
+			78 = { add_core_of = POL }
+			79 = { add_core_of = POL }
+			766 = { add_core_of = POL }
+		}
+			80 = { transfer_state_to = POL }
+			80 = { add_core_of = POL }
+
+			82 = { transfer_state_to = HUN }
+			82 = { add_core_of = HUN }
+			84 = { transfer_state_to = HUN }
+			84 = { add_core_of = HUN }
+			83 = { transfer_state_to = HUN }
+			83 = { add_core_of = HUN }
+			76 = { transfer_state_to = HUN }
+			76 = { add_core_of = HUN }
+
+			POL = {
+				puppet = ROM
+			}
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.7402
+	title = PLREW_poland.7402.t
+	desc = PLREW_poland.7402.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.7402.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+
+
+
+
+#rzadanie chorwacji
+country_event = {
+	id = PLREW_poland.75
+	title = PLREW_poland.75.t
+	desc = PLREW_poland.75.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.75.a
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.7501 }
+		}
+		
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.75.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.7502 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.7501
+	title = PLREW_poland.7501.t
+	desc = PLREW_poland.7501.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.7501.a
+		ai_chance = {
+			base = 30
+		}
+
+			764 = { transfer_state_to = HUN }
+			
+			853 = { transfer_state_to = HUN }
+			
+			45 = { transfer_state_to = HUN }
+			
+			102 = { transfer_state_to = HUN }
+			
+			109 = { transfer_state_to = HUN }
+			
+
+			POL = {
+				puppet = YUG
+			}
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.7502
+	title = PLREW_poland.7502.t
+	desc = PLREW_poland.7502.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.7502.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = { # koronacja
+	id = PLREW_poland.76
+	title = PLREW_poland.76.t
+	desc = PLREW_poland.76.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.76.o1
+	}
+}
+
+country_event = { # korwin w uk
+	id = PLREW_poland.77
+	title = PLREW_poland.77.t
+	desc = PLREW_poland.77.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.77.o1
+	}
+}
+
+country_event = { # korwin u krola hiszpanskiego
+	id = PLREW_poland.78
+	title = PLREW_poland.78.t
+	desc = PLREW_poland.78.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.78.o1
+	}
+}
+
+country_event = { # korwin bojkotuje monarchow polnocy
+	id = PLREW_poland.79
+	title = PLREW_poland.79.t
+	desc = PLREW_poland.79.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.79.o1
+	}
+}
+
+country_event = { # korwin w rumunii
+	id = PLREW_poland.80
+	title = PLREW_poland.80.t
+	desc = PLREW_poland.80.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.80.o1
+	}
+}
+
+country_event = { # bojkot tfu gejow
+	id = PLREW_poland.81
+	title = PLREW_poland.81.t
+	desc = PLREW_poland.81.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.81.o1
+	}
+}
+country_event = { # korwin na pyrkonie
+	id = PLREW_poland.82
+	title = PLREW_poland.82.t
+	desc = PLREW_poland.82.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.82.o1
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

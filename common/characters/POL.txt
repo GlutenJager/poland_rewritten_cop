@@ -260,6 +260,26 @@ characters = {
 		
 	}
 
+	POL_janusz_korwin_mikke_krol = {
+		name="Janusz Korwin-Mikke"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_korwin_mikke
+			}
+		}
+		
+	}
+
+	POL_konrad_berkowicz = {
+		name="Konrad Berkowicz"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_korwin_mikke
+			}
+		}
+		
+	}
+
 	POL_slawomir_mentzen = {
 		name = "Sławomir Mentzen"
 		portraits = {

@@ -106,6 +106,7 @@ set_popularities = {
 }
 
 recruit_character = POL_ignacy_moscicki
+recruit_character = POL_konrad_berkowicz
 recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski
 recruit_character = POL_wladyslaw_gomulka
@@ -147,6 +148,8 @@ recruit_character = POL_mateusz_morawiecki
 recruit_character = POL_rada_liderow_pis
 recruit_character = POL_janusz_kowalski
 	# Konfa
+recruit_character = POL_korwin_general
+recruit_character = POL_janusz_korwin_mikke_krol
 recruit_character = POL_slawomir_mentzen 
 recruit_character = POL_przemyslaw_wipler
 recruit_character = POL_artur_dziambor
