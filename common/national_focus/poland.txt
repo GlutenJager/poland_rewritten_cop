@@ -8783,7 +8783,7 @@ focus = {
 
 
 focus = {
-		id = POL_marzenia_endekow
+		id = POL_marzenia_endekow #pp
 		icon = GFX_goal_unknown
 		x = 1
 		y = 12
@@ -8805,7 +8805,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_przygotowanie_do_linii_dmowskiego
+		id = POL_przygotowanie_do_linii_dmowskiego #dywizje
 		icon = GFX_goal_unknown
 		x = -2
 		y = 1
@@ -8817,7 +8817,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_zadbanie_o_wsparcie_zachodu
+		id = POL_zadbanie_o_wsparcie_zachodu #SPYTAC zachod czy nas poprze
 		icon = GFX_goal_unknown
 		x = 0
 		y = 1
@@ -8829,7 +8829,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_sojusz_falangistow
+		id = POL_sojusz_falangistow #stworz frakcje z fasz panstwami
 		icon = GFX_goal_unknown
 		x = 2
 		y = 1
@@ -8841,7 +8841,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_naprawa_bledow_pilsudskiego
+		id = POL_naprawa_bledow_pilsudskiego #poprawa relacji z sasiadami i francja
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -8859,7 +8859,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_zjednoczenie_narodowe
+		id = POL_zjednoczenie_narodowe #litwa papa
 		icon = GFX_goal_unknown
 		x = -2
 		y = 3
@@ -8871,7 +8871,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_poszerzenie_granic_pokoju_ryskiego
+		id = POL_poszerzenie_granic_pokoju_ryskiego #rzadanie od sowietow
 		icon = GFX_goal_unknown
 		x = -3
 		y = 4
@@ -8883,7 +8883,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_nasza_wlasna_strefa_wplywow
+		id = POL_nasza_wlasna_strefa_wplywow #puppet wargoale na lotwe, estonie
 		icon = GFX_goal_unknown
 		x = -1
 		y = 4
@@ -8895,7 +8895,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_rajd_po_slowacje
+		id = POL_rajd_po_slowacje # wargoal na czechy
 		icon = GFX_goal_unknown
 		x = 0
 		y = 3
@@ -8907,7 +8907,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_oderwanie_bukowiny
+		id = POL_oderwanie_bukowiny #rzadnie do rumunii
 		icon = GFX_goal_unknown
 		x = 1
 		y = 4
@@ -8919,7 +8919,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wymuszenie_respektowania_warunkow_pokoju
+		id = POL_wymuszenie_respektowania_warunkow_pokoju #niemcy oddaja slask
 		icon = GFX_goal_unknown
 		x = 3
 		y = 3
@@ -8931,7 +8931,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_rzadanie_rekapensaty
+		id = POL_rzadanie_rekapensaty #niemcy oddaja mazury
 		icon = GFX_goal_unknown
 		x = 3
 		y = 4
@@ -8943,7 +8943,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_smiala_proba
+		id = POL_smiala_proba #wargoal na niemca
 		icon = GFX_goal_unknown
 		x = 3
 		y = 5
@@ -8955,7 +8955,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_zwyciestwo_polskiej_dyplomacji
+		id = POL_zwyciestwo_polskiej_dyplomacji #wargoale na czechy, rumunir, wegry zeby je spuppetowac
 		icon = GFX_goal_unknown
 		x = -1
 		y = 5
@@ -8973,7 +8973,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wychandlowanie_madagaskaru
+		id = POL_wychandlowanie_madagaskaru #jak w nazwie
 		icon = GFX_goal_unknown
 		x = -2
 		y = 6
@@ -8986,7 +8986,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_polonia_restitutti
+		id = POL_polonia_restitutti #polska nazywa sie odrodzone imperium rzeczpospolitej
 		icon = GFX_goal_unknown
 		x = 1
 		y = 6
@@ -9001,7 +9001,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_ziemie_z_wizji_smiglego #po drodze niemcy sie rozpadną
+		id = POL_ziemie_z_wizji_smiglego #wiadomo
 		icon = GFX_goal_unknown
 		x = 0
 		y = 7
@@ -9014,7 +9014,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_posel_do_dumy_rosyjskiej
+		id = POL_posel_do_dumy_rosyjskiej #event wychwalajcy dmowskiego, wargoale na francje, uk i beneluks aby je spuppetowac
 		icon = GFX_goal_unknown
 		x = 2
 		y = 7
