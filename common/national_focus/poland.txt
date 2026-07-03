@@ -4765,6 +4765,7 @@ focus_tree = {
 			}
 			country_event = { id = PLREW_poland.16 }
 			add_ideas = POL_nowa_nadzieja
+			set_cosmetic_tag = POL_polska_wolna_strefa_ekonomiczna
 		}
 	}
 	focus = {
@@ -4784,7 +4785,7 @@ focus_tree = {
 			POL_slawomir_mentzen = {
 				kill_country_leader = yes
 			}
-			
+			set_cosmetic_tag = POL_kaczism
 			hidden_effect = {
 				add_country_leader_role = {
 					character = POL_przemyslaw_wipler
@@ -5670,6 +5671,7 @@ focus_tree = {
 					  id=-1
                     }
                 }
+			set_cosmetic_tag = POL_krolestwo_polskie
 			country_event = PLREW_poland.76
 		}
 	}
@@ -7397,9 +7399,11 @@ focus_tree = {
 				long_name = KWL_LONG
 				name = KWL_SHORT
 			}
+			set_cosmetic_tag = POL_liberalna_republika_polska
 
 			#custom_effect_tooltip = POL_nowi_generalowie_doradcy
 			hidden_effect = {
+
 				add_country_leader_role = {
                     character = POL_artur_dziambor
                     country_leader = {
@@ -8154,6 +8158,7 @@ focus = {
 				long_name = KON_LONG
 				name = KON_SHORT
 			}
+			set_cosmetic_tag = POL_wielka_polska
 			
 
 			#custom_effect_tooltip = POL_nowi_generalowie_doradcy

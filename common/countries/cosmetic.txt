@@ -669,35 +669,118 @@ TBE_third_bulgarian_empire_neutrality = {
 	color_ui = rgb { 138 249 195 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+########         				  ######################################
+###     ###		 ###
+###       ###	 ###			  ########  	MOD PLREW 	    ########
+###       ###	 ###
+###       ###	 ###			  ######################################
+###     ###		 ###
+######## 		 ###
+###				 ###
+###				 ###
+###              ###
+###              ############
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PLREW
-PAL_braun = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
-}
-POL_regnum_kaczanum = {
-	color = rgb { 150 50 20  }
-	color_ui = rgb { 150 50 20  }
-}
-POL_imperium_smolenskie = {
-	color = rgb { 150 50 20  }
-	color_ui = rgb { 150 50 20  }
-}
-POL_korona_krolestwa_polskiego = {
-	color = rgb { 188 35 36 }
-	color_ui = rgb { 188 35 36 }
-}
-POL_european_union = {
-	color = rgb { 0 10 120 }
-	color_ui = rgb { 0 10 120 }
-}
-POL_rzad_swiatowy = {
-	color = rgb { 8 13 75 }
-	color_ui = rgb { 8 13 75 }
-}
-POL_rzesza_wielkogermanska = {
-	color = rgb { 54 54 54 }
-	color_ui = rgb { 115 115 115 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 FRA_eurorepublik = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
@@ -834,18 +917,113 @@ POL_german_poland = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
+
+
+
+
+
+
+
+
+
+
 POL_usmiechnieta = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
-POL_lepperism = {
-	color = rgb { 229  52  52 }
-	color_ui = rgb { 229  52  52 }
+POL_european_union = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
 }
-POL_lepperism_prl = {
-	color = rgb { 155 33 33 }
-	color_ui = rgb { 155 33 33 }
+POL_rzad_swiatowy = {
+	color = rgb { 8 13 75 }
+	color_ui = rgb { 8 13 75 }
 }
+POL_rzesza_wielkogermanska = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+POL_konfa = {
+	color = rgb { 180 30 30 }
+	color_ui = rgb { 180 30 30 }
+}
+
+POL_liberalna_republika_polska = {
+	color = rgb { 186 151 54 }
+	color_ui = rgb { 186 151 54 }
+}
+
+POL_polska_wolna_strefa_ekonomiczna = {
+	color = rgb { 12 13 43 }
+	color_ui = rgb { 12 13 43 }
+}
+
+POL_krolestwo_polskie = {
+	color = rgb { 199 82 82 }
+	color_ui = rgb { 199 82 82 }
+}
+
+POL_wielka_polska = {
+	color = rgb { 135 90 47 }
+	color_ui = rgb { 135 90 47 }
+}
+
+PAL_braun = {
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
+}
+
+POL_korona_krolestwa_polskiego = {
+	color = rgb { 92 18 6 }
+	color_ui = rgb { 92 18 6 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 POL_kaczism = {
 	color = rgb { 44 28 84 }
 	color_ui = rgb { 44 28 84 }
@@ -854,10 +1032,50 @@ POL_iv_rp = {
 	color = rgb { 30 6 140 }
 	color_ui = rgb { 30 6 140 }
 }
-POL_konfa = {
-	color = rgb { 180 30 30 }
-	color_ui = rgb { 180 30 30 }
+POL_regnum_kaczanum = {
+	color = rgb { 150 50 20  }
+	color_ui = rgb { 150 50 20  }
 }
+POL_imperium_smolenskie = {
+	color = rgb { 150 50 20  }
+	color_ui = rgb { 150 50 20  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+POL_lepperism = {
+	color = rgb { 229  52  52 }
+	color_ui = rgb { 229  52  52 }
+}
+POL_lepperism_prl = {
+	color = rgb { 155 33 33 }
+	color_ui = rgb { 155 33 33 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 UKR_UPA = {
 	color = rgb { 50 30 0 }
 	color_ui = rgb { 50 30 0 }
@@ -866,6 +1084,82 @@ DNZ_reichsprotektorat = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 122 145 93 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+########         				  ######################################
+###     ###		 ###
+###       ###	 ###			  ########  	MOD PLREW 	    ########
+###       ###	 ###
+###       ###	 ###			  ######################################
+###     ###		 ###
+######## 		 ###
+###				 ###
+###				 ###
+###              ###
+###              ############
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 POL_SANATION = {
 	color = rgb { 212  33  61 }

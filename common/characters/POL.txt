@@ -2171,7 +2171,18 @@ POL_samuela_torkowska = {
 			defense_skill = 5
 			planning_skill = 2
 			logistics_skill = 5
+
+			visible = {
+				OR = {
+					has_completed_focus = POL_karol_nawrocki_prezydentem_polski
+					has_completed_focus = POL_opcja_konfa
+					has_completed_focus = POL_opcja_kamraci
+					has_completed_focus = POL_vamos_polska
+
+				}
+			}
 		}
+		
 	}
 
 	POL_andrzej_duda = {
